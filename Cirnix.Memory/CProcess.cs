@@ -12,6 +12,7 @@ namespace Cirnix.Memory
     {
         /// <summary>
         /// 정리 전 / 정리 직후 / 정리 5초후
+        /// Before cleaning / Immediately after cleaning / 5 seconds after cleaning
         /// </summary>
         public static long[] MemoryValue = new long[3];
 
@@ -33,6 +34,7 @@ namespace Cirnix.Memory
 
         /// <summary>
         /// 시스템에서 실행중인 모든 프로세스에 대해, 사용하지 않는 WorkingSet 메모리를 OS에게 반환하도록 합니다.
+        /// Forces any unused WorkingSet memory to be returned to the OS for all processes running on the system.
         /// </summary>
         /// <param name="excludeThisProcess">현재 프로세스를 제외할 것인가 여부 (기본값은 제외)</param>
         /// <param name="excludeProcessNames">메모리 반환을 하지 않을 프로세스 명의 컬렉션</param>
@@ -40,6 +42,7 @@ namespace Cirnix.Memory
         {
             //if (log.IsInfoEnabled)
             //    log.Info("컴퓨터의 모든 프로세스에 대해 사용하지 않는 메모리를 OS에 반환하도록 합니다...");
+            //    log.Info("Forces unused memory to be returned to the OS for all processes on the computer...");
 
             Process currentProcess = Process.GetCurrentProcess();
 

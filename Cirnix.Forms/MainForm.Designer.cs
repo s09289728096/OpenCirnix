@@ -4,13 +4,16 @@
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
+        /// This is a required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// 사용 중인 모든 리소스를 정리합니다.
+        /// Clean up all resources in use.
         /// </summary>
         /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        /// <param name="disposing">"true" if the managed resource should be deleted; otherwise, "false".</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -25,6 +28,8 @@
         /// <summary>
         /// 디자이너 지원에 필요한 메서드입니다. 
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
+        /// This method is required for designer support.
+        /// Do not modify the contents of this method with a code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -89,7 +94,7 @@
             // Label_Title
             // 
             this.Label_Title.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Title.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_Title.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_Title.Location = new System.Drawing.Point(80, 6);
             this.Label_Title.Margin = new System.Windows.Forms.Padding(100, 0, 100, 0);
             this.Label_Title.Name = "Label_Title";
@@ -99,49 +104,49 @@
             // 
             // BTN_Option
             // 
-            this.BTN_Option.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.BTN_Option.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.BTN_Option.Location = new System.Drawing.Point(3, 161);
             this.BTN_Option.Margin = new System.Windows.Forms.Padding(0);
             this.BTN_Option.Name = "BTN_Option";
             this.BTN_Option.Size = new System.Drawing.Size(39, 23);
             this.BTN_Option.TabIndex = 9;
-            this.BTN_Option.Text = "설정";
+            this.BTN_Option.Text = "設定";
             this.BTN_Option.UseVisualStyleBackColor = true;
             this.BTN_Option.Click += new System.EventHandler(this.BTN_Option_Click);
             // 
             // BTN_RoomList
             // 
-            this.BTN_RoomList.Font = new System.Drawing.Font("맑은 고딕", 8F, System.Drawing.FontStyle.Bold);
+            this.BTN_RoomList.Font = new System.Drawing.Font("Malgun Gothic", 8F, System.Drawing.FontStyle.Bold);
             this.BTN_RoomList.Location = new System.Drawing.Point(42, 161);
             this.BTN_RoomList.Margin = new System.Windows.Forms.Padding(0);
             this.BTN_RoomList.Name = "BTN_RoomList";
             this.BTN_RoomList.Size = new System.Drawing.Size(85, 23);
             this.BTN_RoomList.TabIndex = 10;
-            this.BTN_RoomList.Text = "대기실 리스트";
+            this.BTN_RoomList.Text = "房間列表";
             this.BTN_RoomList.UseVisualStyleBackColor = true;
             this.BTN_RoomList.Click += new System.EventHandler(this.BTN_RoomList_Click);
             // 
             // BTN_Info
             // 
-            this.BTN_Info.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.BTN_Info.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.BTN_Info.Location = new System.Drawing.Point(3, 184);
             this.BTN_Info.Margin = new System.Windows.Forms.Padding(0);
             this.BTN_Info.Name = "BTN_Info";
             this.BTN_Info.Size = new System.Drawing.Size(39, 23);
             this.BTN_Info.TabIndex = 11;
-            this.BTN_Info.Text = "정보";
+            this.BTN_Info.Text = "資訊";
             this.BTN_Info.UseVisualStyleBackColor = true;
             this.BTN_Info.Click += new System.EventHandler(this.BTN_Info_Click);
             // 
             // BTN_Analyzer
             // 
-            this.BTN_Analyzer.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.BTN_Analyzer.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.BTN_Analyzer.Location = new System.Drawing.Point(42, 184);
             this.BTN_Analyzer.Margin = new System.Windows.Forms.Padding(0);
             this.BTN_Analyzer.Name = "BTN_Analyzer";
             this.BTN_Analyzer.Size = new System.Drawing.Size(85, 23);
             this.BTN_Analyzer.TabIndex = 12;
-            this.BTN_Analyzer.Text = "강제설정";
+            this.BTN_Analyzer.Text = "主程式設定";
             this.BTN_Analyzer.UseVisualStyleBackColor = true;
             this.BTN_Analyzer.Click += new System.EventHandler(this.BTN_Analyzer_Click);
             // 
@@ -154,30 +159,30 @@
             this.groupBox1.Controls.Add(this.Box_MapType);
             this.groupBox1.Controls.Add(this.Box_HeroType);
             this.groupBox1.Controls.Add(this.Box_SaveText);
-            this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.groupBox1.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.groupBox1.Location = new System.Drawing.Point(4, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(165, 131);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "세이브 분류";
+            this.groupBox1.Text = "存檔分類";
             // 
             // Label_Command
             // 
             this.Label_Command.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Command.Font = new System.Drawing.Font("맑은 고딕", 11F);
+            this.Label_Command.Font = new System.Drawing.Font("Malgun Gothic", 11F);
             this.Label_Command.Location = new System.Drawing.Point(5, 101);
             this.Label_Command.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Command.Name = "Label_Command";
             this.Label_Command.Size = new System.Drawing.Size(55, 26);
             this.Label_Command.TabIndex = 87;
-            this.Label_Command.Text = "명령어";
+            this.Label_Command.Text = "指令";
             this.Label_Command.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // RB_Preset2
             // 
             this.RB_Preset2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Preset2.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.RB_Preset2.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.RB_Preset2.Location = new System.Drawing.Point(96, 101);
             this.RB_Preset2.Name = "RB_Preset2";
             this.RB_Preset2.Size = new System.Drawing.Size(30, 26);
@@ -190,7 +195,7 @@
             // RB_Preset3
             // 
             this.RB_Preset3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Preset3.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.RB_Preset3.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.RB_Preset3.Location = new System.Drawing.Point(131, 101);
             this.RB_Preset3.Name = "RB_Preset3";
             this.RB_Preset3.Size = new System.Drawing.Size(30, 26);
@@ -204,7 +209,7 @@
             // 
             this.RB_Preset1.Appearance = System.Windows.Forms.Appearance.Button;
             this.RB_Preset1.Checked = true;
-            this.RB_Preset1.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.RB_Preset1.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.RB_Preset1.Location = new System.Drawing.Point(61, 101);
             this.RB_Preset1.Name = "RB_Preset1";
             this.RB_Preset1.Size = new System.Drawing.Size(30, 26);
@@ -227,31 +232,31 @@
             // 
             // BTN_AdditionalTool
             // 
-            this.BTN_AdditionalTool.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.BTN_AdditionalTool.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.BTN_AdditionalTool.Location = new System.Drawing.Point(127, 161);
             this.BTN_AdditionalTool.Margin = new System.Windows.Forms.Padding(0);
             this.BTN_AdditionalTool.Name = "BTN_AdditionalTool";
             this.BTN_AdditionalTool.Size = new System.Drawing.Size(42, 23);
             this.BTN_AdditionalTool.TabIndex = 15;
-            this.BTN_AdditionalTool.Text = "부가";
+            this.BTN_AdditionalTool.Text = "工具";
             this.BTN_AdditionalTool.UseVisualStyleBackColor = true;
             this.BTN_AdditionalTool.Click += new System.EventHandler(this.BTN_AdditionalTool_Click);
             // 
             // BTN_LaunchWC3
             // 
-            this.BTN_LaunchWC3.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.BTN_LaunchWC3.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.BTN_LaunchWC3.Location = new System.Drawing.Point(127, 184);
             this.BTN_LaunchWC3.Margin = new System.Windows.Forms.Padding(0);
             this.BTN_LaunchWC3.Name = "BTN_LaunchWC3";
             this.BTN_LaunchWC3.Size = new System.Drawing.Size(42, 23);
             this.BTN_LaunchWC3.TabIndex = 16;
-            this.BTN_LaunchWC3.Text = "실행";
+            this.BTN_LaunchWC3.Text = "執行";
             this.BTN_LaunchWC3.UseVisualStyleBackColor = true;
             this.BTN_LaunchWC3.Click += new System.EventHandler(this.BTN_LaunchWC3_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 11F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(320, 210);
@@ -265,7 +270,7 @@
             this.Controls.Add(this.Label_Title);
             this.Controls.Add(this.ImageBox);
             this.DisplayHeader = false;
-            this.Font = new System.Drawing.Font("굴림", 8F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);

@@ -39,19 +39,20 @@ namespace Cirnix.Forms
         {
             Process proc = ProcessList.FocusedItem.Tag as Process;
             //MetroDialog.OK("지정 완료", $"{proc.ProcessName} ({proc.Id}) 가 지정되었습니다.");
-            
+            //MetroDialog.OK("Designation complete", $"{proc.ProcessName} ({proc.Id}) has been specified.");
+
             switch (GameModule.InitWarcraft3Info(proc))
             {
                 case WarcraftState.OK:
                     Warcraft3Info.Refresh();
                     GameModule.GetOffset();
-                    MetroDialog.OK("지정 완료", $"{proc.ProcessName} ({proc.Id}) 가 지정되었습니다.");
+                    MetroDialog.OK("指定完成", $"{proc.ProcessName} ({proc.Id}) 已被指定");
                     break;
                 case WarcraftState.Closed:
-                    MetroDialog.OK("오류", $"{proc.ProcessName} ({proc.Id}) 는 이미 화면이 종료된 상태이므로 강제로 프로세스를 종료합니다.");
+                    MetroDialog.OK("錯誤", $"{proc.ProcessName} ({proc.Id}) 由於螢幕已經關閉，執行緒被強制終止。");
                     break;
                 case WarcraftState.Error:
-                    MetroDialog.OK("오류", "프로세스를 초기화 하는데에 실패했습니다.");
+                    MetroDialog.OK("錯誤", "無法初始化執行緒。");
                     break;
             }
             

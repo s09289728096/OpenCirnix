@@ -41,7 +41,7 @@
             this.Label_Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_Title.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Title.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_Title.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_Title.Location = new System.Drawing.Point(30, 10);
             this.Label_Title.Name = "Label_Title";
             this.Label_Title.Size = new System.Drawing.Size(120, 20);
@@ -51,7 +51,7 @@
             // BTN_Two
             // 
             this.BTN_Two.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_Two.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_Two.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_Two.Location = new System.Drawing.Point(9, 59);
             this.BTN_Two.Name = "BTN_Two";
             this.BTN_Two.Size = new System.Drawing.Size(80, 23);
@@ -63,7 +63,7 @@
             // BTN_One
             // 
             this.BTN_One.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_One.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_One.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_One.Location = new System.Drawing.Point(91, 59);
             this.BTN_One.Name = "BTN_One";
             this.BTN_One.Size = new System.Drawing.Size(80, 23);
@@ -74,7 +74,7 @@
             // Label_Message
             // 
             this.Label_Message.AutoSize = true;
-            this.Label_Message.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_Message.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_Message.Location = new System.Drawing.Point(10, 37);
             this.Label_Message.Name = "Label_Message";
             this.Label_Message.Size = new System.Drawing.Size(0, 15);
@@ -85,7 +85,7 @@
             // BTN_Three
             // 
             this.BTN_Three.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_Three.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_Three.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_Three.Location = new System.Drawing.Point(-73, 59);
             this.BTN_Three.Name = "BTN_Three";
             this.BTN_Three.Size = new System.Drawing.Size(80, 23);
@@ -97,7 +97,7 @@
             // BTN_Four
             // 
             this.BTN_Four.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_Four.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_Four.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_Four.Location = new System.Drawing.Point(-155, 59);
             this.BTN_Four.Name = "BTN_Four";
             this.BTN_Four.Size = new System.Drawing.Size(80, 23);

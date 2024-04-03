@@ -4,6 +4,8 @@ using System.Runtime.InteropServices;
 // 어셈블리에 대한 일반 정보는 다음 특성 집합을 통해 
 // 제어됩니다. 어셈블리와 관련된 정보를 수정하려면
 // 이러한 특성 값을 변경하세요.
+// General information about an assembly is controlled through the following set of properties:
+// Change the values of these properties to modify information related to the assembly.
 [assembly: AssemblyTitle("Cirnix - Warcraft III 보조 도구")]
 [assembly: AssemblyProduct("Cirnix - Warcraft III 보조 도구")]
 [assembly: AssemblyCopyright("Copyright © BlacklightsC 2017 - 2021")]

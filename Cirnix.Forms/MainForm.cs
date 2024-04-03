@@ -92,11 +92,11 @@ namespace Cirnix.Forms
             if (depth > 0)
             {
                 Box_HeroType.Items.Clear();
-                if (!Directory.Exists(GetCurrentPath(0) + @"\미지정"))
-                    Directory.CreateDirectory(GetCurrentPath(0) + @"\미지정");
+                if (!Directory.Exists(GetCurrentPath(0) + @"\未指定"))
+                    Directory.CreateDirectory(GetCurrentPath(0) + @"\未指定");
                 foreach (FileInfo item in new DirectoryInfo(GetCurrentPath(0)).GetFiles())
                     if (item.Extension.ToLower() == ".txt")
-                        item.MoveTo(GetCurrentPath(0) + @"\미지정\" + item.Name);
+                        item.MoveTo(GetCurrentPath(0) + @"\未指定\" + item.Name);
                 Box_HeroType.Items.AddRange(GetDirectoryList(GetCurrentPath(0)));
                 Box_HeroType.Text = Category[1];
             }
@@ -130,7 +130,7 @@ namespace Cirnix.Forms
             }
             if (GetCurrentPath(0) != null)
             {
-                string path = $"{GetCurrentPath(0)}\\미지정";
+                string path = $"{GetCurrentPath(0)}\\未指定";
                 if (!Directory.Exists(path)) Directory.CreateDirectory(path);
                 foreach (FileInfo item in new DirectoryInfo(GetCurrentPath(0)).GetFiles())
                     if (item.Extension.ToLower() == ".txt")
@@ -182,13 +182,13 @@ namespace Cirnix.Forms
                 Box_HeroType.Enabled = true;
                 Box_SaveText.Enabled = true;
             }
-            if (!Directory.Exists(GetCurrentPath(0) + @"\미지정"))
-                Directory.CreateDirectory(GetCurrentPath(0) + @"\미지정");
+            if (!Directory.Exists(GetCurrentPath(0) + @"\未指定"))
+                Directory.CreateDirectory(GetCurrentPath(0) + @"\未指定");
             foreach (FileInfo item in new DirectoryInfo(GetCurrentPath(0)).GetFiles())
                 if (item.Extension.ToLower() == ".txt")
-                    item.MoveTo(GetCurrentPath(0) + @"\미지정\" + item.Name);
+                    item.MoveTo(GetCurrentPath(0) + @"\未指定\" + item.Name);
             Box_HeroType.Items.AddRange(GetDirectoryList(GetCurrentPath(0)));
-            Box_HeroType.Text = Category[1] = "미지정";
+            Box_HeroType.Text = Category[1] = "未指定";
             Box_HeroType_TextChanged(sender, e);
         }
 
@@ -249,8 +249,8 @@ namespace Cirnix.Forms
             {
                 OpenFileDialog FDialog = new OpenFileDialog
                 {
-                    Title = "실행 파일을 선택하세요.",
-                    Filter = "워크래프트 EXE파일|JNLoader.exe;Warcraft III.exe;war3.exe"
+                    Title = "選擇一個執行檔",
+                    Filter = "魔獸爭霸執行檔|JNLoader.exe;Warcraft III.exe;war3.exe"
                 };
                 if (FDialog.ShowDialog() != DialogResult.OK) return;
                 Settings.InstallPath = LastInstallPath = Path.GetDirectoryName(FDialog.FileName);
@@ -263,16 +263,16 @@ namespace Cirnix.Forms
                 }
             }
             if (Memory.Component.Warcraft3Info.Process != null)
-                if (MetroDialog.YesNo("기존 프로세스 감지 됨", "Warcraft III 프로세스가 아직 실행 중입니다.\n종료하고 실행하시겠습니까?"))
+                if (MetroDialog.YesNo("偵測到執行中的程式", "Warcraft III 執行中\n是否仍然執行?"))
                 {
                     if (!Memory.Component.Warcraft3Info.Close())
                     {
-                        MetroDialog.OK("액세스 오류", "Warcraft III 프로세스를 종료할 수 없었습니다.\n작업 관리자에서 수동으로 프로세스를 종료하세요.");
+                        MetroDialog.OK("存取錯誤", "Warcraft III 無法被終止\n請從工作管理員強制終止程式");
                         return;
                     }
                 }
                 else return;
-            GameModule.StartWarcraft3(LastInstallPath, MetroDialog.Select("화면 표기 설정", "창 모드", "전체 창", "전체화면"));
+            GameModule.StartWarcraft3(LastInstallPath, MetroDialog.Select("視窗顯示設定", "視窗模式", "全視窗", "全螢幕"));
         }
 
         private void MainForm_Resize(object sender, EventArgs e)

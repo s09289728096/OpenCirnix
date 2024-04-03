@@ -42,14 +42,14 @@ namespace Cirnix.Forms
 
         private void InfoForm_Shown(object sender, EventArgs e)
         {
-            UpdateButton.Text = "업데이트";
+            UpdateButton.Text = "更新";
             UpdateButton.Enabled = false;
             VersionChecker.RunWorkerAsync();
         }
 
         private void VersionChecker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            if (e.Error != null) LatestVersion.Text = "연결 실패";
+            if (e.Error != null) LatestVersion.Text = "連線失敗";
             else VersionUpdate();
         }
 
@@ -62,12 +62,12 @@ namespace Cirnix.Forms
                 if (i != 1 && Current[i] == version[i]) continue;
                 if (Current[i] >= version[i])
                 {
-                    UpdateButton.Text = "최신 버전";
+                    UpdateButton.Text = "最新版本";
                     UpdateButton.Enabled = false;
                 }
                 else
                 {
-                    UpdateButton.Text = "업데이트";
+                    UpdateButton.Text = "更新";
                     UpdateButton.Enabled = true;
                 }
                 break;

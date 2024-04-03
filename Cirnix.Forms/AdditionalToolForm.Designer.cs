@@ -42,7 +42,7 @@
             // Label_Title
             // 
             this.Label_Title.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Title.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_Title.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_Title.Location = new System.Drawing.Point(80, 10);
             this.Label_Title.Margin = new System.Windows.Forms.Padding(150, 0, 150, 0);
             this.Label_Title.Name = "Label_Title";
@@ -56,7 +56,7 @@
             this.BTN_CheatMapCheck.Name = "BTN_CheatMapCheck";
             this.BTN_CheatMapCheck.Size = new System.Drawing.Size(90, 31);
             this.BTN_CheatMapCheck.TabIndex = 10;
-            this.BTN_CheatMapCheck.Text = "치트맵 검사";
+            this.BTN_CheatMapCheck.Text = "作弊圖檢查";
             this.BTN_CheatMapCheck.UseVisualStyleBackColor = true;
             this.BTN_CheatMapCheck.Click += new System.EventHandler(this.BTN_CheatMapCheck_Click);
             // 
@@ -66,7 +66,7 @@
             this.BTN_ConvertScreenShot.Name = "BTN_ConvertScreenShot";
             this.BTN_ConvertScreenShot.Size = new System.Drawing.Size(100, 31);
             this.BTN_ConvertScreenShot.TabIndex = 11;
-            this.BTN_ConvertScreenShot.Text = "스크린샷 변환";
+            this.BTN_ConvertScreenShot.Text = "截圖轉換";
             this.BTN_ConvertScreenShot.UseVisualStyleBackColor = true;
             this.BTN_ConvertScreenShot.Click += new System.EventHandler(this.BTN_ConvertScreenShot_Click);
             // 
@@ -96,7 +96,7 @@
             // 
             // FileName
             // 
-            this.FileName.HeaderText = "파일 이름";
+            this.FileName.HeaderText = "檔案名稱";
             this.FileName.MinimumWidth = 110;
             this.FileName.Name = "FileName";
             this.FileName.ReadOnly = true;
@@ -106,7 +106,7 @@
             // States
             // 
             this.States.FillWeight = 50F;
-            this.States.HeaderText = "상태";
+            this.States.HeaderText = "狀態";
             this.States.MinimumWidth = 20;
             this.States.Name = "States";
             this.States.ReadOnly = true;
@@ -115,7 +115,7 @@
             // 
             // Combo_ScreenShotExtension
             // 
-            this.Combo_ScreenShotExtension.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Combo_ScreenShotExtension.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Combo_ScreenShotExtension.FormattingEnabled = true;
             this.Combo_ScreenShotExtension.ItemHeight = 23;
             this.Combo_ScreenShotExtension.Items.AddRange(new object[] {
@@ -148,14 +148,14 @@
             this.Controls.Add(this.BTN_CheatMapCheck);
             this.Controls.Add(this.Label_Title);
             this.DisplayHeader = false;
-            this.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "AdditionalToolForm";
             this.Padding = new System.Windows.Forms.Padding(5, 30, 5, 5);
             this.Resizable = false;
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
-            this.Text = "Cirnix 부가 기능";
+            this.Text = "Cirnix 附加元件";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdditionalToolForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.List_Data)).EndInit();
             this.ResumeLayout(false);

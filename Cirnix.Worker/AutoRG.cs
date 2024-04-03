@@ -44,11 +44,11 @@ namespace Cirnix.Worker
             SendMsg(false, "/rg");
             if (AutoRGCount > 0)
             {
-                SendMsg(true, string.Format("자동 RG 사용 중: {0}회", ++LoopedCount));
+                SendMsg(true, string.Format("自動 RG: {0}次", ++LoopedCount));
                 if (LoopedCount >= AutoRGCount)
                 {
                     CancelAsync();
-                    SendMsg(true, "자동 RG 기능이 자동적으로 종료되었습니다.");
+                    SendMsg(true, "自動 RG 功能已停止");
                 }
             }
         }

@@ -133,7 +133,7 @@ namespace Cirnix.Forms.ServerStatus
         }
         private void Invoked_Disconnected()
         {
-            Label_Loading.Text = "재 연결 하는 중 입니다...";
+            Label_Loading.Text = "重新連接...";
             FormEnable = false;
             BTN_Refresh.Enabled = false;
         }
@@ -302,19 +302,19 @@ namespace Cirnix.Forms.ServerStatus
             switch (Target.status)
             {
                 case "started":
-                    Label_Status.Text = "게임 중";
+                    Label_Status.Text = "遊戲中";
                     Label_Status.ForeColor = Color.Red;
                     break;
                 case "full":
-                    Label_Status.Text = "꽉 참";
+                    Label_Status.Text = "全滿";
                     Label_Status.ForeColor = Color.Orange;
                     break;
                 case "loaded":
-                    Label_Status.Text = "로딩 중";
+                    Label_Status.Text = "載入中";
                     Label_Status.ForeColor = Color.BlueViolet;
                     break;
                 case "open":
-                    Label_Status.Text = "대기실";
+                    Label_Status.Text = "等候中";
                     Label_Status.ForeColor = Color.Black;
                     break;
                 default:
@@ -325,11 +325,11 @@ namespace Cirnix.Forms.ServerStatus
             switch (Target.flag)
             {
                 case "private":
-                    Label_Flag.Text = "비공개";
+                    Label_Flag.Text = "私人的";
                     Label_Flag.ForeColor = Color.SeaGreen;
                     break;
                 case "public":
-                    Label_Flag.Text = "공개";
+                    Label_Flag.Text = "公開的";
                     Label_Flag.ForeColor = Color.Black;
                     break;
                 default:
@@ -364,7 +364,7 @@ namespace Cirnix.Forms.ServerStatus
                 SetRTBText(ref RTB_MapName, (json["Title"] as JValue)?.Value as string, true, true, true);
                 if (!((json["Thumbnail"] as JValue)?.Value is string imagePath)) return;
                 MapImage.Image = new Bitmap($@"{ResourceDataPath}\{imagePath}");
-                Label_MapExist.Text = "맵 있음";
+                Label_MapExist.Text = "有地圖";
                 Label_MapExist.ForeColor = Color.LimeGreen;
                 DirFileSearch(DocumentPath + @"\Maps", Target.mapname);
                 if (string.IsNullOrEmpty(FilePath))
@@ -374,7 +374,7 @@ namespace Cirnix.Forms.ServerStatus
                         DirFileSearch(Settings.InstallPath + @"\Maps", Target.mapname);
                     if (string.IsNullOrEmpty(FilePath))
                     {
-                        Label_MapExist.Text = "맵 없음";
+                        Label_MapExist.Text = "沒有地圖";
                         Label_MapExist.ForeColor = Color.Red;
                     }
                 }
@@ -389,14 +389,14 @@ namespace Cirnix.Forms.ServerStatus
                         DirFileSearch(Settings.InstallPath + @"\Maps", Target.mapname);
                     if (string.IsNullOrEmpty(FilePath))
                     {
-                        Label_MapExist.Text = "맵 없음";
+                        Label_MapExist.Text = "沒有地圖";
                         Label_MapExist.ForeColor = Color.Red;
                         MapImage.Image = Properties.Resources.Unknown;
                         SetRTBText(ref RTB_MapName, Target.mapname, true, true, true);
                         return;
                     }
                 }
-                Label_MapExist.Text = "맵 있음";
+                Label_MapExist.Text = "有地圖";
                 Label_MapExist.ForeColor = Color.LimeGreen;
                 try
                 {
@@ -435,7 +435,7 @@ namespace Cirnix.Forms.ServerStatus
         #endregion
         private void BTN_ChangeType_Click(object sender, EventArgs e)
         {
-            Label_Search.Text = (IsMapSearch = !IsMapSearch) ? "맵 필터:" : "방 필터:";
+            Label_Search.Text = (IsMapSearch = !IsMapSearch) ? "地圖過濾:" : "房間過濾:";
             if (!string.IsNullOrEmpty(TB_Search.Text)) StatusChanged(sender, e);
         }
 
@@ -450,12 +450,12 @@ namespace Cirnix.Forms.ServerStatus
                     if (SLD.ShowDialog() != DialogResult.OK) return;
                     FilterMapName = SLD.MapName;
                 }
-                BTN_MapLog.Text = "중단";
+                BTN_MapLog.Text = "停止";
             }
             else
             {
                 FilterMapName = null;
-                BTN_MapLog.Text = "기록";
+                BTN_MapLog.Text = "紀錄";
             }
         }
 
@@ -488,7 +488,7 @@ namespace Cirnix.Forms.ServerStatus
         {
             if (infoList.Count <= 0)
             {
-                MetroDialog.OK("대기실 리스트 없음", "대기실 리스트가 존재하지 않습니다.\n대기실 리스트를 새로고침하여 방을 불러와주세요.");
+                MetroDialog.OK("無房間列表", "沒有偵測到房間列表\n請重新整理以讀取房間列表");
                 return;
             }
             using (RoomListSearchPlayerDialog SPD = new RoomListSearchPlayerDialog { infoList = infoList })
@@ -496,7 +496,7 @@ namespace Cirnix.Forms.ServerStatus
                 if (SPD.ShowDialog() != DialogResult.OK) return;
                 if (SPD.ResultIndex == -1)
                 {
-                    MetroDialog.OK("플레이어를 찾을 수 없음", SPD.PlayerName + "(을)를 찾을 수 없습니다.\n서버에 접속해있지 않거나, 게임 중이 아닐 수도 있습니다.");
+                    MetroDialog.OK("未找到玩家", SPD.PlayerName + "玩家未找到\n可能未登入伺服器或未進行遊戲");
                     return;
                 }
                 RoomList.SelectedIndex = -1;
@@ -508,7 +508,7 @@ namespace Cirnix.Forms.ServerStatus
         {
             if (infoList.Count <= 0)
             {
-                MetroDialog.OK("대기실 리스트 없음", "대기실 리스트가 존재하지 않습니다.\n대기실 리스트를 새로고침하여 방을 불러와주세요.");
+                MetroDialog.OK("無房間列表", "沒有偵測到房間列表\n請重新整理以讀取房間列表");
                 return;
             }
             if (!(Statistics == null

@@ -54,13 +54,13 @@
             // Title
             // 
             this.Title.BackColor = System.Drawing.Color.Transparent;
-            this.Title.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Title.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Title.Location = new System.Drawing.Point(125, 9);
             this.Title.Margin = new System.Windows.Forms.Padding(120, 0, 120, 0);
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(250, 20);
             this.Title.TabIndex = 1;
-            this.Title.Text = "접속 중 - ";
+            this.Title.Text = "連線中 - ";
             this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ChatTimer
@@ -79,9 +79,9 @@
             this.ColorChange.FontWeight = MetroFramework.MetroButtonWeight.Regular;
             this.ColorChange.Location = new System.Drawing.Point(8, 312);
             this.ColorChange.Name = "ColorChange";
-            this.ColorChange.Size = new System.Drawing.Size(90, 30);
+            this.ColorChange.Size = new System.Drawing.Size(120, 30);
             this.ColorChange.TabIndex = 2;
-            this.ColorChange.Text = "배경색 변경";
+            this.ColorChange.Text = "變更背景顏色";
             this.ColorChange.UseMnemonic = false;
             this.ColorChange.UseSelectable = true;
             this.ColorChange.Click += new System.EventHandler(this.ColorChange_Click);
@@ -89,23 +89,24 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(200, 329);
+            this.label1.Location = new System.Drawing.Point(260, 330);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 15);
             this.label1.TabIndex = 3;
-            this.label1.Text = "창 자동 종료";
+            this.label1.Text = "自動關閉視窗";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AutoClose
             // 
             this.AutoClose.AutoSize = true;
             this.AutoClose.BackColor = System.Drawing.Color.Transparent;
-            this.AutoClose.Location = new System.Drawing.Point(200, 310);
+            this.AutoClose.Checked = true;
+            this.AutoClose.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.AutoClose.Location = new System.Drawing.Point(260, 311);
             this.AutoClose.Name = "AutoClose";
             this.AutoClose.Size = new System.Drawing.Size(80, 16);
             this.AutoClose.TabIndex = 8;
-            this.AutoClose.Text = "Off";
-            this.AutoClose.Checked = true;
+            this.AutoClose.Text = "On";
             this.AutoClose.UseSelectable = true;
             this.AutoClose.CheckedChanged += new System.EventHandler(this.AutoClose_CheckedChanged);
             // 
@@ -113,11 +114,11 @@
             // 
             this.ClearScreen.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.ClearScreen.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.ClearScreen.Location = new System.Drawing.Point(104, 312);
+            this.ClearScreen.Location = new System.Drawing.Point(134, 312);
             this.ClearScreen.Name = "ClearScreen";
-            this.ClearScreen.Size = new System.Drawing.Size(90, 30);
+            this.ClearScreen.Size = new System.Drawing.Size(120, 30);
             this.ClearScreen.TabIndex = 9;
-            this.ClearScreen.Text = "채팅창 청소";
+            this.ClearScreen.Text = "清除聊天內容";
             this.ClearScreen.UseMnemonic = false;
             this.ClearScreen.UseSelectable = true;
             this.ClearScreen.Click += new System.EventHandler(this.ClearScreen_Click);

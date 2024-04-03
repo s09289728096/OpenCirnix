@@ -35,7 +35,7 @@
             // Label_Title
             // 
             this.Label_Title.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Title.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_Title.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_Title.Location = new System.Drawing.Point(180, 10);
             this.Label_Title.Margin = new System.Windows.Forms.Padding(100, 0, 100, 0);
             this.Label_Title.Name = "Label_Title";
@@ -50,7 +50,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TB_History.BackColor = System.Drawing.Color.White;
             this.TB_History.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TB_History.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.TB_History.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.TB_History.Location = new System.Drawing.Point(10, 35);
             this.TB_History.Margin = new System.Windows.Forms.Padding(0);
             this.TB_History.Multiline = true;

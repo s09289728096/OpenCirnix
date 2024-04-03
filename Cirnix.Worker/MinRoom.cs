@@ -48,12 +48,12 @@ namespace Cirnix.Worker
             try
             {
                 CancelAsync();
-                SendMsg(true, $"'{MinCount}'명 이하가 되었습니다.");
+                SendMsg(true, $"最少人數設定為 '{MinCount}'名");
                 Play(Resources.max);
             }
             catch
             {
-                SendMsg(true, "실행 도중 문제가 발생했습니다.");
+                SendMsg(true, "執行時出現例外狀況");
             }
         }
     }

@@ -8,6 +8,7 @@ namespace Cirnix.Forms.Update
 {
     public static class ReleaseChecker
     {
+        //Reserve original github to check update.
         public static readonly string HistoryURL = "https://github.com/BlacklightsC/OpenCirnix/releases";
 
         private static Release _Recommanded;
@@ -29,6 +30,7 @@ namespace Cirnix.Forms.Update
 
         public static bool GetRelease()
         {
+            //Reserve original github to check update.
             string result = Globals.GetStringFromServer("https://api.github.com/repos/BlacklightsC/OpenCirnix/releases");
             if (result == null) return false;
             try

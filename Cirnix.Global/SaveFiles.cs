@@ -44,7 +44,7 @@ namespace Cirnix.Global
         {
             int index;
             if ((index = path.IndexOf("CustomMapData")) == -1)
-                throw new Exception("경로에 CustomMapData가 존재하지 않습니다.");
+                throw new Exception("CustomMapData不存在");
             Add(new SavePath(path.Substring(index + 13), nameEN, nameKR));
             Save();
         }
@@ -132,6 +132,7 @@ namespace Cirnix.Global
     {
         /// <summary>
         /// \로 시작하는 상대 경로
+        /// Relative path starting with "\"
         /// </summary>
         public string path { get; set; }
         public string nameEN { get; set; }

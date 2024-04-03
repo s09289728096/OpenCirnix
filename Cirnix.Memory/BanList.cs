@@ -32,7 +32,7 @@ namespace Cirnix.Memory
 			{
 				ReadProcessMemory(Warcraft3Info.Handle, Offset, array2, array2.Length, out _);
 				List<byte[]> list = CheckArea(array2);
-				SendMsg(true, "현재 연결된 유저를 검사합니다.");
+				SendMsg(true, "檢查目前連線的使用者");
 				foreach (byte[] array3 in list)
 				{
 					byte[] array4 = new byte[4];
@@ -43,13 +43,13 @@ namespace Cirnix.Memory
 					BanlistModel banlistModel = Matching(ipaddress.ToString(), text);
 					if (banlistModel != null)
 					{
-						SendMsg(true, $"근접 발견 ID - {text} IP - {ipaddress}");
+						SendMsg(true, $"發現 ID - {text} IP - {ipaddress}");
 						await Task.Delay(300);
-						SendMsg(true, $"밴리 사유 : {banlistModel.Reason}");
+						SendMsg(true, $"黑名單理由 : {banlistModel.Reason}");
 					}
 					await Task.Delay(300);
 				}
-				SendMsg(true, "현재 연결된 유저의 검사를 종료합니다.");
+				SendMsg(true, "終止對使用者的掃瞄");
             }
 		}
 

@@ -35,35 +35,35 @@
             // BTN_OK
             // 
             this.BTN_OK.Highlight = true;
-            this.BTN_OK.Location = new System.Drawing.Point(316, 457);
+            this.BTN_OK.Location = new System.Drawing.Point(271, 457);
             this.BTN_OK.Name = "BTN_OK";
-            this.BTN_OK.Size = new System.Drawing.Size(100, 35);
+            this.BTN_OK.Size = new System.Drawing.Size(86, 35);
             this.BTN_OK.TabIndex = 4;
-            this.BTN_OK.Text = "확인";
+            this.BTN_OK.Text = "確認";
             this.BTN_OK.UseSelectable = true;
             this.BTN_OK.Click += new System.EventHandler(this.BTN_OK_click);
             // 
             // Label_Licence
             // 
             this.Label_Licence.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Licence.Location = new System.Drawing.Point(10, 60);
+            this.Label_Licence.Location = new System.Drawing.Point(9, 60);
             this.Label_Licence.Name = "Label_Licence";
-            this.Label_Licence.Size = new System.Drawing.Size(713, 380);
+            this.Label_Licence.Size = new System.Drawing.Size(611, 380);
             this.Label_Licence.TabIndex = 5;
             this.Label_Licence.Text = "Label_Licence";
             this.Label_Licence.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LicenceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 505);
+            this.ClientSize = new System.Drawing.Size(627, 505);
             this.Controls.Add(this.Label_Licence);
             this.Controls.Add(this.BTN_OK);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LicenceForm";
-            this.Padding = new System.Windows.Forms.Padding(10, 60, 10, 10);
+            this.Padding = new System.Windows.Forms.Padding(9, 60, 9, 10);
             this.Resizable = false;
             this.Text = "MIT Licence";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;

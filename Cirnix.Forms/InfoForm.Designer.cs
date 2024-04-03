@@ -47,7 +47,7 @@
             // Picture
             // 
             this.Picture.Image = ((System.Drawing.Image)(resources.GetObject("Picture.Image")));
-            this.Picture.Location = new System.Drawing.Point(10, 65);
+            this.Picture.Location = new System.Drawing.Point(0, 65);
             this.Picture.Name = "Picture";
             this.Picture.Size = new System.Drawing.Size(256, 256);
             this.Picture.TabIndex = 0;
@@ -57,65 +57,65 @@
             // 
             this.CopyRight.BackColor = System.Drawing.Color.Transparent;
             this.CopyRight.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.CopyRight.Location = new System.Drawing.Point(10, 327);
+            this.CopyRight.Location = new System.Drawing.Point(0, 327);
             this.CopyRight.Name = "CopyRight";
             this.CopyRight.Size = new System.Drawing.Size(256, 20);
             this.CopyRight.Style = MetroFramework.MetroColorStyle.Blue;
             this.CopyRight.TabIndex = 1;
-            this.CopyRight.Text = "제작: 평타천국 (BlacklightsC)\r\n\r\n";
+            this.CopyRight.Text = "製作: 평타천국 (BlacklightsC)\r\n\r\n";
             this.CopyRight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CopyRight.UseStyleColors = true;
             // 
             // Label_CurrentVersion
             // 
             this.Label_CurrentVersion.BackColor = System.Drawing.Color.Transparent;
-            this.Label_CurrentVersion.Location = new System.Drawing.Point(39, 419);
+            this.Label_CurrentVersion.Location = new System.Drawing.Point(45, 418);
             this.Label_CurrentVersion.Name = "Label_CurrentVersion";
-            this.Label_CurrentVersion.Size = new System.Drawing.Size(72, 20);
+            this.Label_CurrentVersion.Size = new System.Drawing.Size(75, 20);
             this.Label_CurrentVersion.TabIndex = 2;
-            this.Label_CurrentVersion.Text = "현재 버전:";
+            this.Label_CurrentVersion.Text = "目前版本:";
             this.Label_CurrentVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label_LatestVersion
             // 
             this.Label_LatestVersion.BackColor = System.Drawing.Color.Transparent;
-            this.Label_LatestVersion.Location = new System.Drawing.Point(39, 440);
+            this.Label_LatestVersion.Location = new System.Drawing.Point(45, 439);
             this.Label_LatestVersion.Name = "Label_LatestVersion";
-            this.Label_LatestVersion.Size = new System.Drawing.Size(72, 20);
+            this.Label_LatestVersion.Size = new System.Drawing.Size(75, 20);
             this.Label_LatestVersion.TabIndex = 3;
-            this.Label_LatestVersion.Text = "최신 버전:";
+            this.Label_LatestVersion.Text = "最新版本:";
             this.Label_LatestVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UpdateButton
             // 
             this.UpdateButton.Enabled = false;
             this.UpdateButton.Highlight = true;
-            this.UpdateButton.Location = new System.Drawing.Point(150, 470);
+            this.UpdateButton.Location = new System.Drawing.Point(140, 467);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(100, 35);
+            this.UpdateButton.Size = new System.Drawing.Size(86, 35);
             this.UpdateButton.TabIndex = 4;
-            this.UpdateButton.Text = "업데이트";
+            this.UpdateButton.Text = "更新";
             this.UpdateButton.UseSelectable = true;
             this.UpdateButton.Click += new System.EventHandler(this.Update_Click);
             // 
             // LatestVersion
             // 
             this.LatestVersion.BackColor = System.Drawing.Color.Transparent;
-            this.LatestVersion.Location = new System.Drawing.Point(117, 440);
+            this.LatestVersion.Location = new System.Drawing.Point(112, 439);
             this.LatestVersion.Name = "LatestVersion";
-            this.LatestVersion.Size = new System.Drawing.Size(120, 20);
+            this.LatestVersion.Size = new System.Drawing.Size(110, 20);
             this.LatestVersion.TabIndex = 6;
-            this.LatestVersion.Text = "연결 중...";
+            this.LatestVersion.Text = "確認中...";
             this.LatestVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CurrentVersion
             // 
             this.CurrentVersion.BackColor = System.Drawing.Color.Transparent;
-            this.CurrentVersion.Location = new System.Drawing.Point(117, 419);
+            this.CurrentVersion.Location = new System.Drawing.Point(112, 418);
             this.CurrentVersion.Name = "CurrentVersion";
-            this.CurrentVersion.Size = new System.Drawing.Size(120, 20);
+            this.CurrentVersion.Size = new System.Drawing.Size(110, 20);
             this.CurrentVersion.TabIndex = 5;
-            this.CurrentVersion.Text = "확인 중...";
+            this.CurrentVersion.Text = "確認中...";
             this.CurrentVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CurrentVersion.Click += new System.EventHandler(this.CurrentVersion_Click);
             // 
@@ -125,9 +125,9 @@
             this.Toggle_BetaUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Toggle_BetaUser.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Toggle_BetaUser.FontWeight = MetroFramework.MetroLinkWeight.Bold;
-            this.Toggle_BetaUser.Location = new System.Drawing.Point(135, 402);
+            this.Toggle_BetaUser.Location = new System.Drawing.Point(129, 400);
             this.Toggle_BetaUser.Name = "Toggle_BetaUser";
-            this.Toggle_BetaUser.Size = new System.Drawing.Size(70, 15);
+            this.Toggle_BetaUser.Size = new System.Drawing.Size(60, 15);
             this.Toggle_BetaUser.Style = MetroFramework.MetroColorStyle.Green;
             this.Toggle_BetaUser.TabIndex = 70;
             this.Toggle_BetaUser.Text = "Off";
@@ -139,12 +139,12 @@
             // 
             this.Label_BetaUser.BackColor = System.Drawing.Color.Transparent;
             this.Label_BetaUser.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.Label_BetaUser.Location = new System.Drawing.Point(51, 399);
+            this.Label_BetaUser.Location = new System.Drawing.Point(57, 397);
             this.Label_BetaUser.Name = "Label_BetaUser";
-            this.Label_BetaUser.Size = new System.Drawing.Size(80, 20);
+            this.Label_BetaUser.Size = new System.Drawing.Size(69, 20);
             this.Label_BetaUser.Style = MetroFramework.MetroColorStyle.Green;
             this.Label_BetaUser.TabIndex = 72;
-            this.Label_BetaUser.Text = "베타 버전";
+            this.Label_BetaUser.Text = "測試版本";
             this.Label_BetaUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Label_BetaUser.UseStyleColors = true;
             // 
@@ -152,23 +152,23 @@
             // 
             this.metroLabel1.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(10, 350);
+            this.metroLabel1.Location = new System.Drawing.Point(0, 350);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(256, 20);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel1.TabIndex = 73;
-            this.metroLabel1.Text = "수정: 류아릴 (Drev_H.Kirito)\r\n\r\n";
+            this.metroLabel1.Text = "修正: 류아릴 (Drev_H.Kirito)\r\n\r\n";
             this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel1.UseStyleColors = true;
             // 
             // LicenceButton
             // 
             this.LicenceButton.Highlight = true;
-            this.LicenceButton.Location = new System.Drawing.Point(24, 470);
+            this.LicenceButton.Location = new System.Drawing.Point(30, 467);
             this.LicenceButton.Name = "LicenceButton";
-            this.LicenceButton.Size = new System.Drawing.Size(100, 35);
+            this.LicenceButton.Size = new System.Drawing.Size(86, 35);
             this.LicenceButton.TabIndex = 74;
-            this.LicenceButton.Text = "라이선스";
+            this.LicenceButton.Text = "License";
             this.LicenceButton.UseSelectable = true;
             this.LicenceButton.Click += new System.EventHandler(this.LicenceButton_Click);
             // 
@@ -176,19 +176,20 @@
             // 
             this.metroLabel2.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel2.Location = new System.Drawing.Point(10, 373);
+            this.metroLabel2.Location = new System.Drawing.Point(0, 373);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(256, 20);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel2.TabIndex = 75;
+            this.metroLabel2.Text = "中文化: s09289728096@github";
             this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel2.UseStyleColors = true;
             // 
             // InfoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 515);
+            this.ClientSize = new System.Drawing.Size(256, 515);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.LicenceButton);
             this.Controls.Add(this.metroLabel1);
@@ -204,9 +205,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "InfoForm";
-            this.Padding = new System.Windows.Forms.Padding(10, 60, 10, 10);
+            this.Padding = new System.Windows.Forms.Padding(9, 60, 9, 10);
             this.Resizable = false;
-            this.Text = "프로그램 정보";
+            this.Text = "程式資訊";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Shown += new System.EventHandler(this.InfoForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.Picture)).EndInit();

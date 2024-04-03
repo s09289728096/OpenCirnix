@@ -82,8 +82,8 @@ namespace Cirnix.Global
         {
             using (var dialog = new MessageBoxDialog(Title, Message, 2))
             {
-                dialog.Buttons[0].Text = "네";
-                dialog.Buttons[1].Text = "아니오";
+                dialog.Buttons[0].Text = "是";
+                dialog.Buttons[1].Text = "否";
                 dialog.ShowDialog();
                 return dialog.Result == 0;
             }
@@ -93,7 +93,7 @@ namespace Cirnix.Global
         {
             using (var dialog = new MessageBoxDialog(Title, Message, 1))
             {
-                dialog.Buttons[0].Text = "확인";
+                dialog.Buttons[0].Text = "確認";
                 dialog.ShowDialog();
             }
         }

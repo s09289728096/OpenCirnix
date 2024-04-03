@@ -64,7 +64,7 @@ namespace Cirnix.Memory
         {
             if (!GetOffset()) return;
             byte[] buffer = new byte[1];
-            byte[] bytes = Encoding.UTF8.GetBytes($"\x1{Theme.MsgTitleColor}{Theme.MsgTitle} {Theme.MsgColor}채팅 주파수 검색 중...");
+            byte[] bytes = Encoding.UTF8.GetBytes($"\x1{Theme.MsgTitleColor}{Theme.MsgTitle} {Theme.MsgColor}搜尋聊天頻率...");
             for (int i = 0; i < 20; i++)
                 WriteProcessMemory(Warcraft3Info.Handle, CEditBoxOffset + 0x88 + 0x110 * i, bytes, bytes.Length + 1, out _);
             ApplyChat(false);

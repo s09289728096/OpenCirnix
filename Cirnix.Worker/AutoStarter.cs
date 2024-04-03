@@ -54,10 +54,10 @@ namespace Cirnix.Worker
                 {
                     if (RequireCount > PlayerCount)
                     {
-                        SendMsg(true, "지정된 인원보다 수가 적습니다. 시작을 취소합니다.");
+                        SendMsg(true, "人數低於設定值，取消開始");
                         return;
                     }
-                    SendMsg(true, $"{i}초후 게임을 시작합니다.");
+                    SendMsg(true, $"{i} 秒後遊戲將自動開始");
                     Thread.Sleep(1000);
                 }
                 PostMessage(Warcraft3Info.MainWindowHandle, 0x100, 18, 0);
@@ -67,7 +67,7 @@ namespace Cirnix.Worker
             }
             catch
             {
-                SendMsg(true, "실행 도중 문제가 발생했습니다.");
+                SendMsg(true, "執行時出現例外狀況");
             }
         }
     }

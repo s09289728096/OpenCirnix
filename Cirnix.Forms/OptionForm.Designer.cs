@@ -272,7 +272,7 @@ namespace Cirnix.Forms
             this.MainTabControl.Controls.Add(this.metroTabPage2);
             this.MainTabControl.Location = new System.Drawing.Point(10, 30);
             this.MainTabControl.Name = "MainTabControl";
-            this.MainTabControl.SelectedIndex = 5;
+            this.MainTabControl.SelectedIndex = 2;
             this.MainTabControl.Size = new System.Drawing.Size(640, 275);
             this.MainTabControl.TabIndex = 6;
             this.MainTabControl.UseSelectable = true;
@@ -292,15 +292,15 @@ namespace Cirnix.Forms
             this.War3SettingTab.Controls.Add(this.Toggle_HpCommandAuto);
             this.War3SettingTab.Controls.Add(this.GroupBox_MemoryOptimization);
             this.War3SettingTab.Controls.Add(this.GB_Camera);
-            this.War3SettingTab.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.War3SettingTab.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.War3SettingTab.HorizontalScrollbarBarColor = true;
             this.War3SettingTab.HorizontalScrollbarHighlightOnWheel = false;
             this.War3SettingTab.HorizontalScrollbarSize = 10;
-            this.War3SettingTab.Location = new System.Drawing.Point(4, 36);
+            this.War3SettingTab.Location = new System.Drawing.Point(4, 38);
             this.War3SettingTab.Name = "War3SettingTab";
-            this.War3SettingTab.Size = new System.Drawing.Size(632, 235);
+            this.War3SettingTab.Size = new System.Drawing.Size(632, 233);
             this.War3SettingTab.TabIndex = 2;
-            this.War3SettingTab.Text = "워크래프트";
+            this.War3SettingTab.Text = "魔獸爭霸";
             this.War3SettingTab.VerticalScrollbarBarColor = true;
             this.War3SettingTab.VerticalScrollbarHighlightOnWheel = false;
             this.War3SettingTab.VerticalScrollbarSize = 10;
@@ -320,22 +320,22 @@ namespace Cirnix.Forms
             this.GB_MixFile.Size = new System.Drawing.Size(165, 225);
             this.GB_MixFile.TabIndex = 72;
             this.GB_MixFile.TabStop = false;
-            this.GB_MixFile.Text = "Mix 파일";
+            this.GB_MixFile.Text = "Mix 文件";
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.label1.Location = new System.Drawing.Point(5, 167);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 52);
             this.label1.TabIndex = 80;
-            this.label1.Text = "Mix 파일의 설정 변경은\r\n워크래프트가 실행 중인\r\n상태에서는 워크래프트가\r\n꺼진 뒤, 설정이 적용됩니다.\r\n";
+            this.label1.Text = "Mix 檔案變更時需要重新啟動魔獸爭霸後才會進行套用";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BTN_InstallPath
             // 
-            this.BTN_InstallPath.Font = new System.Drawing.Font("굴림", 8F);
+            this.BTN_InstallPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.BTN_InstallPath.Location = new System.Drawing.Point(136, 43);
             this.BTN_InstallPath.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_InstallPath.Name = "BTN_InstallPath";
@@ -384,37 +384,37 @@ namespace Cirnix.Forms
             this.GB_Manabar.Controls.Add(this.RB_DisableManabar);
             this.GB_Manabar.Controls.Add(this.RB_EnableManabar);
             this.GB_Manabar.Enabled = false;
-            this.GB_Manabar.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.GB_Manabar.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.GB_Manabar.Location = new System.Drawing.Point(5, 118);
             this.GB_Manabar.Name = "GB_Manabar";
             this.GB_Manabar.Size = new System.Drawing.Size(155, 45);
             this.GB_Manabar.TabIndex = 76;
             this.GB_Manabar.TabStop = false;
-            this.GB_Manabar.Text = "마나바";
+            this.GB_Manabar.Text = "魔力槽顯示";
             // 
             // RB_DisableManabar
             // 
             this.RB_DisableManabar.Appearance = System.Windows.Forms.Appearance.Button;
             this.RB_DisableManabar.Checked = true;
-            this.RB_DisableManabar.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_DisableManabar.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_DisableManabar.Location = new System.Drawing.Point(78, 15);
             this.RB_DisableManabar.Name = "RB_DisableManabar";
             this.RB_DisableManabar.Size = new System.Drawing.Size(73, 25);
             this.RB_DisableManabar.TabIndex = 80;
             this.RB_DisableManabar.TabStop = true;
-            this.RB_DisableManabar.Text = "꺼짐";
+            this.RB_DisableManabar.Text = "關閉";
             this.RB_DisableManabar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RB_DisableManabar.UseVisualStyleBackColor = true;
             // 
             // RB_EnableManabar
             // 
             this.RB_EnableManabar.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_EnableManabar.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_EnableManabar.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_EnableManabar.Location = new System.Drawing.Point(4, 15);
             this.RB_EnableManabar.Name = "RB_EnableManabar";
             this.RB_EnableManabar.Size = new System.Drawing.Size(73, 25);
             this.RB_EnableManabar.TabIndex = 79;
-            this.RB_EnableManabar.Text = "켜짐";
+            this.RB_EnableManabar.Text = "開啟";
             this.RB_EnableManabar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RB_EnableManabar.UseVisualStyleBackColor = true;
             this.RB_EnableManabar.CheckedChanged += new System.EventHandler(this.RB_EnableManabar_CheckedChanged);
@@ -425,75 +425,75 @@ namespace Cirnix.Forms
             this.GB_SpeenNumberize.Controls.Add(this.RB_DisableSpeedNumberize);
             this.GB_SpeenNumberize.Controls.Add(this.RB_EnableSpeedNumberize);
             this.GB_SpeenNumberize.Enabled = false;
-            this.GB_SpeenNumberize.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.GB_SpeenNumberize.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.GB_SpeenNumberize.Location = new System.Drawing.Point(5, 70);
             this.GB_SpeenNumberize.Name = "GB_SpeenNumberize";
             this.GB_SpeenNumberize.Size = new System.Drawing.Size(155, 45);
             this.GB_SpeenNumberize.TabIndex = 75;
             this.GB_SpeenNumberize.TabStop = false;
-            this.GB_SpeenNumberize.Text = "속도 수치를 숫자로 변경";
+            this.GB_SpeenNumberize.Text = "將速度變更為數字顯示";
             // 
             // RB_DisableSpeedNumberize
             // 
             this.RB_DisableSpeedNumberize.Appearance = System.Windows.Forms.Appearance.Button;
             this.RB_DisableSpeedNumberize.Checked = true;
-            this.RB_DisableSpeedNumberize.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_DisableSpeedNumberize.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_DisableSpeedNumberize.Location = new System.Drawing.Point(78, 15);
             this.RB_DisableSpeedNumberize.Name = "RB_DisableSpeedNumberize";
             this.RB_DisableSpeedNumberize.Size = new System.Drawing.Size(73, 25);
             this.RB_DisableSpeedNumberize.TabIndex = 78;
             this.RB_DisableSpeedNumberize.TabStop = true;
-            this.RB_DisableSpeedNumberize.Text = "꺼짐";
+            this.RB_DisableSpeedNumberize.Text = "關閉";
             this.RB_DisableSpeedNumberize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RB_DisableSpeedNumberize.UseVisualStyleBackColor = true;
             // 
             // RB_EnableSpeedNumberize
             // 
             this.RB_EnableSpeedNumberize.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_EnableSpeedNumberize.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_EnableSpeedNumberize.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_EnableSpeedNumberize.Location = new System.Drawing.Point(4, 15);
             this.RB_EnableSpeedNumberize.Name = "RB_EnableSpeedNumberize";
             this.RB_EnableSpeedNumberize.Size = new System.Drawing.Size(73, 25);
             this.RB_EnableSpeedNumberize.TabIndex = 77;
-            this.RB_EnableSpeedNumberize.Text = "켜짐";
+            this.RB_EnableSpeedNumberize.Text = "開啟";
             this.RB_EnableSpeedNumberize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RB_EnableSpeedNumberize.UseVisualStyleBackColor = true;
             this.RB_EnableSpeedNumberize.CheckedChanged += new System.EventHandler(this.RB_EnableSpeedNumberize_CheckedChanged);
             // 
             // BTN_UninstallMix
             // 
-            this.BTN_UninstallMix.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_UninstallMix.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.BTN_UninstallMix.Location = new System.Drawing.Point(83, 17);
             this.BTN_UninstallMix.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_UninstallMix.Name = "BTN_UninstallMix";
             this.BTN_UninstallMix.Size = new System.Drawing.Size(75, 25);
             this.BTN_UninstallMix.TabIndex = 74;
-            this.BTN_UninstallMix.Text = "제거";
+            this.BTN_UninstallMix.Text = "移除";
             this.BTN_UninstallMix.UseVisualStyleBackColor = true;
             this.BTN_UninstallMix.Click += new System.EventHandler(this.BTN_UninstallMix_Click);
             // 
             // BTN_InstallMix
             // 
-            this.BTN_InstallMix.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_InstallMix.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.BTN_InstallMix.Location = new System.Drawing.Point(7, 17);
             this.BTN_InstallMix.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_InstallMix.Name = "BTN_InstallMix";
             this.BTN_InstallMix.Size = new System.Drawing.Size(75, 25);
             this.BTN_InstallMix.TabIndex = 73;
-            this.BTN_InstallMix.Text = "설치";
+            this.BTN_InstallMix.Text = "安裝";
             this.BTN_InstallMix.UseVisualStyleBackColor = true;
             this.BTN_InstallMix.Click += new System.EventHandler(this.BTN_InstallMix_Click);
             // 
             // Label_CheatMapCheck
             // 
             this.Label_CheatMapCheck.BackColor = System.Drawing.Color.Transparent;
-            this.Label_CheatMapCheck.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_CheatMapCheck.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_CheatMapCheck.Location = new System.Drawing.Point(0, 213);
             this.Label_CheatMapCheck.Name = "Label_CheatMapCheck";
             this.Label_CheatMapCheck.Size = new System.Drawing.Size(151, 17);
             this.Label_CheatMapCheck.TabIndex = 71;
-            this.Label_CheatMapCheck.Text = "맵 다운로드시 치트맵 체크";
-            this.Label_CheatMapCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label_CheatMapCheck.Text = "下載地圖時自動檢查作弊";
+            this.Label_CheatMapCheck.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Toggle_CheatMapCheck
             // 
@@ -511,12 +511,13 @@ namespace Cirnix.Forms
             // Label_ChannelChatViewer
             // 
             this.Label_ChannelChatViewer.BackColor = System.Drawing.Color.Transparent;
-            this.Label_ChannelChatViewer.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_ChannelChatViewer.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_ChannelChatViewer.Location = new System.Drawing.Point(226, 213);
             this.Label_ChannelChatViewer.Name = "Label_ChannelChatViewer";
+            this.Label_ChannelChatViewer.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Label_ChannelChatViewer.Size = new System.Drawing.Size(167, 15);
             this.Label_ChannelChatViewer.TabIndex = 69;
-            this.Label_ChannelChatViewer.Text = "방 리스트에서 채널 채팅 표시";
+            this.Label_ChannelChatViewer.Text = "在房間列表中顯示頻道聊天";
             this.Label_ChannelChatViewer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Toggle_ChannelChatViewer
@@ -535,23 +536,23 @@ namespace Cirnix.Forms
             // Label_War3FixClipboard
             // 
             this.Label_War3FixClipboard.BackColor = System.Drawing.Color.Transparent;
-            this.Label_War3FixClipboard.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_War3FixClipboard.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_War3FixClipboard.Location = new System.Drawing.Point(0, 195);
             this.Label_War3FixClipboard.Name = "Label_War3FixClipboard";
             this.Label_War3FixClipboard.Size = new System.Drawing.Size(148, 15);
             this.Label_War3FixClipboard.TabIndex = 67;
-            this.Label_War3FixClipboard.Text = "워크 클립보드 오류 수정";
+            this.Label_War3FixClipboard.Text = "剪貼簿格式自動轉換";
             this.Label_War3FixClipboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Label_HpCommandAuto
             // 
             this.Label_HpCommandAuto.BackColor = System.Drawing.Color.Transparent;
-            this.Label_HpCommandAuto.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_HpCommandAuto.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_HpCommandAuto.Location = new System.Drawing.Point(0, 66);
             this.Label_HpCommandAuto.Name = "Label_HpCommandAuto";
             this.Label_HpCommandAuto.Size = new System.Drawing.Size(151, 15);
             this.Label_HpCommandAuto.TabIndex = 62;
-            this.Label_HpCommandAuto.Text = "!Hp 명령어 자동";
+            this.Label_HpCommandAuto.Text = "!Hp 自動使用";
             this.Label_HpCommandAuto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // GB_ScreenShot
@@ -562,17 +563,17 @@ namespace Cirnix.Forms
             this.GB_ScreenShot.Controls.Add(this.Toggle_RemoveOriginal);
             this.GB_ScreenShot.Controls.Add(this.Label_RemoveOriginal);
             this.GB_ScreenShot.Controls.Add(this.Label_AutoConvert);
-            this.GB_ScreenShot.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.GB_ScreenShot.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.GB_ScreenShot.Location = new System.Drawing.Point(0, 140);
             this.GB_ScreenShot.Name = "GB_ScreenShot";
             this.GB_ScreenShot.Size = new System.Drawing.Size(219, 52);
             this.GB_ScreenShot.TabIndex = 54;
             this.GB_ScreenShot.TabStop = false;
-            this.GB_ScreenShot.Text = "스크린샷";
+            this.GB_ScreenShot.Text = "截圖";
             // 
             // Combo_ScreenShotExtension
             // 
-            this.Combo_ScreenShotExtension.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Combo_ScreenShotExtension.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Combo_ScreenShotExtension.FormattingEnabled = true;
             this.Combo_ScreenShotExtension.ItemHeight = 23;
             this.Combo_ScreenShotExtension.Items.AddRange(new object[] {
@@ -616,23 +617,23 @@ namespace Cirnix.Forms
             // Label_RemoveOriginal
             // 
             this.Label_RemoveOriginal.BackColor = System.Drawing.Color.Transparent;
-            this.Label_RemoveOriginal.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_RemoveOriginal.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_RemoveOriginal.Location = new System.Drawing.Point(65, 32);
             this.Label_RemoveOriginal.Name = "Label_RemoveOriginal";
             this.Label_RemoveOriginal.Size = new System.Drawing.Size(83, 15);
             this.Label_RemoveOriginal.TabIndex = 66;
-            this.Label_RemoveOriginal.Text = "원본 삭제";
+            this.Label_RemoveOriginal.Text = "刪除原始檔";
             this.Label_RemoveOriginal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Label_AutoConvert
             // 
             this.Label_AutoConvert.BackColor = System.Drawing.Color.Transparent;
-            this.Label_AutoConvert.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_AutoConvert.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_AutoConvert.Location = new System.Drawing.Point(65, 14);
             this.Label_AutoConvert.Name = "Label_AutoConvert";
             this.Label_AutoConvert.Size = new System.Drawing.Size(83, 15);
             this.Label_AutoConvert.TabIndex = 65;
-            this.Label_AutoConvert.Text = "자동 변환";
+            this.Label_AutoConvert.Text = "自動轉換";
             this.Label_AutoConvert.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // GB_Host
@@ -643,30 +644,30 @@ namespace Cirnix.Forms
             this.GB_Host.Controls.Add(this.Num_GameStartDelay);
             this.GB_Host.Controls.Add(this.Label_GameDelay);
             this.GB_Host.Controls.Add(this.Label_GameStartDelay);
-            this.GB_Host.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.GB_Host.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.GB_Host.Location = new System.Drawing.Point(0, 3);
             this.GB_Host.Name = "GB_Host";
             this.GB_Host.Size = new System.Drawing.Size(219, 60);
             this.GB_Host.TabIndex = 52;
             this.GB_Host.TabStop = false;
-            this.GB_Host.Text = "호스트";
+            this.GB_Host.Text = "房主";
             // 
             // BTN_HostApply
             // 
-            this.BTN_HostApply.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_HostApply.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_HostApply.Location = new System.Drawing.Point(180, 10);
             this.BTN_HostApply.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_HostApply.Name = "BTN_HostApply";
             this.BTN_HostApply.Size = new System.Drawing.Size(37, 47);
             this.BTN_HostApply.TabIndex = 72;
-            this.BTN_HostApply.Text = "적용";
+            this.BTN_HostApply.Text = "套用";
             this.BTN_HostApply.UseVisualStyleBackColor = true;
             this.BTN_HostApply.Click += new System.EventHandler(this.DelayApplyBTN_Click);
             // 
             // Num_GameDelay
             // 
             this.Num_GameDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Num_GameDelay.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.Num_GameDelay.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.Num_GameDelay.Location = new System.Drawing.Point(142, 11);
             this.Num_GameDelay.Maximum = new decimal(new int[] {
             550,
@@ -681,7 +682,7 @@ namespace Cirnix.Forms
             // Num_GameStartDelay
             // 
             this.Num_GameStartDelay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Num_GameStartDelay.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.Num_GameStartDelay.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.Num_GameStartDelay.Location = new System.Drawing.Point(142, 34);
             this.Num_GameStartDelay.Maximum = new decimal(new int[] {
             6,
@@ -696,23 +697,23 @@ namespace Cirnix.Forms
             // Label_GameDelay
             // 
             this.Label_GameDelay.BackColor = System.Drawing.Color.Transparent;
-            this.Label_GameDelay.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_GameDelay.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_GameDelay.Location = new System.Drawing.Point(1, 11);
             this.Label_GameDelay.Name = "Label_GameDelay";
             this.Label_GameDelay.Size = new System.Drawing.Size(140, 22);
             this.Label_GameDelay.TabIndex = 59;
-            this.Label_GameDelay.Text = "반응 지연시간";
+            this.Label_GameDelay.Text = "遊戲延遲設定";
             this.Label_GameDelay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Label_GameStartDelay
             // 
             this.Label_GameStartDelay.BackColor = System.Drawing.Color.Transparent;
-            this.Label_GameStartDelay.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_GameStartDelay.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_GameStartDelay.Location = new System.Drawing.Point(1, 34);
             this.Label_GameStartDelay.Name = "Label_GameStartDelay";
             this.Label_GameStartDelay.Size = new System.Drawing.Size(140, 22);
             this.Label_GameStartDelay.TabIndex = 61;
-            this.Label_GameStartDelay.Text = "시작 대기시간";
+            this.Label_GameStartDelay.Text = "開始等待時間";
             this.Label_GameStartDelay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Toggle_War3FixClipboard
@@ -749,19 +750,19 @@ namespace Cirnix.Forms
             this.GroupBox_MemoryOptimization.Controls.Add(this.Toggle_OutGameAutoMemoryOptimization);
             this.GroupBox_MemoryOptimization.Controls.Add(this.Label_MemoryOptimizationDelay);
             this.GroupBox_MemoryOptimization.Controls.Add(this.Label_OutGameAutoMemoryOptimization);
-            this.GroupBox_MemoryOptimization.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.GroupBox_MemoryOptimization.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.GroupBox_MemoryOptimization.Location = new System.Drawing.Point(0, 84);
             this.GroupBox_MemoryOptimization.Name = "GroupBox_MemoryOptimization";
             this.GroupBox_MemoryOptimization.Size = new System.Drawing.Size(219, 53);
             this.GroupBox_MemoryOptimization.TabIndex = 51;
             this.GroupBox_MemoryOptimization.TabStop = false;
-            this.GroupBox_MemoryOptimization.Text = "메모리 최적화";
+            this.GroupBox_MemoryOptimization.Text = "記憶體最佳化";
             // 
             // TB_MemoryOptimizationDelay
             // 
             this.TB_MemoryOptimizationDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TB_MemoryOptimizationDelay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TB_MemoryOptimizationDelay.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.TB_MemoryOptimizationDelay.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.TB_MemoryOptimizationDelay.Location = new System.Drawing.Point(4, 15);
             this.TB_MemoryOptimizationDelay.MaxLength = 3;
             this.TB_MemoryOptimizationDelay.Name = "TB_MemoryOptimizationDelay";
@@ -800,23 +801,23 @@ namespace Cirnix.Forms
             // Label_MemoryOptimizationDelay
             // 
             this.Label_MemoryOptimizationDelay.BackColor = System.Drawing.Color.Transparent;
-            this.Label_MemoryOptimizationDelay.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_MemoryOptimizationDelay.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_MemoryOptimizationDelay.Location = new System.Drawing.Point(26, 15);
             this.Label_MemoryOptimizationDelay.Name = "Label_MemoryOptimizationDelay";
             this.Label_MemoryOptimizationDelay.Size = new System.Drawing.Size(122, 15);
             this.Label_MemoryOptimizationDelay.TabIndex = 63;
-            this.Label_MemoryOptimizationDelay.Text = "분 마다 최적화";
+            this.Label_MemoryOptimizationDelay.Text = "分鐘自動執行";
             this.Label_MemoryOptimizationDelay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Label_OutGameAutoMemoryOptimization
             // 
             this.Label_OutGameAutoMemoryOptimization.BackColor = System.Drawing.Color.Transparent;
-            this.Label_OutGameAutoMemoryOptimization.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_OutGameAutoMemoryOptimization.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_OutGameAutoMemoryOptimization.Location = new System.Drawing.Point(2, 33);
             this.Label_OutGameAutoMemoryOptimization.Name = "Label_OutGameAutoMemoryOptimization";
             this.Label_OutGameAutoMemoryOptimization.Size = new System.Drawing.Size(146, 15);
             this.Label_OutGameAutoMemoryOptimization.TabIndex = 64;
-            this.Label_OutGameAutoMemoryOptimization.Text = "게임 끝난후 최적화";
+            this.Label_OutGameAutoMemoryOptimization.Text = "遊戲結束後自動執行";
             this.Label_OutGameAutoMemoryOptimization.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // GB_Camera
@@ -829,53 +830,53 @@ namespace Cirnix.Forms
             this.GB_Camera.Controls.Add(this.Num_CameraY);
             this.GB_Camera.Controls.Add(this.Num_CameraDistance);
             this.GB_Camera.Controls.Add(this.CameraImage);
-            this.GB_Camera.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.GB_Camera.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.GB_Camera.Location = new System.Drawing.Point(220, 3);
             this.GB_Camera.Name = "GB_Camera";
             this.GB_Camera.Size = new System.Drawing.Size(241, 202);
             this.GB_Camera.TabIndex = 58;
             this.GB_Camera.TabStop = false;
-            this.GB_Camera.Text = "카메라";
+            this.GB_Camera.Text = "視角";
             // 
             // BTN_CameraPresetJurrasic
             // 
-            this.BTN_CameraPresetJurrasic.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_CameraPresetJurrasic.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_CameraPresetJurrasic.Location = new System.Drawing.Point(191, 11);
             this.BTN_CameraPresetJurrasic.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_CameraPresetJurrasic.Name = "BTN_CameraPresetJurrasic";
             this.BTN_CameraPresetJurrasic.Size = new System.Drawing.Size(48, 22);
             this.BTN_CameraPresetJurrasic.TabIndex = 72;
-            this.BTN_CameraPresetJurrasic.Text = "프리셋";
+            this.BTN_CameraPresetJurrasic.Text = "預設";
             this.BTN_CameraPresetJurrasic.UseVisualStyleBackColor = true;
             this.BTN_CameraPresetJurrasic.Click += new System.EventHandler(this.BTN_CameraPresetJurrasic_Click);
             // 
             // BTN_CameraReset
             // 
-            this.BTN_CameraReset.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_CameraReset.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_CameraReset.Location = new System.Drawing.Point(191, 154);
             this.BTN_CameraReset.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_CameraReset.Name = "BTN_CameraReset";
             this.BTN_CameraReset.Size = new System.Drawing.Size(48, 22);
             this.BTN_CameraReset.TabIndex = 70;
-            this.BTN_CameraReset.Text = "초기화";
+            this.BTN_CameraReset.Text = "重設";
             this.BTN_CameraReset.UseVisualStyleBackColor = true;
             this.BTN_CameraReset.Click += new System.EventHandler(this.CameraResetBTN_Click);
             // 
             // BTN_CameraApply
             // 
-            this.BTN_CameraApply.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_CameraApply.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_CameraApply.Location = new System.Drawing.Point(191, 177);
             this.BTN_CameraApply.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_CameraApply.Name = "BTN_CameraApply";
             this.BTN_CameraApply.Size = new System.Drawing.Size(48, 22);
             this.BTN_CameraApply.TabIndex = 71;
-            this.BTN_CameraApply.Text = "적용";
+            this.BTN_CameraApply.Text = "套用";
             this.BTN_CameraApply.UseVisualStyleBackColor = true;
             this.BTN_CameraApply.Click += new System.EventHandler(this.CameraApplyBTN_Click);
             // 
             // Num_CameraX
             // 
-            this.Num_CameraX.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.Num_CameraX.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.Num_CameraX.Location = new System.Drawing.Point(192, 126);
             this.Num_CameraX.Maximum = new decimal(new int[] {
             360,
@@ -889,7 +890,7 @@ namespace Cirnix.Forms
             // 
             // Num_CameraY
             // 
-            this.Num_CameraY.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.Num_CameraY.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.Num_CameraY.Location = new System.Drawing.Point(192, 97);
             this.Num_CameraY.Maximum = new decimal(new int[] {
             360,
@@ -903,7 +904,7 @@ namespace Cirnix.Forms
             // 
             // Num_CameraDistance
             // 
-            this.Num_CameraDistance.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.Num_CameraDistance.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.Num_CameraDistance.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Num_CameraDistance.Location = new System.Drawing.Point(192, 67);
             this.Num_CameraDistance.Maximum = new decimal(new int[] {
@@ -939,11 +940,11 @@ namespace Cirnix.Forms
             this.RPGTab.HorizontalScrollbarBarColor = true;
             this.RPGTab.HorizontalScrollbarHighlightOnWheel = false;
             this.RPGTab.HorizontalScrollbarSize = 10;
-            this.RPGTab.Location = new System.Drawing.Point(4, 36);
+            this.RPGTab.Location = new System.Drawing.Point(4, 38);
             this.RPGTab.Name = "RPGTab";
-            this.RPGTab.Size = new System.Drawing.Size(632, 235);
+            this.RPGTab.Size = new System.Drawing.Size(632, 233);
             this.RPGTab.TabIndex = 0;
-            this.RPGTab.Text = "세이브";
+            this.RPGTab.Text = "存檔";
             this.RPGTab.VerticalScrollbar = true;
             this.RPGTab.VerticalScrollbarBarColor = true;
             this.RPGTab.VerticalScrollbarHighlightOnWheel = false;
@@ -952,13 +953,13 @@ namespace Cirnix.Forms
             // CB_AutoLoad
             // 
             this.CB_AutoLoad.AutoSize = true;
-            this.CB_AutoLoad.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.CB_AutoLoad.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.CB_AutoLoad.Location = new System.Drawing.Point(435, 8);
             this.CB_AutoLoad.Margin = new System.Windows.Forms.Padding(0);
             this.CB_AutoLoad.Name = "CB_AutoLoad";
-            this.CB_AutoLoad.Size = new System.Drawing.Size(182, 19);
+            this.CB_AutoLoad.Size = new System.Drawing.Size(134, 19);
             this.CB_AutoLoad.TabIndex = 47;
-            this.CB_AutoLoad.Text = "게임 시작시에 자동으로 로드";
+            this.CB_AutoLoad.Text = "遊戲開始時自動載入";
             this.CB_AutoLoad.UseVisualStyleBackColor = true;
             this.CB_AutoLoad.CheckedChanged += new System.EventHandler(this.CB_AutoLoad_CheckedChanged);
             // 
@@ -974,12 +975,12 @@ namespace Cirnix.Forms
             // 
             // Label_CommandPreset
             // 
-            this.Label_CommandPreset.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Label_CommandPreset.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.Label_CommandPreset.Location = new System.Drawing.Point(48, 10);
             this.Label_CommandPreset.Name = "Label_CommandPreset";
             this.Label_CommandPreset.Size = new System.Drawing.Size(104, 20);
             this.Label_CommandPreset.TabIndex = 46;
-            this.Label_CommandPreset.Text = "명령어 프리셋";
+            this.Label_CommandPreset.Text = "預設命令";
             this.Label_CommandPreset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TabControl_CommandPreset
@@ -1003,7 +1004,7 @@ namespace Cirnix.Forms
             this.TP_CommandPreset1.Padding = new System.Windows.Forms.Padding(3);
             this.TP_CommandPreset1.Size = new System.Drawing.Size(188, 90);
             this.TP_CommandPreset1.TabIndex = 0;
-            this.TP_CommandPreset1.Text = "프리셋 1";
+            this.TP_CommandPreset1.Text = "預設 1";
             this.TP_CommandPreset1.UseVisualStyleBackColor = true;
             // 
             // TB_CommandPreset1
@@ -1023,7 +1024,7 @@ namespace Cirnix.Forms
             this.TP_CommandPreset2.Padding = new System.Windows.Forms.Padding(3);
             this.TP_CommandPreset2.Size = new System.Drawing.Size(188, 90);
             this.TP_CommandPreset2.TabIndex = 1;
-            this.TP_CommandPreset2.Text = "프리셋 2";
+            this.TP_CommandPreset2.Text = "預設 2";
             this.TP_CommandPreset2.UseVisualStyleBackColor = true;
             // 
             // TB_CommandPreset2
@@ -1043,7 +1044,7 @@ namespace Cirnix.Forms
             this.TP_CommandPreset3.Padding = new System.Windows.Forms.Padding(3);
             this.TP_CommandPreset3.Size = new System.Drawing.Size(188, 90);
             this.TP_CommandPreset3.TabIndex = 2;
-            this.TP_CommandPreset3.Text = "프리셋 3";
+            this.TP_CommandPreset3.Text = "預設 3";
             this.TP_CommandPreset3.UseVisualStyleBackColor = true;
             // 
             // TB_CommandPreset3
@@ -1058,39 +1059,39 @@ namespace Cirnix.Forms
             // CB_NoSavesReplaySave
             // 
             this.CB_NoSavesReplaySave.AutoSize = true;
-            this.CB_NoSavesReplaySave.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.CB_NoSavesReplaySave.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.CB_NoSavesReplaySave.Location = new System.Drawing.Point(435, 65);
             this.CB_NoSavesReplaySave.Margin = new System.Windows.Forms.Padding(0);
             this.CB_NoSavesReplaySave.Name = "CB_NoSavesReplaySave";
-            this.CB_NoSavesReplaySave.Size = new System.Drawing.Size(194, 19);
+            this.CB_NoSavesReplaySave.Size = new System.Drawing.Size(170, 19);
             this.CB_NoSavesReplaySave.TabIndex = 44;
-            this.CB_NoSavesReplaySave.Text = "저장하지 않은 리플레이도 저장";
+            this.CB_NoSavesReplaySave.Text = "保存所有未保存的重播檔案";
             this.CB_NoSavesReplaySave.UseVisualStyleBackColor = true;
             this.CB_NoSavesReplaySave.CheckedChanged += new System.EventHandler(this.NoSavesReplaySave_CheckedChanged);
             // 
             // CB_SavesReplayAutoSave
             // 
             this.CB_SavesReplayAutoSave.AutoSize = true;
-            this.CB_SavesReplayAutoSave.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.CB_SavesReplayAutoSave.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.CB_SavesReplayAutoSave.Location = new System.Drawing.Point(435, 46);
             this.CB_SavesReplayAutoSave.Margin = new System.Windows.Forms.Padding(0);
             this.CB_SavesReplayAutoSave.Name = "CB_SavesReplayAutoSave";
-            this.CB_SavesReplayAutoSave.Size = new System.Drawing.Size(197, 19);
+            this.CB_SavesReplayAutoSave.Size = new System.Drawing.Size(194, 19);
             this.CB_SavesReplayAutoSave.TabIndex = 43;
-            this.CB_SavesReplayAutoSave.Text = "세이브시, 리플레이도 자동 저장";
+            this.CB_SavesReplayAutoSave.Text = "儲存時，同時自動儲存重播檔案";
             this.CB_SavesReplayAutoSave.UseVisualStyleBackColor = true;
             this.CB_SavesReplayAutoSave.CheckedChanged += new System.EventHandler(this.SavesReplayAutoSave_CheckedChanged);
             // 
             // CB_NewMapSaveFileAuto
             // 
             this.CB_NewMapSaveFileAuto.AutoSize = true;
-            this.CB_NewMapSaveFileAuto.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.CB_NewMapSaveFileAuto.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.CB_NewMapSaveFileAuto.Location = new System.Drawing.Point(435, 27);
             this.CB_NewMapSaveFileAuto.Margin = new System.Windows.Forms.Padding(0);
             this.CB_NewMapSaveFileAuto.Name = "CB_NewMapSaveFileAuto";
-            this.CB_NewMapSaveFileAuto.Size = new System.Drawing.Size(190, 19);
+            this.CB_NewMapSaveFileAuto.Size = new System.Drawing.Size(134, 19);
             this.CB_NewMapSaveFileAuto.TabIndex = 42;
-            this.CB_NewMapSaveFileAuto.Text = "신규 맵 세이브 파일 자동 감지";
+            this.CB_NewMapSaveFileAuto.Text = "自動偵測新地圖存檔";
             this.CB_NewMapSaveFileAuto.UseVisualStyleBackColor = true;
             this.CB_NewMapSaveFileAuto.CheckedChanged += new System.EventHandler(this.NewMapSaveFileAutoSense_CheckedChanged);
             // 
@@ -1112,34 +1113,34 @@ namespace Cirnix.Forms
             // 
             // BTN_Refresh
             // 
-            this.BTN_Refresh.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_Refresh.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.BTN_Refresh.Location = new System.Drawing.Point(3, 196);
             this.BTN_Refresh.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_Refresh.Name = "BTN_Refresh";
             this.BTN_Refresh.Size = new System.Drawing.Size(122, 29);
             this.BTN_Refresh.TabIndex = 59;
-            this.BTN_Refresh.Text = "새로고침";
+            this.BTN_Refresh.Text = "更新";
             this.BTN_Refresh.UseVisualStyleBackColor = true;
             this.BTN_Refresh.Click += new System.EventHandler(this.BTN_Refresh_Click);
             // 
             // Label_HeroList
             // 
-            this.Label_HeroList.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Label_HeroList.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.Label_HeroList.Location = new System.Drawing.Point(126, 10);
             this.Label_HeroList.Name = "Label_HeroList";
             this.Label_HeroList.Size = new System.Drawing.Size(120, 30);
             this.Label_HeroList.TabIndex = 42;
-            this.Label_HeroList.Text = "저장 분류 리스트";
+            this.Label_HeroList.Text = "存檔列表";
             this.Label_HeroList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label_RPGList
             // 
-            this.Label_RPGList.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Label_RPGList.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.Label_RPGList.Location = new System.Drawing.Point(4, 10);
             this.Label_RPGList.Name = "Label_RPGList";
             this.Label_RPGList.Size = new System.Drawing.Size(120, 30);
             this.Label_RPGList.TabIndex = 42;
-            this.Label_RPGList.Text = "RPG 리스트";
+            this.Label_RPGList.Text = "RPG 列表";
             this.Label_RPGList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox4
@@ -1149,61 +1150,61 @@ namespace Cirnix.Forms
             this.groupBox4.Controls.Add(this.BTN_HeroDel);
             this.groupBox4.Controls.Add(this.BTN_HeroAddMod);
             this.groupBox4.Controls.Add(this.TB_HeroName);
-            this.groupBox4.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.groupBox4.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.groupBox4.Location = new System.Drawing.Point(249, 155);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(176, 70);
             this.groupBox4.TabIndex = 42;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "저장 분류 설정";
+            this.groupBox4.Text = "存檔分類";
             // 
             // BTN_HeroFolder
             // 
             this.BTN_HeroFolder.Enabled = false;
-            this.BTN_HeroFolder.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_HeroFolder.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_HeroFolder.Location = new System.Drawing.Point(98, 40);
             this.BTN_HeroFolder.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_HeroFolder.Name = "BTN_HeroFolder";
             this.BTN_HeroFolder.Size = new System.Drawing.Size(74, 25);
             this.BTN_HeroFolder.TabIndex = 60;
-            this.BTN_HeroFolder.Text = "폴더 열기";
+            this.BTN_HeroFolder.Text = "開啟資料夾";
             this.BTN_HeroFolder.UseVisualStyleBackColor = true;
             this.BTN_HeroFolder.Click += new System.EventHandler(this.BTN_HeroFolder_Click);
             // 
             // Label_HeroName
             // 
             this.Label_HeroName.AutoSize = true;
-            this.Label_HeroName.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Label_HeroName.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.Label_HeroName.Location = new System.Drawing.Point(4, 17);
             this.Label_HeroName.Name = "Label_HeroName";
             this.Label_HeroName.Size = new System.Drawing.Size(37, 19);
             this.Label_HeroName.TabIndex = 45;
-            this.Label_HeroName.Text = "이름";
+            this.Label_HeroName.Text = "名稱";
             // 
             // BTN_HeroDel
             // 
             this.BTN_HeroDel.Enabled = false;
-            this.BTN_HeroDel.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_HeroDel.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_HeroDel.Location = new System.Drawing.Point(51, 40);
             this.BTN_HeroDel.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_HeroDel.Name = "BTN_HeroDel";
             this.BTN_HeroDel.Size = new System.Drawing.Size(47, 25);
             this.BTN_HeroDel.TabIndex = 59;
-            this.BTN_HeroDel.Text = "삭제";
+            this.BTN_HeroDel.Text = "刪除";
             this.BTN_HeroDel.UseVisualStyleBackColor = true;
             this.BTN_HeroDel.Click += new System.EventHandler(this.BTN_HeroDel_Click);
             // 
             // BTN_HeroAddMod
             // 
             this.BTN_HeroAddMod.Enabled = false;
-            this.BTN_HeroAddMod.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_HeroAddMod.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_HeroAddMod.Location = new System.Drawing.Point(4, 40);
             this.BTN_HeroAddMod.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_HeroAddMod.Name = "BTN_HeroAddMod";
             this.BTN_HeroAddMod.Size = new System.Drawing.Size(47, 25);
             this.BTN_HeroAddMod.TabIndex = 58;
-            this.BTN_HeroAddMod.Text = "추가";
+            this.BTN_HeroAddMod.Text = "增加";
             this.BTN_HeroAddMod.UseVisualStyleBackColor = true;
             this.BTN_HeroAddMod.Click += new System.EventHandler(this.BTN_HeroAddMod_Click);
             // 
@@ -1253,71 +1254,71 @@ namespace Cirnix.Forms
             this.groupBox3.Controls.Add(this.Label_RPGKR);
             this.groupBox3.Controls.Add(this.TB_RPGEN);
             this.groupBox3.Controls.Add(this.TB_RPGKR);
-            this.groupBox3.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.groupBox3.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.groupBox3.Location = new System.Drawing.Point(249, 9);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(176, 141);
             this.groupBox3.TabIndex = 41;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "RPG 설정";
+            this.groupBox3.Text = "RPG 設定";
             // 
             // BTN_RPGSetRegex
             // 
             this.BTN_RPGSetRegex.Enabled = false;
-            this.BTN_RPGSetRegex.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_RPGSetRegex.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.BTN_RPGSetRegex.Location = new System.Drawing.Point(4, 111);
             this.BTN_RPGSetRegex.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_RPGSetRegex.Name = "BTN_RPGSetRegex";
             this.BTN_RPGSetRegex.Size = new System.Drawing.Size(168, 25);
             this.BTN_RPGSetRegex.TabIndex = 60;
-            this.BTN_RPGSetRegex.Text = "세이브 불러오기 형식 수정";
+            this.BTN_RPGSetRegex.Text = "修改存檔格式";
             this.BTN_RPGSetRegex.UseVisualStyleBackColor = true;
             this.BTN_RPGSetRegex.Click += new System.EventHandler(this.BTN_RPGSetRegex_Click);
             // 
             // BTN_RPGFolder
             // 
             this.BTN_RPGFolder.Enabled = false;
-            this.BTN_RPGFolder.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_RPGFolder.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_RPGFolder.Location = new System.Drawing.Point(98, 86);
             this.BTN_RPGFolder.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_RPGFolder.Name = "BTN_RPGFolder";
             this.BTN_RPGFolder.Size = new System.Drawing.Size(74, 25);
             this.BTN_RPGFolder.TabIndex = 57;
-            this.BTN_RPGFolder.Text = "폴더 열기";
+            this.BTN_RPGFolder.Text = "開啟資料夾";
             this.BTN_RPGFolder.UseVisualStyleBackColor = true;
             this.BTN_RPGFolder.Click += new System.EventHandler(this.BTN_RPGFolder_Click);
             // 
             // BTN_RPGDel
             // 
             this.BTN_RPGDel.Enabled = false;
-            this.BTN_RPGDel.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_RPGDel.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_RPGDel.Location = new System.Drawing.Point(51, 86);
             this.BTN_RPGDel.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_RPGDel.Name = "BTN_RPGDel";
             this.BTN_RPGDel.Size = new System.Drawing.Size(47, 25);
             this.BTN_RPGDel.TabIndex = 56;
-            this.BTN_RPGDel.Text = "제거";
+            this.BTN_RPGDel.Text = "刪除";
             this.BTN_RPGDel.UseVisualStyleBackColor = true;
             this.BTN_RPGDel.Click += new System.EventHandler(this.BTN_RPGDel_Click);
             // 
             // BTN_RPGAddMod
             // 
             this.BTN_RPGAddMod.Enabled = false;
-            this.BTN_RPGAddMod.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_RPGAddMod.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_RPGAddMod.Location = new System.Drawing.Point(4, 86);
             this.BTN_RPGAddMod.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_RPGAddMod.Name = "BTN_RPGAddMod";
             this.BTN_RPGAddMod.Size = new System.Drawing.Size(47, 25);
             this.BTN_RPGAddMod.TabIndex = 55;
-            this.BTN_RPGAddMod.Text = "추가";
+            this.BTN_RPGAddMod.Text = "增加";
             this.BTN_RPGAddMod.UseVisualStyleBackColor = true;
             this.BTN_RPGAddMod.Click += new System.EventHandler(this.BTN_RPGAddMod_Click);
             // 
             // BTN_RPGPath
             // 
             this.BTN_RPGPath.Enabled = false;
-            this.BTN_RPGPath.Font = new System.Drawing.Font("굴림", 8F);
+            this.BTN_RPGPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.BTN_RPGPath.Location = new System.Drawing.Point(150, 61);
             this.BTN_RPGPath.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_RPGPath.Name = "BTN_RPGPath";
@@ -1330,22 +1331,22 @@ namespace Cirnix.Forms
             // Label_RPGPath
             // 
             this.Label_RPGPath.AutoSize = true;
-            this.Label_RPGPath.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Label_RPGPath.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.Label_RPGPath.Location = new System.Drawing.Point(4, 62);
             this.Label_RPGPath.Name = "Label_RPGPath";
             this.Label_RPGPath.Size = new System.Drawing.Size(37, 19);
             this.Label_RPGPath.TabIndex = 44;
-            this.Label_RPGPath.Text = "경로";
+            this.Label_RPGPath.Text = "中文";
             // 
             // Label_RPGEN
             // 
             this.Label_RPGEN.AutoSize = true;
-            this.Label_RPGEN.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Label_RPGEN.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.Label_RPGEN.Location = new System.Drawing.Point(4, 39);
             this.Label_RPGEN.Name = "Label_RPGEN";
             this.Label_RPGEN.Size = new System.Drawing.Size(37, 19);
             this.Label_RPGEN.TabIndex = 43;
-            this.Label_RPGEN.Text = "영문";
+            this.Label_RPGEN.Text = "英文";
             // 
             // TB_RPGPath
             // 
@@ -1384,12 +1385,12 @@ namespace Cirnix.Forms
             // Label_RPGKR
             // 
             this.Label_RPGKR.AutoSize = true;
-            this.Label_RPGKR.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Label_RPGKR.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.Label_RPGKR.Location = new System.Drawing.Point(4, 16);
             this.Label_RPGKR.Name = "Label_RPGKR";
             this.Label_RPGKR.Size = new System.Drawing.Size(37, 19);
             this.Label_RPGKR.TabIndex = 42;
-            this.Label_RPGKR.Text = "한글";
+            this.Label_RPGKR.Text = "韓文";
             // 
             // TB_RPGEN
             // 
@@ -1460,7 +1461,7 @@ namespace Cirnix.Forms
             // 
             // RPGListBox
             // 
-            this.RPGListBox.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RPGListBox.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RPGListBox.ItemHeight = 15;
             this.RPGListBox.Location = new System.Drawing.Point(4, 40);
             this.RPGListBox.Margin = new System.Windows.Forms.Padding(1);
@@ -1472,7 +1473,7 @@ namespace Cirnix.Forms
             // 
             // HeroListBox
             // 
-            this.HeroListBox.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.HeroListBox.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.HeroListBox.ItemHeight = 15;
             this.HeroListBox.Location = new System.Drawing.Point(126, 40);
             this.HeroListBox.Margin = new System.Windows.Forms.Padding(1);
@@ -1491,11 +1492,11 @@ namespace Cirnix.Forms
             this.MacroTab.HorizontalScrollbarBarColor = true;
             this.MacroTab.HorizontalScrollbarHighlightOnWheel = false;
             this.MacroTab.HorizontalScrollbarSize = 10;
-            this.MacroTab.Location = new System.Drawing.Point(4, 36);
+            this.MacroTab.Location = new System.Drawing.Point(4, 38);
             this.MacroTab.Name = "MacroTab";
-            this.MacroTab.Size = new System.Drawing.Size(632, 235);
+            this.MacroTab.Size = new System.Drawing.Size(632, 233);
             this.MacroTab.TabIndex = 1;
-            this.MacroTab.Text = "매크로";
+            this.MacroTab.Text = "巨集";
             this.MacroTab.VerticalScrollbarBarColor = true;
             this.MacroTab.VerticalScrollbarHighlightOnWheel = false;
             this.MacroTab.VerticalScrollbarSize = 10;
@@ -1513,13 +1514,13 @@ namespace Cirnix.Forms
             this.GB_AutoMouse.Controls.Add(this.BTN_AutoMouseOff);
             this.GB_AutoMouse.Controls.Add(this.Label_AutoLeftMouseOn);
             this.GB_AutoMouse.Controls.Add(this.BTN_AutoLeftMouseOn);
-            this.GB_AutoMouse.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.GB_AutoMouse.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.GB_AutoMouse.Location = new System.Drawing.Point(442, 153);
             this.GB_AutoMouse.Name = "GB_AutoMouse";
             this.GB_AutoMouse.Size = new System.Drawing.Size(190, 80);
             this.GB_AutoMouse.TabIndex = 35;
             this.GB_AutoMouse.TabStop = false;
-            this.GB_AutoMouse.Text = "오토마우스";
+            this.GB_AutoMouse.Text = "自動點擊";
             // 
             // Label_Border
             // 
@@ -1547,7 +1548,7 @@ namespace Cirnix.Forms
             // Label_AutoMouseDelay
             // 
             this.Label_AutoMouseDelay.BackColor = System.Drawing.Color.Transparent;
-            this.Label_AutoMouseDelay.Font = new System.Drawing.Font("맑은 고딕", 8F, System.Drawing.FontStyle.Bold);
+            this.Label_AutoMouseDelay.Font = new System.Drawing.Font("Malgun Gothic", 8F, System.Drawing.FontStyle.Bold);
             this.Label_AutoMouseDelay.Location = new System.Drawing.Point(126, 40);
             this.Label_AutoMouseDelay.Name = "Label_AutoMouseDelay";
             this.Label_AutoMouseDelay.Size = new System.Drawing.Size(60, 16);
@@ -1557,23 +1558,23 @@ namespace Cirnix.Forms
             // Label_AutoRightMouseOn
             // 
             this.Label_AutoRightMouseOn.BackColor = System.Drawing.Color.Transparent;
-            this.Label_AutoRightMouseOn.Font = new System.Drawing.Font("맑은 고딕", 8F, System.Drawing.FontStyle.Bold);
+            this.Label_AutoRightMouseOn.Font = new System.Drawing.Font("Malgun Gothic", 8F, System.Drawing.FontStyle.Bold);
             this.Label_AutoRightMouseOn.Location = new System.Drawing.Point(97, 17);
             this.Label_AutoRightMouseOn.Name = "Label_AutoRightMouseOn";
             this.Label_AutoRightMouseOn.Size = new System.Drawing.Size(50, 16);
             this.Label_AutoRightMouseOn.TabIndex = 98;
-            this.Label_AutoRightMouseOn.Text = "없음";
+            this.Label_AutoRightMouseOn.Text = "無";
             this.Label_AutoRightMouseOn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // BTN_AutoRightMouseOn
             // 
-            this.BTN_AutoRightMouseOn.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_AutoRightMouseOn.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_AutoRightMouseOn.Location = new System.Drawing.Point(147, 15);
             this.BTN_AutoRightMouseOn.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_AutoRightMouseOn.Name = "BTN_AutoRightMouseOn";
             this.BTN_AutoRightMouseOn.Size = new System.Drawing.Size(40, 20);
             this.BTN_AutoRightMouseOn.TabIndex = 97;
-            this.BTN_AutoRightMouseOn.Text = "우클";
+            this.BTN_AutoRightMouseOn.Text = "右鍵";
             this.BTN_AutoRightMouseOn.UseVisualStyleBackColor = true;
             this.BTN_AutoRightMouseOn.Click += new System.EventHandler(this.BTN_AutoRightMouseOn_Click);
             this.BTN_AutoRightMouseOn.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.AutoMouse_PreviewKeyDown);
@@ -1591,23 +1592,23 @@ namespace Cirnix.Forms
             // Label_AutoMouseOff
             // 
             this.Label_AutoMouseOff.BackColor = System.Drawing.Color.Transparent;
-            this.Label_AutoMouseOff.Font = new System.Drawing.Font("맑은 고딕", 8F, System.Drawing.FontStyle.Bold);
+            this.Label_AutoMouseOff.Font = new System.Drawing.Font("Malgun Gothic", 8F, System.Drawing.FontStyle.Bold);
             this.Label_AutoMouseOff.Location = new System.Drawing.Point(43, 36);
             this.Label_AutoMouseOff.Name = "Label_AutoMouseOff";
             this.Label_AutoMouseOff.Size = new System.Drawing.Size(50, 16);
             this.Label_AutoMouseOff.TabIndex = 96;
-            this.Label_AutoMouseOff.Text = "없음";
+            this.Label_AutoMouseOff.Text = "無";
             this.Label_AutoMouseOff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BTN_AutoMouseOff
             // 
-            this.BTN_AutoMouseOff.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_AutoMouseOff.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_AutoMouseOff.Location = new System.Drawing.Point(3, 34);
             this.BTN_AutoMouseOff.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_AutoMouseOff.Name = "BTN_AutoMouseOff";
             this.BTN_AutoMouseOff.Size = new System.Drawing.Size(40, 20);
             this.BTN_AutoMouseOff.TabIndex = 95;
-            this.BTN_AutoMouseOff.Text = "종료";
+            this.BTN_AutoMouseOff.Text = "END";
             this.BTN_AutoMouseOff.UseVisualStyleBackColor = true;
             this.BTN_AutoMouseOff.Click += new System.EventHandler(this.BTN_AutoMouseOff_Click);
             this.BTN_AutoMouseOff.Leave += new System.EventHandler(this.BTN_AutoMouse_Leave);
@@ -1616,23 +1617,24 @@ namespace Cirnix.Forms
             // Label_AutoLeftMouseOn
             // 
             this.Label_AutoLeftMouseOn.BackColor = System.Drawing.Color.Transparent;
-            this.Label_AutoLeftMouseOn.Font = new System.Drawing.Font("맑은 고딕", 8F, System.Drawing.FontStyle.Bold);
+            this.Label_AutoLeftMouseOn.Font = new System.Drawing.Font("Malgun Gothic", 8F, System.Drawing.FontStyle.Bold);
             this.Label_AutoLeftMouseOn.Location = new System.Drawing.Point(43, 17);
             this.Label_AutoLeftMouseOn.Name = "Label_AutoLeftMouseOn";
             this.Label_AutoLeftMouseOn.Size = new System.Drawing.Size(50, 16);
             this.Label_AutoLeftMouseOn.TabIndex = 94;
-            this.Label_AutoLeftMouseOn.Text = "없음";
+            this.Label_AutoLeftMouseOn.Text = "無";
             this.Label_AutoLeftMouseOn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Label_AutoLeftMouseOn.Click += new System.EventHandler(this.Label_AutoLeftMouseOn_Click);
             // 
             // BTN_AutoLeftMouseOn
             // 
-            this.BTN_AutoLeftMouseOn.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_AutoLeftMouseOn.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_AutoLeftMouseOn.Location = new System.Drawing.Point(3, 15);
             this.BTN_AutoLeftMouseOn.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_AutoLeftMouseOn.Name = "BTN_AutoLeftMouseOn";
             this.BTN_AutoLeftMouseOn.Size = new System.Drawing.Size(40, 20);
             this.BTN_AutoLeftMouseOn.TabIndex = 93;
-            this.BTN_AutoLeftMouseOn.Text = "좌클";
+            this.BTN_AutoLeftMouseOn.Text = "左鍵";
             this.BTN_AutoLeftMouseOn.UseVisualStyleBackColor = true;
             this.BTN_AutoLeftMouseOn.Click += new System.EventHandler(this.BTN_AutoLeftMouseOn_Click);
             this.BTN_AutoLeftMouseOn.Leave += new System.EventHandler(this.BTN_AutoMouse_Leave);
@@ -1656,13 +1658,13 @@ namespace Cirnix.Forms
             this.GB_ChatMacro.Controls.Add(this.RB_Chat1);
             this.GB_ChatMacro.Controls.Add(this.Label_ChatMacro);
             this.GB_ChatMacro.Controls.Add(this.TB_ChatMacro);
-            this.GB_ChatMacro.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.GB_ChatMacro.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.GB_ChatMacro.Location = new System.Drawing.Point(0, 153);
             this.GB_ChatMacro.Name = "GB_ChatMacro";
             this.GB_ChatMacro.Size = new System.Drawing.Size(435, 80);
             this.GB_ChatMacro.TabIndex = 34;
             this.GB_ChatMacro.TabStop = false;
-            this.GB_ChatMacro.Text = "채팅 단축키";
+            this.GB_ChatMacro.Text = "快速聊天";
             // 
             // Toggle_ChatMacro
             // 
@@ -1677,23 +1679,23 @@ namespace Cirnix.Forms
             // Label_ChatHotkey
             // 
             this.Label_ChatHotkey.BackColor = System.Drawing.Color.Transparent;
-            this.Label_ChatHotkey.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.Label_ChatHotkey.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.Label_ChatHotkey.Location = new System.Drawing.Point(274, 23);
             this.Label_ChatHotkey.Name = "Label_ChatHotkey";
             this.Label_ChatHotkey.Size = new System.Drawing.Size(70, 17);
             this.Label_ChatHotkey.TabIndex = 92;
-            this.Label_ChatHotkey.Text = "없음";
+            this.Label_ChatHotkey.Text = "無";
             this.Label_ChatHotkey.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // BTN_SetChatHotkey
             // 
-            this.BTN_SetChatHotkey.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.BTN_SetChatHotkey.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.BTN_SetChatHotkey.Location = new System.Drawing.Point(344, 20);
             this.BTN_SetChatHotkey.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_SetChatHotkey.Name = "BTN_SetChatHotkey";
             this.BTN_SetChatHotkey.Size = new System.Drawing.Size(87, 23);
             this.BTN_SetChatHotkey.TabIndex = 91;
-            this.BTN_SetChatHotkey.Text = "단축키 지정";
+            this.BTN_SetChatHotkey.Text = "指定快捷鍵";
             this.BTN_SetChatHotkey.UseVisualStyleBackColor = true;
             this.BTN_SetChatHotkey.Click += new System.EventHandler(this.BTN_SetChatHotkey_Click);
             this.BTN_SetChatHotkey.Leave += new System.EventHandler(this.BTN_SetChatHotkey_Leave);
@@ -1702,7 +1704,7 @@ namespace Cirnix.Forms
             // RB_Chat8
             // 
             this.RB_Chat8.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Chat8.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Chat8.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Chat8.Location = new System.Drawing.Point(189, 19);
             this.RB_Chat8.Name = "RB_Chat8";
             this.RB_Chat8.Size = new System.Drawing.Size(25, 25);
@@ -1715,7 +1717,7 @@ namespace Cirnix.Forms
             // RB_Chat0
             // 
             this.RB_Chat0.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Chat0.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Chat0.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Chat0.Location = new System.Drawing.Point(241, 19);
             this.RB_Chat0.Name = "RB_Chat0";
             this.RB_Chat0.Size = new System.Drawing.Size(25, 25);
@@ -1728,7 +1730,7 @@ namespace Cirnix.Forms
             // RB_Chat9
             // 
             this.RB_Chat9.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Chat9.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Chat9.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Chat9.Location = new System.Drawing.Point(215, 19);
             this.RB_Chat9.Name = "RB_Chat9";
             this.RB_Chat9.Size = new System.Drawing.Size(25, 25);
@@ -1741,7 +1743,7 @@ namespace Cirnix.Forms
             // RB_Chat7
             // 
             this.RB_Chat7.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Chat7.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Chat7.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Chat7.Location = new System.Drawing.Point(163, 19);
             this.RB_Chat7.Name = "RB_Chat7";
             this.RB_Chat7.Size = new System.Drawing.Size(25, 25);
@@ -1754,7 +1756,7 @@ namespace Cirnix.Forms
             // RB_Chat4
             // 
             this.RB_Chat4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Chat4.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Chat4.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Chat4.Location = new System.Drawing.Point(85, 19);
             this.RB_Chat4.Name = "RB_Chat4";
             this.RB_Chat4.Size = new System.Drawing.Size(25, 25);
@@ -1767,7 +1769,7 @@ namespace Cirnix.Forms
             // RB_Chat2
             // 
             this.RB_Chat2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Chat2.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Chat2.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Chat2.Location = new System.Drawing.Point(32, 19);
             this.RB_Chat2.Name = "RB_Chat2";
             this.RB_Chat2.Size = new System.Drawing.Size(25, 25);
@@ -1780,7 +1782,7 @@ namespace Cirnix.Forms
             // RB_Chat6
             // 
             this.RB_Chat6.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Chat6.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Chat6.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Chat6.Location = new System.Drawing.Point(137, 19);
             this.RB_Chat6.Name = "RB_Chat6";
             this.RB_Chat6.Size = new System.Drawing.Size(25, 25);
@@ -1793,7 +1795,7 @@ namespace Cirnix.Forms
             // RB_Chat5
             // 
             this.RB_Chat5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Chat5.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Chat5.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Chat5.Location = new System.Drawing.Point(111, 19);
             this.RB_Chat5.Name = "RB_Chat5";
             this.RB_Chat5.Size = new System.Drawing.Size(25, 25);
@@ -1806,7 +1808,7 @@ namespace Cirnix.Forms
             // RB_Chat3
             // 
             this.RB_Chat3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Chat3.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Chat3.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Chat3.Location = new System.Drawing.Point(59, 19);
             this.RB_Chat3.Name = "RB_Chat3";
             this.RB_Chat3.Size = new System.Drawing.Size(25, 25);
@@ -1820,7 +1822,7 @@ namespace Cirnix.Forms
             // 
             this.RB_Chat1.Appearance = System.Windows.Forms.Appearance.Button;
             this.RB_Chat1.Checked = true;
-            this.RB_Chat1.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Chat1.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Chat1.Location = new System.Drawing.Point(6, 19);
             this.RB_Chat1.Name = "RB_Chat1";
             this.RB_Chat1.Size = new System.Drawing.Size(25, 25);
@@ -1833,12 +1835,12 @@ namespace Cirnix.Forms
             // 
             // Label_ChatMacro
             // 
-            this.Label_ChatMacro.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Label_ChatMacro.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.Label_ChatMacro.Location = new System.Drawing.Point(3, 53);
             this.Label_ChatMacro.Name = "Label_ChatMacro";
             this.Label_ChatMacro.Size = new System.Drawing.Size(37, 20);
             this.Label_ChatMacro.TabIndex = 49;
-            this.Label_ChatMacro.Text = "채팅";
+            this.Label_ChatMacro.Text = "內容";
             this.Label_ChatMacro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TB_ChatMacro
@@ -1891,13 +1893,13 @@ namespace Cirnix.Forms
             this.GB_SmartKey.Controls.Add(this.Xbutton);
             this.GB_SmartKey.Controls.Add(this.Cbutton);
             this.GB_SmartKey.Controls.Add(this.Vbutton);
-            this.GB_SmartKey.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.GB_SmartKey.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.GB_SmartKey.Location = new System.Drawing.Point(285, 3);
             this.GB_SmartKey.Name = "GB_SmartKey";
             this.GB_SmartKey.Size = new System.Drawing.Size(347, 142);
             this.GB_SmartKey.TabIndex = 32;
             this.GB_SmartKey.TabStop = false;
-            this.GB_SmartKey.Text = "스마트키";
+            this.GB_SmartKey.Text = "智慧施法";
             // 
             // GB_SmartKeyPrevention
             // 
@@ -1915,13 +1917,13 @@ namespace Cirnix.Forms
             // RB_Prev4
             // 
             this.RB_Prev4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Prev4.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Prev4.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Prev4.Location = new System.Drawing.Point(5, 111);
             this.RB_Prev4.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Prev4.Name = "RB_Prev4";
             this.RB_Prev4.Size = new System.Drawing.Size(120, 25);
             this.RB_Prev4.TabIndex = 87;
-            this.RB_Prev4.Text = "9,0번키를 사용 함";
+            this.RB_Prev4.Text = "使用按鍵9,0";
             this.RB_Prev4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RB_Prev4.UseVisualStyleBackColor = true;
             this.RB_Prev4.CheckedChanged += new System.EventHandler(this.RB_Prev_CheckedChanged);
@@ -1929,13 +1931,13 @@ namespace Cirnix.Forms
             // RB_Prev2
             // 
             this.RB_Prev2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Prev2.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Prev2.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Prev2.Location = new System.Drawing.Point(5, 49);
             this.RB_Prev2.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Prev2.Name = "RB_Prev2";
             this.RB_Prev2.Size = new System.Drawing.Size(120, 25);
             this.RB_Prev2.TabIndex = 86;
-            this.RB_Prev2.Text = "ESC키 누름";
+            this.RB_Prev2.Text = "停用ESC";
             this.RB_Prev2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RB_Prev2.UseVisualStyleBackColor = true;
             this.RB_Prev2.CheckedChanged += new System.EventHandler(this.RB_Prev_CheckedChanged);
@@ -1943,24 +1945,24 @@ namespace Cirnix.Forms
             // Label_ClickPrevention
             // 
             this.Label_ClickPrevention.BackColor = System.Drawing.Color.White;
-            this.Label_ClickPrevention.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_ClickPrevention.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Label_ClickPrevention.Location = new System.Drawing.Point(7, 0);
             this.Label_ClickPrevention.Name = "Label_ClickPrevention";
             this.Label_ClickPrevention.Size = new System.Drawing.Size(71, 15);
             this.Label_ClickPrevention.TabIndex = 46;
-            this.Label_ClickPrevention.Text = "오클릭 방지";
+            this.Label_ClickPrevention.Text = "停用按鍵";
             this.Label_ClickPrevention.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // RB_Prev3
             // 
             this.RB_Prev3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Prev3.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Prev3.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Prev3.Location = new System.Drawing.Point(5, 80);
             this.RB_Prev3.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Prev3.Name = "RB_Prev3";
             this.RB_Prev3.Size = new System.Drawing.Size(120, 25);
             this.RB_Prev3.TabIndex = 85;
-            this.RB_Prev3.Text = "부대지정 1키 누름";
+            this.RB_Prev3.Text = "指定單位1號";
             this.RB_Prev3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RB_Prev3.UseVisualStyleBackColor = true;
             this.RB_Prev3.CheckedChanged += new System.EventHandler(this.RB_Prev_CheckedChanged);
@@ -1968,13 +1970,13 @@ namespace Cirnix.Forms
             // RB_Prev1
             // 
             this.RB_Prev1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Prev1.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.RB_Prev1.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.RB_Prev1.Location = new System.Drawing.Point(5, 18);
             this.RB_Prev1.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Prev1.Name = "RB_Prev1";
             this.RB_Prev1.Size = new System.Drawing.Size(120, 25);
             this.RB_Prev1.TabIndex = 84;
-            this.RB_Prev1.Text = "사용 안 함";
+            this.RB_Prev1.Text = "不使用";
             this.RB_Prev1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RB_Prev1.UseVisualStyleBackColor = true;
             this.RB_Prev1.CheckedChanged += new System.EventHandler(this.RB_Prev_CheckedChanged);
@@ -2151,7 +2153,7 @@ namespace Cirnix.Forms
             this.GB_KeyReMap.Controls.Add(this.Key5);
             this.GB_KeyReMap.Controls.Add(this.Key7);
             this.GB_KeyReMap.Controls.Add(this.Key8);
-            this.GB_KeyReMap.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.GB_KeyReMap.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.GB_KeyReMap.ForeColor = System.Drawing.SystemColors.ControlText;
             this.GB_KeyReMap.Location = new System.Drawing.Point(0, 3);
             this.GB_KeyReMap.Name = "GB_KeyReMap";
@@ -2159,51 +2161,51 @@ namespace Cirnix.Forms
             this.GB_KeyReMap.Size = new System.Drawing.Size(266, 142);
             this.GB_KeyReMap.TabIndex = 33;
             this.GB_KeyReMap.TabStop = false;
-            this.GB_KeyReMap.Text = "키리맵핑";
+            this.GB_KeyReMap.Text = "改鍵";
             this.GB_KeyReMap.Leave += new System.EventHandler(this.KeyReMap_Leave);
             // 
             // Key8Text
             // 
             this.Key8Text.BackColor = System.Drawing.Color.Transparent;
-            this.Key8Text.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.Key8Text.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.Key8Text.Location = new System.Drawing.Point(173, 27);
             this.Key8Text.Name = "Key8Text";
             this.Key8Text.Size = new System.Drawing.Size(90, 18);
             this.Key8Text.TabIndex = 38;
-            this.Key8Text.Text = "키패드8";
+            this.Key8Text.Text = "按鍵8";
             this.Key8Text.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Key1Text
             // 
             this.Key1Text.BackColor = System.Drawing.Color.Transparent;
-            this.Key1Text.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.Key1Text.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.Key1Text.Location = new System.Drawing.Point(3, 109);
             this.Key1Text.Name = "Key1Text";
             this.Key1Text.Size = new System.Drawing.Size(90, 18);
             this.Key1Text.TabIndex = 35;
-            this.Key1Text.Text = "키패드1";
+            this.Key1Text.Text = "按鍵1";
             this.Key1Text.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Key5Text
             // 
             this.Key5Text.BackColor = System.Drawing.Color.Transparent;
-            this.Key5Text.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.Key5Text.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.Key5Text.Location = new System.Drawing.Point(173, 68);
             this.Key5Text.Name = "Key5Text";
             this.Key5Text.Size = new System.Drawing.Size(90, 18);
             this.Key5Text.TabIndex = 37;
-            this.Key5Text.Text = "키패드5";
+            this.Key5Text.Text = "按鍵5";
             this.Key5Text.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Key4Text
             // 
             this.Key4Text.BackColor = System.Drawing.Color.Transparent;
-            this.Key4Text.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.Key4Text.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.Key4Text.Location = new System.Drawing.Point(3, 68);
             this.Key4Text.Name = "Key4Text";
             this.Key4Text.Size = new System.Drawing.Size(90, 18);
             this.Key4Text.TabIndex = 36;
-            this.Key4Text.Text = "키패드4";
+            this.Key4Text.Text = "按鍵4";
             this.Key4Text.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Toggle_KeyRemapping
@@ -2219,12 +2221,12 @@ namespace Cirnix.Forms
             // Key2Text
             // 
             this.Key2Text.BackColor = System.Drawing.Color.Transparent;
-            this.Key2Text.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.Key2Text.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.Key2Text.Location = new System.Drawing.Point(173, 109);
             this.Key2Text.Name = "Key2Text";
             this.Key2Text.Size = new System.Drawing.Size(90, 18);
             this.Key2Text.TabIndex = 36;
-            this.Key2Text.Text = "키패드2";
+            this.Key2Text.Text = "按鍵2";
             this.Key2Text.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Key1
@@ -2256,12 +2258,12 @@ namespace Cirnix.Forms
             // Key7Text
             // 
             this.Key7Text.BackColor = System.Drawing.Color.Transparent;
-            this.Key7Text.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.Key7Text.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.Key7Text.Location = new System.Drawing.Point(3, 27);
             this.Key7Text.Name = "Key7Text";
             this.Key7Text.Size = new System.Drawing.Size(90, 18);
             this.Key7Text.TabIndex = 34;
-            this.Key7Text.Text = "키패드7";
+            this.Key7Text.Text = "按鍵7";
             this.Key7Text.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Key4
@@ -2330,11 +2332,11 @@ namespace Cirnix.Forms
             this.BanList.HorizontalScrollbarBarColor = true;
             this.BanList.HorizontalScrollbarHighlightOnWheel = false;
             this.BanList.HorizontalScrollbarSize = 10;
-            this.BanList.Location = new System.Drawing.Point(4, 36);
+            this.BanList.Location = new System.Drawing.Point(4, 38);
             this.BanList.Name = "BanList";
-            this.BanList.Size = new System.Drawing.Size(632, 235);
+            this.BanList.Size = new System.Drawing.Size(632, 233);
             this.BanList.TabIndex = 5;
-            this.BanList.Text = "밴리스트";
+            this.BanList.Text = "黑名單";
             this.BanList.VerticalScrollbarBarColor = true;
             this.BanList.VerticalScrollbarHighlightOnWheel = false;
             this.BanList.VerticalScrollbarSize = 10;
@@ -2345,7 +2347,7 @@ namespace Cirnix.Forms
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 11;
-            this.button2.Text = "삭제";
+            this.button2.Text = "刪除";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -2357,7 +2359,7 @@ namespace Cirnix.Forms
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 10;
-            this.label4.Text = "사유";
+            this.label4.Text = "原因";
             // 
             // label3
             // 
@@ -2365,7 +2367,7 @@ namespace Cirnix.Forms
             this.label3.BackColor = System.Drawing.SystemColors.Window;
             this.label3.Location = new System.Drawing.Point(483, 57);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 12);
+            this.label3.Size = new System.Drawing.Size(15, 12);
             this.label3.TabIndex = 9;
             this.label3.Text = "IP";
             // 
@@ -2375,7 +2377,7 @@ namespace Cirnix.Forms
             this.label2.BackColor = System.Drawing.SystemColors.Window;
             this.label2.Location = new System.Drawing.Point(483, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(16, 12);
+            this.label2.Size = new System.Drawing.Size(17, 12);
             this.label2.TabIndex = 8;
             this.label2.Text = "ID";
             // 
@@ -2383,21 +2385,21 @@ namespace Cirnix.Forms
             // 
             this.ReasonTextBox.Location = new System.Drawing.Point(527, 91);
             this.ReasonTextBox.Name = "ReasonTextBox";
-            this.ReasonTextBox.Size = new System.Drawing.Size(100, 21);
+            this.ReasonTextBox.Size = new System.Drawing.Size(100, 22);
             this.ReasonTextBox.TabIndex = 7;
             // 
             // IPTextBox
             // 
             this.IPTextBox.Location = new System.Drawing.Point(527, 54);
             this.IPTextBox.Name = "IPTextBox";
-            this.IPTextBox.Size = new System.Drawing.Size(100, 21);
+            this.IPTextBox.Size = new System.Drawing.Size(100, 22);
             this.IPTextBox.TabIndex = 6;
             // 
             // IdTextBox
             // 
             this.IdTextBox.Location = new System.Drawing.Point(527, 15);
             this.IdTextBox.Name = "IdTextBox";
-            this.IdTextBox.Size = new System.Drawing.Size(100, 21);
+            this.IdTextBox.Size = new System.Drawing.Size(100, 22);
             this.IdTextBox.TabIndex = 4;
             // 
             // button1
@@ -2406,7 +2408,7 @@ namespace Cirnix.Forms
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
-            this.button1.Text = "추가";
+            this.button1.Text = "增加";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -2438,7 +2440,7 @@ namespace Cirnix.Forms
             // 
             // 사유
             // 
-            this.사유.Text = "사유";
+            this.사유.Text = "原因";
             this.사유.Width = 213;
             // 
             // metroTabPage1
@@ -2461,20 +2463,20 @@ namespace Cirnix.Forms
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(632, 233);
             this.metroTabPage1.TabIndex = 3;
-            this.metroTabPage1.Text = "명령어";
+            this.metroTabPage1.Text = "命令";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
             // BTN_HotKeyDebug
             // 
-            this.BTN_HotKeyDebug.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_HotKeyDebug.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_HotKeyDebug.Location = new System.Drawing.Point(512, 92);
             this.BTN_HotKeyDebug.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_HotKeyDebug.Name = "BTN_HotKeyDebug";
             this.BTN_HotKeyDebug.Size = new System.Drawing.Size(110, 23);
             this.BTN_HotKeyDebug.TabIndex = 93;
-            this.BTN_HotKeyDebug.Text = "단축키 디버깅";
+            this.BTN_HotKeyDebug.Text = "快速調試";
             this.BTN_HotKeyDebug.UseVisualStyleBackColor = true;
             this.BTN_HotKeyDebug.Click += new System.EventHandler(this.BTN_HotKeyDebug_Click);
             // 
@@ -2491,24 +2493,24 @@ namespace Cirnix.Forms
             this.GB_ChatFrequency.Size = new System.Drawing.Size(120, 85);
             this.GB_ChatFrequency.TabIndex = 13;
             this.GB_ChatFrequency.TabStop = false;
-            this.GB_ChatFrequency.Text = "채팅 주파수";
+            this.GB_ChatFrequency.Text = "聊天頻率";
             // 
             // BTN_DetectFrequency
             // 
-            this.BTN_DetectFrequency.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.BTN_DetectFrequency.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.BTN_DetectFrequency.Location = new System.Drawing.Point(5, 57);
             this.BTN_DetectFrequency.Margin = new System.Windows.Forms.Padding(1);
             this.BTN_DetectFrequency.Name = "BTN_DetectFrequency";
             this.BTN_DetectFrequency.Size = new System.Drawing.Size(110, 23);
             this.BTN_DetectFrequency.TabIndex = 92;
-            this.BTN_DetectFrequency.Text = "채팅 주파수 검색";
+            this.BTN_DetectFrequency.Text = "聊天頻率搜尋";
             this.BTN_DetectFrequency.UseVisualStyleBackColor = true;
             this.BTN_DetectFrequency.Click += new System.EventHandler(this.BTN_DetectFrequency_Click);
             // 
             // Number_ChatFrequency
             // 
             this.Number_ChatFrequency.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Number_ChatFrequency.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.Number_ChatFrequency.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.Number_ChatFrequency.Location = new System.Drawing.Point(75, 33);
             this.Number_ChatFrequency.Maximum = new decimal(new int[] {
             20,
@@ -2534,23 +2536,23 @@ namespace Cirnix.Forms
             // Label_ChatFrequency
             // 
             this.Label_ChatFrequency.BackColor = System.Drawing.Color.Transparent;
-            this.Label_ChatFrequency.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_ChatFrequency.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_ChatFrequency.Location = new System.Drawing.Point(4, 33);
             this.Label_ChatFrequency.Name = "Label_ChatFrequency";
             this.Label_ChatFrequency.Size = new System.Drawing.Size(69, 22);
             this.Label_ChatFrequency.TabIndex = 66;
-            this.Label_ChatFrequency.Text = "채널 번호";
+            this.Label_ChatFrequency.Text = "頻道號碼";
             this.Label_ChatFrequency.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label_AutoFrequency
             // 
             this.Label_AutoFrequency.BackColor = System.Drawing.Color.Transparent;
-            this.Label_AutoFrequency.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_AutoFrequency.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_AutoFrequency.Location = new System.Drawing.Point(4, 15);
             this.Label_AutoFrequency.Name = "Label_AutoFrequency";
             this.Label_AutoFrequency.Size = new System.Drawing.Size(41, 15);
             this.Label_AutoFrequency.TabIndex = 64;
-            this.Label_AutoFrequency.Text = "자동";
+            this.Label_AutoFrequency.Text = "自動";
             this.Label_AutoFrequency.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Toggle_AutoFrequency
@@ -2570,7 +2572,7 @@ namespace Cirnix.Forms
             // 
             this.TB_CommandDescription.BackColor = System.Drawing.SystemColors.Control;
             this.TB_CommandDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_CommandDescription.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.TB_CommandDescription.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.TB_CommandDescription.Location = new System.Drawing.Point(141, 92);
             this.TB_CommandDescription.Name = "TB_CommandDescription";
             this.TB_CommandDescription.Size = new System.Drawing.Size(350, 140);
@@ -2580,18 +2582,18 @@ namespace Cirnix.Forms
             // Label_ParameterInfo
             // 
             this.Label_ParameterInfo.BackColor = System.Drawing.Color.Transparent;
-            this.Label_ParameterInfo.Font = new System.Drawing.Font("맑은 고딕", 11F);
+            this.Label_ParameterInfo.Font = new System.Drawing.Font("Malgun Gothic", 11F);
             this.Label_ParameterInfo.Location = new System.Drawing.Point(141, 65);
             this.Label_ParameterInfo.Name = "Label_ParameterInfo";
             this.Label_ParameterInfo.Size = new System.Drawing.Size(115, 20);
             this.Label_ParameterInfo.TabIndex = 11;
-            this.Label_ParameterInfo.Text = "매개 변수 :";
+            this.Label_ParameterInfo.Text = "範圍 :";
             this.Label_ParameterInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Label_ParameterValue
             // 
             this.Label_ParameterValue.BackColor = System.Drawing.Color.Transparent;
-            this.Label_ParameterValue.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_ParameterValue.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_ParameterValue.Location = new System.Drawing.Point(256, 65);
             this.Label_ParameterValue.Name = "Label_ParameterValue";
             this.Label_ParameterValue.Size = new System.Drawing.Size(140, 20);
@@ -2601,7 +2603,7 @@ namespace Cirnix.Forms
             // Label_CommandKR
             // 
             this.Label_CommandKR.BackColor = System.Drawing.Color.Transparent;
-            this.Label_CommandKR.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Label_CommandKR.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.Label_CommandKR.Location = new System.Drawing.Point(346, 40);
             this.Label_CommandKR.Name = "Label_CommandKR";
             this.Label_CommandKR.Size = new System.Drawing.Size(75, 20);
@@ -2611,18 +2613,18 @@ namespace Cirnix.Forms
             // Label_CommandInfo
             // 
             this.Label_CommandInfo.BackColor = System.Drawing.Color.Transparent;
-            this.Label_CommandInfo.Font = new System.Drawing.Font("맑은 고딕", 11F);
+            this.Label_CommandInfo.Font = new System.Drawing.Font("Malgun Gothic", 11F);
             this.Label_CommandInfo.Location = new System.Drawing.Point(141, 40);
             this.Label_CommandInfo.Name = "Label_CommandInfo";
             this.Label_CommandInfo.Size = new System.Drawing.Size(115, 20);
             this.Label_CommandInfo.TabIndex = 7;
-            this.Label_CommandInfo.Text = "입력 명령어 :";
+            this.Label_CommandInfo.Text = "指令 :";
             this.Label_CommandInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Label_CommandEN
             // 
             this.Label_CommandEN.BackColor = System.Drawing.Color.Transparent;
-            this.Label_CommandEN.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Label_CommandEN.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.Label_CommandEN.Location = new System.Drawing.Point(266, 40);
             this.Label_CommandEN.Name = "Label_CommandEN";
             this.Label_CommandEN.Size = new System.Drawing.Size(63, 20);
@@ -2632,7 +2634,7 @@ namespace Cirnix.Forms
             // Label_CommandTitle
             // 
             this.Label_CommandTitle.BackColor = System.Drawing.Color.Transparent;
-            this.Label_CommandTitle.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+            this.Label_CommandTitle.Font = new System.Drawing.Font("Malgun Gothic", 13F, System.Drawing.FontStyle.Bold);
             this.Label_CommandTitle.Location = new System.Drawing.Point(216, 3);
             this.Label_CommandTitle.Name = "Label_CommandTitle";
             this.Label_CommandTitle.Size = new System.Drawing.Size(200, 25);
@@ -2642,17 +2644,17 @@ namespace Cirnix.Forms
             // Label_CommandListBox
             // 
             this.Label_CommandListBox.BackColor = System.Drawing.Color.Transparent;
-            this.Label_CommandListBox.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.Label_CommandListBox.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.Label_CommandListBox.Location = new System.Drawing.Point(11, 3);
             this.Label_CommandListBox.Name = "Label_CommandListBox";
             this.Label_CommandListBox.Size = new System.Drawing.Size(67, 15);
             this.Label_CommandListBox.TabIndex = 3;
-            this.Label_CommandListBox.Text = "리스트";
+            this.Label_CommandListBox.Text = "列表";
             this.Label_CommandListBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // CommandListBox
             // 
-            this.CommandListBox.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CommandListBox.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.CommandListBox.FormattingEnabled = true;
             this.CommandListBox.ItemHeight = 15;
             this.CommandListBox.Items.AddRange(new object[] {
@@ -2706,7 +2708,7 @@ namespace Cirnix.Forms
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(632, 233);
             this.metroTabPage2.TabIndex = 4;
-            this.metroTabPage2.Text = "도움말";
+            this.metroTabPage2.Text = "幫助";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
@@ -2714,7 +2716,7 @@ namespace Cirnix.Forms
             // RB_Help8
             // 
             this.RB_Help8.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Help8.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.RB_Help8.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.RB_Help8.Location = new System.Drawing.Point(3, 164);
             this.RB_Help8.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Help8.Name = "RB_Help8";
@@ -2729,7 +2731,7 @@ namespace Cirnix.Forms
             // 
             this.RB_Help10.Appearance = System.Windows.Forms.Appearance.Button;
             this.RB_Help10.Checked = true;
-            this.RB_Help10.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.RB_Help10.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.RB_Help10.Location = new System.Drawing.Point(3, 210);
             this.RB_Help10.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Help10.Name = "RB_Help10";
@@ -2744,7 +2746,7 @@ namespace Cirnix.Forms
             // RB_Help9
             // 
             this.RB_Help9.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Help9.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.RB_Help9.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.RB_Help9.Location = new System.Drawing.Point(3, 187);
             this.RB_Help9.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Help9.Name = "RB_Help9";
@@ -2758,7 +2760,7 @@ namespace Cirnix.Forms
             // RB_Help7
             // 
             this.RB_Help7.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Help7.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.RB_Help7.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.RB_Help7.Location = new System.Drawing.Point(3, 141);
             this.RB_Help7.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Help7.Name = "RB_Help7";
@@ -2772,7 +2774,7 @@ namespace Cirnix.Forms
             // RB_Help4
             // 
             this.RB_Help4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Help4.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.RB_Help4.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.RB_Help4.Location = new System.Drawing.Point(3, 72);
             this.RB_Help4.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Help4.Name = "RB_Help4";
@@ -2786,7 +2788,7 @@ namespace Cirnix.Forms
             // RB_Help2
             // 
             this.RB_Help2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Help2.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.RB_Help2.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.RB_Help2.Location = new System.Drawing.Point(3, 26);
             this.RB_Help2.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Help2.Name = "RB_Help2";
@@ -2800,7 +2802,7 @@ namespace Cirnix.Forms
             // RB_Help6
             // 
             this.RB_Help6.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Help6.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.RB_Help6.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.RB_Help6.Location = new System.Drawing.Point(3, 118);
             this.RB_Help6.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Help6.Name = "RB_Help6";
@@ -2814,7 +2816,7 @@ namespace Cirnix.Forms
             // RB_Help5
             // 
             this.RB_Help5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Help5.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.RB_Help5.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.RB_Help5.Location = new System.Drawing.Point(3, 95);
             this.RB_Help5.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Help5.Name = "RB_Help5";
@@ -2828,7 +2830,7 @@ namespace Cirnix.Forms
             // RB_Help3
             // 
             this.RB_Help3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Help3.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.RB_Help3.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.RB_Help3.Location = new System.Drawing.Point(3, 49);
             this.RB_Help3.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Help3.Name = "RB_Help3";
@@ -2842,7 +2844,7 @@ namespace Cirnix.Forms
             // RB_Help1
             // 
             this.RB_Help1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.RB_Help1.Font = new System.Drawing.Font("맑은 고딕", 8F);
+            this.RB_Help1.Font = new System.Drawing.Font("Malgun Gothic", 8F);
             this.RB_Help1.Location = new System.Drawing.Point(3, 3);
             this.RB_Help1.Margin = new System.Windows.Forms.Padding(0);
             this.RB_Help1.Name = "RB_Help1";
@@ -2857,26 +2859,13 @@ namespace Cirnix.Forms
             // 
             this.TB_Help.BackColor = System.Drawing.Color.White;
             this.TB_Help.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Help.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.TB_Help.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.TB_Help.Location = new System.Drawing.Point(97, 1);
             this.TB_Help.Multiline = true;
             this.TB_Help.Name = "TB_Help";
             this.TB_Help.ReadOnly = true;
             this.TB_Help.Size = new System.Drawing.Size(530, 232);
             this.TB_Help.TabIndex = 3;
-            this.TB_Help.Text = @"- 개발 기간: 2017-07-16 ~ ...
-
-해당 프로그램은 Cirnix의 오픈소스 프로젝트인 OpenCirnix입니다.
-https://github.com/BlacklightsC/OpenCirnix
-
-
----------- 후원 안내 ----------
-
-농협중앙회 302-0627-1751-31 박성현
-카카오뱅크 3333-09-4274361 박성현
-투네이션: https://toon.at/donate/637131255322131449
-페이팔(해외): https://www.paypal.me/BlacklightsC
-Patreon(해외 정기후원): https://www.patreon.com/cirnix";
             // 
             // Toggle_CommandHide
             // 
@@ -2894,7 +2883,7 @@ Patreon(해외 정기후원): https://www.patreon.com/cirnix";
             // Label_Title
             // 
             this.Label_Title.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Title.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.Label_Title.Font = new System.Drawing.Font("Malgun Gothic", 9F);
             this.Label_Title.Location = new System.Drawing.Point(255, 10);
             this.Label_Title.Margin = new System.Windows.Forms.Padding(260, 0, 260, 0);
             this.Label_Title.Name = "Label_Title";
@@ -2904,12 +2893,12 @@ Patreon(해외 정기후원): https://www.patreon.com/cirnix";
             // 
             // CommandHideText
             // 
-            this.CommandHideText.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.CommandHideText.Font = new System.Drawing.Font("Malgun Gothic", 10F);
             this.CommandHideText.Location = new System.Drawing.Point(425, 40);
             this.CommandHideText.Name = "CommandHideText";
             this.CommandHideText.Size = new System.Drawing.Size(142, 19);
             this.CommandHideText.TabIndex = 45;
-            this.CommandHideText.Text = "명령어 숨기기";
+            this.CommandHideText.Text = "隱藏命令";
             this.CommandHideText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // OptionForm

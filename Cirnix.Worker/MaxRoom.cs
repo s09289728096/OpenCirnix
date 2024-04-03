@@ -48,12 +48,12 @@ namespace Cirnix.Worker
             try
             {
                 CancelAsync();
-                SendMsg(true, $"'{MaxCount}'명 이상이 되었습니다.");
+                SendMsg(true, $"最大人數設定為 '{MaxCount}'名");
                 Play(Resources.max);
             }
             catch
             {
-                SendMsg(true, "실행 도중 문제가 발생했습니다.");
+                SendMsg(true, "執行時出現例外狀況");
             }
         }
     }

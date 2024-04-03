@@ -42,23 +42,23 @@
             // 
             this.metroLabel2.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel2.Location = new System.Drawing.Point(12, 80);
+            this.metroLabel2.Location = new System.Drawing.Point(10, 80);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(256, 20);
+            this.metroLabel2.Size = new System.Drawing.Size(219, 20);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel2.TabIndex = 1;
-            this.metroLabel2.Text = "워크래프트를 선택할 수 있습니다.";
+            this.metroLabel2.Text = "可以手動選擇程式";
             this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel2.UseStyleColors = true;
             // 
             // SelectButton
             // 
             this.SelectButton.Highlight = true;
-            this.SelectButton.Location = new System.Drawing.Point(80, 341);
+            this.SelectButton.Location = new System.Drawing.Point(69, 341);
             this.SelectButton.Name = "SelectButton";
-            this.SelectButton.Size = new System.Drawing.Size(100, 35);
+            this.SelectButton.Size = new System.Drawing.Size(86, 35);
             this.SelectButton.TabIndex = 4;
-            this.SelectButton.Text = "선택";
+            this.SelectButton.Text = "選擇";
             this.SelectButton.UseSelectable = true;
             this.SelectButton.Click += new System.EventHandler(this.Select_Click);
             // 
@@ -66,12 +66,12 @@
             // 
             this.metroLabel1.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(10, 60);
+            this.metroLabel1.Location = new System.Drawing.Point(9, 60);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(256, 20);
+            this.metroLabel1.Size = new System.Drawing.Size(219, 20);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel1.TabIndex = 73;
-            this.metroLabel1.Text = "워크래프트를 못찾는 경우";
+            this.metroLabel1.Text = "如果你找不到War3";
             this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel1.UseStyleColors = true;
             // 
@@ -80,46 +80,46 @@
             this.ProcessList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.PID,
             this.War3Name});
+            this.ProcessList.FullRowSelect = true;
             this.ProcessList.GridLines = true;
             this.ProcessList.HideSelection = false;
             this.ProcessList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ProcessList.Location = new System.Drawing.Point(11, 135);
+            this.ProcessList.Location = new System.Drawing.Point(9, 135);
             this.ProcessList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProcessList.Name = "ProcessList";
-            this.ProcessList.Size = new System.Drawing.Size(254, 191);
+            this.ProcessList.Size = new System.Drawing.Size(218, 191);
             this.ProcessList.TabIndex = 76;
             this.ProcessList.UseCompatibleStateImageBehavior = false;
             this.ProcessList.View = System.Windows.Forms.View.Details;
-            this.ProcessList.FullRowSelect = true;
             // 
             // PID
             // 
             this.PID.Text = "PID";
-            this.PID.Width = -2;
+            this.PID.Width = 30;
             // 
             // War3Name
             // 
             this.War3Name.Text = "War3Name";
-            this.War3Name.Width = -2;
+            this.War3Name.Width = 220;
             // 
             // metroLabel3
             // 
             this.metroLabel3.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel3.Location = new System.Drawing.Point(10, 106);
+            this.metroLabel3.Location = new System.Drawing.Point(9, 106);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(256, 20);
+            this.metroLabel3.Size = new System.Drawing.Size(219, 20);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Red;
             this.metroLabel3.TabIndex = 77;
-            this.metroLabel3.Text = "PID를 클릭한뒤 선택버튼을 누르세요";
+            this.metroLabel3.Text = "點擊PID並按下選擇按鈕";
             this.metroLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroLabel3.UseStyleColors = true;
             // 
             // SelectProcess
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 387);
+            this.ClientSize = new System.Drawing.Size(237, 387);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.ProcessList);
             this.Controls.Add(this.metroLabel1);
@@ -129,9 +129,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SelectProcess";
-            this.Padding = new System.Windows.Forms.Padding(10, 60, 10, 10);
+            this.Padding = new System.Windows.Forms.Padding(9, 60, 9, 10);
             this.Resizable = false;
-            this.Text = "War3 선택";
+            this.Text = "War3 選擇";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SelectProcess_FormClosing);
             this.ResumeLayout(false);

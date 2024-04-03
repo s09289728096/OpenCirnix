@@ -6,6 +6,7 @@ namespace Cirnix.Global
     public static class Theme
     {
         // TODO: 테마 리소스 가져오는 곳
+        // TODO: Where to get theme resources
         public static string MainImageFile { get; private set; }
 
         public static string IconFile { get; private set; }

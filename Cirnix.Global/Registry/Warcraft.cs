@@ -4,6 +4,7 @@ namespace Cirnix.Global.Registry
 {
     /// <summary>
     /// 워크래프트 3 의 레지스트리 키입니다.
+    /// This is the registry key for Warcraft 3.
     /// </summary>
     public static class Warcraft
     {
@@ -11,6 +12,7 @@ namespace Cirnix.Global.Registry
 
         /// <summary>
         /// 프로그램이 설치되어 있는 경로입니다.
+        /// This is the path where the program is installed.
         /// </summary>
         public static string InstallPath {
             get => com.GetValue(nameof(InstallPath), string.Empty) as string;
@@ -19,6 +21,7 @@ namespace Cirnix.Global.Registry
 
         /// <summary>
         /// 사용자 데이터 이전 여부
+        /// Whether user data is transferred?
         /// </summary>
         public static bool MigrationComplete {
             get => (int)com.GetValue("Migration Complete", 0) == 1;
@@ -27,6 +30,7 @@ namespace Cirnix.Global.Registry
 
         /// <summary>
         /// 인트로 영상  
+        /// intro video
         /// </summary>
         public static bool SeenIntroMovie {
             get => (int)com.GetValue("Misc", "seenintromovie", 0) == 1;
@@ -36,6 +40,7 @@ namespace Cirnix.Global.Registry
         #region [    Graphics Options    ]
         /// <summary>
         /// 모델 디테일 (0 ~ 2)
+        /// Model Details (0 ~ 2)
         /// </summary>
         public static int ModelDetail {
             get => (int)com.GetValue("Video", "modeldetail", 0);
@@ -43,6 +48,7 @@ namespace Cirnix.Global.Registry
         }
         /// <summary>
         /// 애니메이션 화질 (0 ~ 2)
+        /// Animation Quality
         /// </summary>
         public static int AnimationQuality {
             get => (int)com.GetValue("Video", "animquality", 1);
@@ -50,6 +56,7 @@ namespace Cirnix.Global.Registry
         }
         /// <summary>
         /// 텍스쳐 화질 (0 ~ 2)
+        /// Texture Quality (0 ~ 2)
         /// </summary>
         public static int TextureQuality {
             get => (int)com.GetValue("Video", "texquality", 1);
@@ -74,6 +81,7 @@ namespace Cirnix.Global.Registry
         }
         /// <summary>
         /// 입자 (0 ~ 2)
+        /// Particle (0 ~ 2)
         /// </summary>
         public static int Particles {
             get => (int)com.GetValue("Video", "particles", 1);
@@ -84,6 +92,7 @@ namespace Cirnix.Global.Registry
         }
         /// <summary>
         /// 광원 (0 ~ 2)
+        /// Lights (0 ~ 2)
         /// </summary>
         public static int Lights {
             get => (int)com.GetValue("Video", "lights", 1);
@@ -91,6 +100,7 @@ namespace Cirnix.Global.Registry
         }
         /// <summary>
         /// 유닛 그림자
+        /// Unitshadows
         /// </summary>
         public static bool UnitShadows {
             get => (int)com.GetValue("Video", "unitshadows", 1) == 1;
@@ -98,6 +108,7 @@ namespace Cirnix.Global.Registry
         }
         /// <summary>
         /// 투명화
+        /// Occlusion
         /// </summary>
         public static bool Occlusion {
             get => (int)com.GetValue("Video", "occlusion", 1) == 1;

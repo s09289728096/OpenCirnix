@@ -140,14 +140,14 @@ int __stdcall PrintAttackSpeedAndOtherInfo(int addr, float * attackspeed, float 
 			float MaxAttackReload = 1.0f / (maxattackspeed / realBAT);
 #pragma warning(push)
 #pragma warning(disable: 4819)
-			sprintf_s(buffer, sizeof(buffer), "%.1f/ÃÊ (ÁÖ±â: %.2f ÃÊ)|n°ø°Ý ¼Óµµ º¸³Ê½º: %.0f%%|nÇÑ°è ¼Óµµ: %.1f/ÃÊ (ÁÖ±â: %.2f ÃÊ)|n", AttacksPerSec, AttackReload, AttackSpeedBonus, MaxAttacksPerSec, MaxAttackReload);
+			sprintf_s(buffer, sizeof(buffer), "%.1f/¬í («á·n: %.2f ¬í)|n§ðÀ»³t«×¥[¦¨: %.0f%%|n³Ì¤j§ð³t: %.1f/¬í («á·n: %.2f ¬í)|n", AttacksPerSec, AttackReload, AttackSpeedBonus, MaxAttacksPerSec, MaxAttackReload);
 #pragma warning(pop)
 		}
 		else
 		{
 #pragma warning(push)
 #pragma warning(disable: 4819)
-			sprintf_s(buffer, sizeof(buffer), "%.3f/ÃÊ (ÁÖ±â: %.2f ÃÊ)|n°ø°Ý ¼Óµµ º¸³Ê½º: %.0f%%", AttacksPerSec, AttackReload, AttackSpeedBonus);
+			sprintf_s(buffer, sizeof(buffer), "%.3f/¬í («á·n: %.2f ¬í)|n§ðÀ»³t«×¥[¦¨: %.0f%%", AttacksPerSec, AttackReload, AttackSpeedBonus);
 #pragma warning(pop)
 		}
 

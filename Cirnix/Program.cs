@@ -11,10 +11,13 @@ namespace Cirnix
         /// <summary>
         /// Main 진입 전에 동작할 함수들 입니다.
         /// 추가 라이브러리가 로드되기 전의 부분 입니다.
+        /// These are functions to be operated before entering main.
+        /// This is the part before additional libraries are loaded.
         /// </summary>
         static Program()
         {
             // 라이브러리가 외부에 있을 경우 문제가 생김
+            // Problems arise when the library is external
             foreach (var item in Directory.GetFiles(".", "CirnoLib.*"))
                 try { File.Delete(item); } catch { }
             foreach (var item in Directory.GetFiles(".", "Cirnix.*dll"))
@@ -23,6 +26,7 @@ namespace Cirnix
 
         /// <summary>
         /// 해당 응용 프로그램의 주 진입점입니다.
+        /// This is the main entry point for the application.
         /// </summary>
         [STAThread]
         public static void Main()

@@ -47,7 +47,7 @@ namespace Cirnix.Forms
             Label_Title.MouseDown += new MouseEventHandler(Label_Title_MouseDown);
             Label_Title.MouseMove += new MouseEventHandler(Label_Title_MouseMove);
             Label_Title.MouseUp += new MouseEventHandler(Label_Title_MouseUp);
-            Label_Title.Text = Text = $"{Global.Theme.Title} 설정 및 도움말";
+            Label_Title.Text = Text = $"{Global.Theme.Title} 設定和幫助";
             Toggle_CommandHide.Checked = Settings.IsCommandHide;
             #region [    Warcraft Tab Initialize    ]
             Num_GameDelay.Value = Settings.GameDelay;
@@ -70,7 +70,7 @@ namespace Cirnix.Forms
             #region [    RPG Tab Initialize    ]
             RPGListBox.BeginUpdate();
             RPGListBox.Items.Clear();
-            RPGListBox.Items.Add("(새로 만들기)");
+            RPGListBox.Items.Add("(新增)");
             if(saveFilePath.Count > 0)
                 foreach (SavePath item in saveFilePath)
                     RPGListBox.Items.Add(saveFilePath.ConvertName(item.nameEN));
@@ -150,7 +150,7 @@ namespace Cirnix.Forms
             #region [    Text Macro Showing Status Initialize   ]
             TB_ChatMacro.Text = chatHotkeyList[CurrentChatIndex].ChatMessage;
             Label_ChatHotkey.Text = GetHotkeyString(chatHotkeyList[CurrentChatIndex].Hotkey);
-            BTN_SetChatHotkey.Text = chatHotkeyList.IsKeyRegisted(CurrentChatIndex) ? "단축키 해제" : "단축키 지정";
+            BTN_SetChatHotkey.Text = chatHotkeyList.IsKeyRegisted(CurrentChatIndex) ? "關閉快捷鍵" : "指定快捷鍵";
             Toggle_ChatMacro.Checked = chatHotkeyList[CurrentChatIndex].IsRegisted;
             for (; CurrentChatIndex < 10; CurrentChatIndex++)
             {
@@ -163,9 +163,9 @@ namespace Cirnix.Forms
             #endregion
             #region [    Auto Mouse Showing Status Initialize    ]
             Toggle_AutoMouse.Checked = AutoMouse.Enabled;
-            BTN_AutoLeftMouseOn.Text = AutoMouse.LeftStartKey == 0 ? "좌클" : "해제";
-            BTN_AutoRightMouseOn.Text = AutoMouse.RightStartKey == 0 ? "우클" : "해제";
-            BTN_AutoMouseOff.Text = AutoMouse.EndKey == 0 ? "종료" : "해제";
+            BTN_AutoLeftMouseOn.Text = AutoMouse.LeftStartKey == 0 ? "左鍵" : "清除";
+            BTN_AutoRightMouseOn.Text = AutoMouse.RightStartKey == 0 ? "右鍵" : "清除";
+            BTN_AutoMouseOff.Text = AutoMouse.EndKey == 0 ? "END" : "清除";
             Label_AutoLeftMouseOn.Text = GetHotkeyString(AutoMouse.LeftStartKey);
             Label_AutoRightMouseOn.Text = GetHotkeyString(AutoMouse.RightStartKey);
             Label_AutoMouseOff.Text = GetHotkeyString(AutoMouse.EndKey);
@@ -309,7 +309,7 @@ namespace Cirnix.Forms
             set {
                 if (string.IsNullOrEmpty(Settings.InstallPath))
                 {
-                    MetroDialog.OK("경로 오류", "경로가 비어있습니다.\n경로를 입력하세요.");
+                    MetroDialog.OK("路徑錯誤", "該路徑不存在\n請重新選擇");
                     return;
                 }
                 string path = $"{Settings.InstallPath}\\Cirnix";
@@ -330,7 +330,7 @@ namespace Cirnix.Forms
                 }
                 catch
                 {
-                    MetroDialog.OK("파일 접근 오류", "워크래프트 실행 중에는 파일을 제거할 수 없습니다.\n먼저 워크래프트를 종료하세요.");
+                    MetroDialog.OK("檔案存取錯誤", "魔獸爭霸執行時無法刪除檔案\n請先退出魔獸爭霸");
                 }
             }
         }
@@ -372,8 +372,8 @@ namespace Cirnix.Forms
         {
             using (OpenFileDialog FDialog = new OpenFileDialog())
             {
-                FDialog.Title = "워크래프트 실행 파일을 선택하세요.";
-                FDialog.Filter = "워크래프트 EXE파일|Warcraft III.exe";
+                FDialog.Title = "選擇魔獸爭霸執行檔";
+                FDialog.Filter = "魔獸爭霸 EXE檔案|Warcraft III.exe";
                 if (FDialog.ShowDialog() != DialogResult.OK) return;
                 Settings.InstallPath = TB_InstallPath.Text = Path.GetDirectoryName(FDialog.FileName);
             }
@@ -401,18 +401,18 @@ namespace Cirnix.Forms
             if (RPGListBox.SelectedIndex == -1)
             {
                 TB_RPGKR.Enabled = TB_RPGEN.Enabled = TB_RPGPath.Enabled = BTN_RPGPath.Enabled = BTN_RPGAddMod.Enabled = false;
-                BTN_RPGAddMod.Text = "추가";
+                BTN_RPGAddMod.Text = "新增";
                 return;
             }
             TB_RPGKR.Enabled = TB_RPGEN.Enabled = TB_RPGPath.Enabled = BTN_RPGPath.Enabled = BTN_RPGAddMod.Enabled = true;
             string SelectedName = RPGListBox.SelectedItem.ToString();
-            if (SelectedName == "(새로 만들기)")
+            if (SelectedName == "(新增)")
             {
-                BTN_RPGAddMod.Text = "추가";
+                BTN_RPGAddMod.Text = "新增";
                 return;
             }
             BTN_RPGDel.Enabled = BTN_RPGFolder.Enabled = true;
-            BTN_RPGAddMod.Text = "변경";
+            BTN_RPGAddMod.Text = "變更";
             string NameEN = saveFilePath.ConvertName(SelectedName, true);
             if (SelectedName != NameEN) TB_RPGKR.Text = SelectedName;
             TB_RPGEN.Text = NameEN;
@@ -425,18 +425,18 @@ namespace Cirnix.Forms
             if (HeroListBox.SelectedIndex == -1)
             {
                 TB_HeroName.Enabled = BTN_HeroAddMod.Enabled = false;
-                BTN_HeroAddMod.Text = "추가";
+                BTN_HeroAddMod.Text = "新增";
                 return;
             }
             TB_HeroName.Enabled = BTN_HeroAddMod.Enabled = true;
             string SelectedName = HeroListBox.SelectedItem.ToString();
-            if (SelectedName == "(새로 만들기)")
+            if (SelectedName == "(新增)")
             {
-                BTN_HeroAddMod.Text = "추가";
+                BTN_HeroAddMod.Text = "新增";
                 return;
             }
             BTN_HeroDel.Enabled = BTN_HeroFolder.Enabled = true;
-            BTN_HeroAddMod.Text = "변경";
+            BTN_HeroAddMod.Text = "變更";
             TB_HeroName.Text = SelectedName;
         }
         private void HeroListBox_Update()
@@ -444,12 +444,12 @@ namespace Cirnix.Forms
             HeroListBox.Items.Clear();
             TB_HeroName.Text = string.Empty;
             TB_HeroName.Enabled = BTN_HeroAddMod.Enabled = BTN_HeroDel.Enabled = BTN_HeroFolder.Enabled = false;
-            BTN_HeroAddMod.Text = "추가";
+            BTN_HeroAddMod.Text = "新增";
             if (RPGListBox.SelectedIndex == -1) return;
             string SelectedName = RPGListBox.SelectedItem.ToString();
-            if (SelectedName != "(새로 만들기)")
+            if (SelectedName != "(新增)")
             {
-                HeroListBox.Items.Add("(새로 만들기)");
+                HeroListBox.Items.Add("(新增)");
                 foreach (string item in GetDirectoryList(saveFilePath.GetFullPath(SelectedName)))
                     HeroListBox.Items.Add(item);
             }
@@ -459,12 +459,12 @@ namespace Cirnix.Forms
         {
             FolderBrowser FDialog = new FolderBrowser();
             FDialog.UseDescriptionForTitle = true;
-            FDialog.Description = "세이브 파일이 저장되는 폴더를 선택하세요.";
+            FDialog.Description = "選擇存檔所在的資料夾";
             if (FDialog.ShowDialog() != DialogResult.OK) return;
             string DirectoryName = FDialog.SelectedPath;
             if (DirectoryName.IndexOf("CustomMapData") == -1)
             {
-                MetroDialog.OK("올바르지 않은 경로", "올바른 경로가 아닌 것 같습니다.\nCustomMapData폴더가 경로에 포함되어 있어야 합니다.");
+                MetroDialog.OK("無效的路徑", "沒有尋找到正確的路徑\n路徑必須包含CustomMapData資料夾");
                 return;
             }
             TB_RPGPath.Text = DirectoryName;
@@ -475,15 +475,15 @@ namespace Cirnix.Forms
             int pathIndex;
             if ((pathIndex = TB_RPGPath.Text.IndexOf("CustomMapData")) == -1)
             {
-                MetroDialog.OK("올바르지 않은 경로", "경로가 올바르지 않은 것같습니다.\n경로를 다시 확인해주세요.");
+                MetroDialog.OK("無效的路徑", "沒有尋找到正確的路徑\n請重新檢查");
                 return;
             }
             switch (BTN_RPGAddMod.Text)
             {
-                case "추가":
+                case "新增":
                     saveFilePath.AddPath(TB_RPGPath.Text, TB_RPGEN.Text, TB_RPGKR.Text);
                     break;
-                case "변경":
+                case "變更":
                     SavePath item = saveFilePath.GetSavePath(RPGListBox.SelectedItem.ToString());
                     item.nameEN = TB_RPGEN.Text;
                     item.nameKR = TB_RPGKR.Text;
@@ -500,11 +500,11 @@ namespace Cirnix.Forms
         {
             if (RPGListBox.Items.Count <= 2)
             {
-                MetroDialog.OK("제거 실패", "1개 이상의 항목이 남아 있어야 합니다.");
+                MetroDialog.OK("刪除失敗", "必須至少剩下1項內容");
                 return;
             }
             string name = RPGListBox.SelectedItem.ToString();
-            if (!MetroDialog.YesNo("제거 여부 확인", $"리스트에서만 제거됩니다.\n정말 {IsKoreanBlock(name, "을", "를")} 제거하시겠습니까?")) return;
+            if (!MetroDialog.YesNo("確認移除", $"將會被從列表中移除\n是否確定要移除?")) return;
             saveFilePath.RemovePath(name);
             ListUpdate(0);
             BTN_Refresh_Click(sender, e);
@@ -535,15 +535,15 @@ namespace Cirnix.Forms
             string RPG = saveFilePath.GetFullPath(RPGListBox.SelectedItem.ToString());
             if (Directory.Exists(RPG + @"\" + TB_HeroName.Text))
             {
-                MetroDialog.OK("이미 존재하는 이름", $"{IsKoreanBlock(TB_HeroName.Text, "은", "는")} 이미 존재하는 이름입니다.\n다른 이름을 사용하시기 바랍니다.");
+                MetroDialog.OK("名稱已存在", $"該名稱已存在\n請使用其他名稱");
                 return;
             }
             switch (BTN_HeroAddMod.Text)
             {
-                case "추가":
+                case "新增":
                     Directory.CreateDirectory(saveFilePath.GetFullPath(RPGListBox.SelectedItem.ToString()) + @"\" + TB_HeroName.Text);
                     break;
-                case "변경":
+                case "變更":
                     string Hero = HeroListBox.SelectedItem.ToString();
                     try
                     {
@@ -551,7 +551,7 @@ namespace Cirnix.Forms
                     }
                     catch
                     {
-                        MetroDialog.OK("변경 실패", "다른 프로세서가 파일을 사용 중 이므로, 변경할 수 없습니다.");
+                        MetroDialog.OK("變更失敗", "其他程式正在使用該檔案，變更失敗");
                         return;
                     }
                     break;
@@ -565,11 +565,11 @@ namespace Cirnix.Forms
         {
             if (HeroListBox.Items.Count <= 2)
             {
-                MetroDialog.OK("삭제 실패", "1개 이상의 항목이 남아 있어야 합니다.");
+                MetroDialog.OK("刪除失敗", "必須至少剩下1項內容");
                 return;
             }
             string name = HeroListBox.SelectedItem.ToString();
-            if (!MetroDialog.YesNo("제거 여부 확인", $"분류에 포함된 모든 세이브 파일이 삭제됩니다.\n정말 {IsKoreanBlock(name, "을", "를")} 삭제하시겠습니까?")) return;
+            if (!MetroDialog.YesNo("確認移除", $"這個區域內的所有檔案都會被移除\n是否確定要移除?")) return;
             string path = saveFilePath.GetFullPath(RPGListBox.SelectedItem.ToString()) + @"\" + name;
             foreach (FileInfo file in new DirectoryInfo(path).GetFiles("*.*", SearchOption.AllDirectories))
                 file.Attributes = FileAttributes.Normal;
@@ -579,7 +579,7 @@ namespace Cirnix.Forms
             }
             catch
             {
-                MetroDialog.OK("삭제 실패", "다른 프로세서가 파일을 사용 중 이므로, 삭제할 수 없습니다.");
+                MetroDialog.OK("刪除失敗", "其他程式正在使用該檔案，刪除失敗");
                 return;
             }
             ListUpdate(1);
@@ -593,7 +593,7 @@ namespace Cirnix.Forms
         private void BTN_Refresh_Click(object sender, EventArgs e)
         {
             RPGListBox.Items.Clear();
-            RPGListBox.Items.Add("(새로 만들기)");
+            RPGListBox.Items.Add("(新增)");
             foreach (SavePath item in saveFilePath)
                 RPGListBox.Items.Add(saveFilePath.ConvertName(item.nameEN));
             RPGListBox.SelectedIndex = -1;
@@ -650,6 +650,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.Q))
             {
                 // 사용 안함
+                // inactivated
                 Qbutton.BackgroundImage = Properties.Resources.Qbutton;
                 SetSmartKey(Keys.Q, false);
             }
@@ -657,6 +658,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.Q)) return;
                 // 사용함
+                // activated
                 Qbutton.BackgroundImage = Properties.Resources.Q1button;
                 SetSmartKey(Keys.Q, true);
             }
@@ -666,6 +668,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.W))
             {
                 // 사용 안함
+                // inactivated
                 Wbutton.BackgroundImage = Properties.Resources.Wbutton;
                 SetSmartKey(Keys.W, false);
             }
@@ -673,6 +676,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.W)) return;
                 // 사용함
+                // activated
                 Wbutton.BackgroundImage = Properties.Resources.W1button;
                 SetSmartKey(Keys.W, true);
             }
@@ -682,6 +686,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.E))
             {
                 // 사용 안함
+                // inactivated
                 Ebutton.BackgroundImage = Properties.Resources.Ebutton;
                 SetSmartKey(Keys.E, false);
             }
@@ -689,6 +694,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.E)) return;
                 // 사용함
+                // activated
                 Ebutton.BackgroundImage = Properties.Resources.E1button;
                 SetSmartKey(Keys.E, true);
             }
@@ -698,6 +704,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.R))
             {
                 // 사용 안함
+                // inactivated
                 Rbutton.BackgroundImage = Properties.Resources.Rbutton;
                 SetSmartKey(Keys.R, false);
             }
@@ -705,6 +712,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.R)) return;
                 // 사용함
+                // activated
                 Rbutton.BackgroundImage = Properties.Resources.R1button;
                 SetSmartKey(Keys.R, true);
             }
@@ -714,6 +722,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.T))
             {
                 // 사용 안함
+                // ionactivated
                 Tbutton.BackgroundImage = Properties.Resources.Tbutton;
                 SetSmartKey(Keys.T, false);
             }
@@ -721,6 +730,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.T)) return;
                 // 사용함
+                // activated
                 Tbutton.BackgroundImage = Properties.Resources.T1button;
                 SetSmartKey(Keys.T, true);
             }
@@ -730,6 +740,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.A))
             {
                 // 사용 안함
+                // inactivated
                 Abutton.BackgroundImage = Properties.Resources.Abutton;
                 SetSmartKey(Keys.A, false);
             }
@@ -737,6 +748,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.A)) return;
                 // 사용함
+                // activated
                 Abutton.BackgroundImage = Properties.Resources.A1button;
                 SetSmartKey(Keys.A, true);
             }
@@ -746,6 +758,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.D))
             {
                 // 사용 안함
+                // inactivated
                 Dbutton.BackgroundImage = Properties.Resources.Dbutton;
                 SetSmartKey(Keys.D, false);
             }
@@ -753,6 +766,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.D)) return;
                 // 사용함
+                // activated
                 Dbutton.BackgroundImage = Properties.Resources.D1button;
                 SetSmartKey(Keys.D, true);
             }
@@ -762,6 +776,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.F))
             {
                 // 사용 안함
+                // inactivated
                 Fbutton.BackgroundImage = Properties.Resources.Fbutton;
                 SetSmartKey(Keys.F, false);
             }
@@ -769,6 +784,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.F)) return;
                 // 사용함
+                // activated
                 Fbutton.BackgroundImage = Properties.Resources.F1button;
                 SetSmartKey(Keys.F, true);
             }
@@ -778,6 +794,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.G))
             {
                 // 사용 안함
+                // inactivated
                 Gbutton.BackgroundImage = Properties.Resources.Gbutton;
                 SetSmartKey(Keys.G, false);
             }
@@ -785,6 +802,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.G)) return;
                 // 사용함
+                // activated
                 Gbutton.BackgroundImage = Properties.Resources.G1button;
                 SetSmartKey(Keys.G, true);
             }
@@ -794,6 +812,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.Z))
             {
                 // 사용 안함
+                // inactivated
                 Zbutton.BackgroundImage = Properties.Resources.Zbutton;
                 SetSmartKey(Keys.Z, false);
             }
@@ -801,6 +820,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.Z)) return;
                 // 사용함
+                // activated
                 Zbutton.BackgroundImage = Properties.Resources.Z1button;
                 SetSmartKey(Keys.Z, true);
             }
@@ -810,6 +830,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.X))
             {
                 // 사용 안함
+                // inactivated
                 Xbutton.BackgroundImage = Properties.Resources.Xbutton;
                 SetSmartKey(Keys.X, false);
             }
@@ -817,6 +838,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.X)) return;
                 // 사용함
+                // activated
                 Xbutton.BackgroundImage = Properties.Resources.X1button;
                 SetSmartKey(Keys.X, true);
             }
@@ -826,6 +848,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.C))
             {
                 // 사용 안함
+                // inactivated
                 Cbutton.BackgroundImage = Properties.Resources.Cbutton;
                 SetSmartKey(Keys.C, false);
             }
@@ -833,6 +856,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.C)) return;
                 // 사용함
+                // activated
                 Cbutton.BackgroundImage = Properties.Resources.C1button;
                 SetSmartKey(Keys.C, true);
             }
@@ -842,6 +866,7 @@ namespace Cirnix.Forms
             if (isSmartKey(Keys.V))
             {
                 // 사용 안함
+                // inactivated
                 Vbutton.BackgroundImage = Properties.Resources.Vbutton;
                 SetSmartKey(Keys.V, false);
             }
@@ -849,6 +874,7 @@ namespace Cirnix.Forms
             {
                 if (hotkeyCheck(Keys.V)) return;
                 // 사용함
+                // activated
                 Vbutton.BackgroundImage = Properties.Resources.V1button;
                 SetSmartKey(Keys.V, true);
             }
@@ -898,7 +924,7 @@ namespace Cirnix.Forms
         {
             if (hotkeyList.IsRegistered(key) && !isKeyReMapped(key))
             {
-                MetroDialog.OK("이미 등록된 단축키", "해당 키가 이미 단축키로 등록되어 있습니다.\n채팅 단축키에서 먼저 해제해주시기 바랍니다.");
+                MetroDialog.OK("快捷鍵已註冊", "這個快捷鍵已經被使用。\n請先從聊天快捷鍵中移除該按鍵的設定。");
                 return true;
             }
             return false;
@@ -923,7 +949,7 @@ namespace Cirnix.Forms
                 case "X":
                     if (isRemappedSmartkey((Keys)Settings.KeyMap7)) break;
                     Key7.Text = "7";
-                    Key7Text.Text = "키패드7";
+                    Key7Text.Text = "按鍵7";
                     UnRegisterReMappedKey(Keys.NumPad7);
                     Settings.KeyMap7 = 0;
                     IsRemapKeyInput = false;
@@ -949,7 +975,7 @@ namespace Cirnix.Forms
                 case "X":
                     if (isRemappedSmartkey((Keys)Settings.KeyMap8)) break;
                     Key8.Text = "8";
-                    Key8Text.Text = "키패드8";
+                    Key8Text.Text = "按鍵8";
                     UnRegisterReMappedKey(Keys.NumPad8);
                     Settings.KeyMap8 = 0;
                     IsRemapKeyInput = false;
@@ -975,7 +1001,7 @@ namespace Cirnix.Forms
                 case "X":
                     if (isRemappedSmartkey((Keys)Settings.KeyMap4)) break;
                     Key4.Text = "4";
-                    Key4Text.Text = "키패드4";
+                    Key4Text.Text = "按鍵4";
                     UnRegisterReMappedKey(Keys.NumPad4);
                     Settings.KeyMap4 = 0;
                     IsRemapKeyInput = false;
@@ -1001,7 +1027,7 @@ namespace Cirnix.Forms
                 case "X":
                     if (isRemappedSmartkey((Keys)Settings.KeyMap5)) break;
                     Key5.Text = "5";
-                    Key5Text.Text = "키패드5";
+                    Key5Text.Text = "按鍵5";
                     UnRegisterReMappedKey(Keys.NumPad5);
                     Settings.KeyMap5 = 0;
                     IsRemapKeyInput = false;
@@ -1027,7 +1053,7 @@ namespace Cirnix.Forms
                 case "X":
                     if (isRemappedSmartkey((Keys)Settings.KeyMap1)) break;
                     Key1.Text = "1";
-                    Key1Text.Text = "키패드1";
+                    Key1Text.Text = "按鍵1";
                     UnRegisterReMappedKey(Keys.NumPad1);
                     Settings.KeyMap1 = 0;
                     IsRemapKeyInput = false;
@@ -1053,7 +1079,7 @@ namespace Cirnix.Forms
                 case "X":
                     if (isRemappedSmartkey((Keys)Settings.KeyMap2)) break;
                     Key2.Text = "2";
-                    Key2Text.Text = "키패드2";
+                    Key2Text.Text = "按鍵2";
                     UnRegisterReMappedKey(Keys.NumPad2);
                     Settings.KeyMap2 = 0;
                     IsRemapKeyInput = false;
@@ -1073,7 +1099,7 @@ namespace Cirnix.Forms
              || hotkeyList.IsRegistered((Keys)Settings.KeyMap1)
              || hotkeyList.IsRegistered((Keys)Settings.KeyMap2)))
             {
-                MetroDialog.OK("이미 등록된 단축키", "해당 키가 이미 단축키로 등록되어 있습니다.\n스마트키나 키리맵핑, 채팅 단축키에서 먼저 해제해주시기 바랍니다.");
+                MetroDialog.OK("快捷鍵已註冊", "這個快捷鍵已經被使用。\n請先從智慧施法、改鍵或聊天快捷鍵中移除該按鍵的設定。");
                 IsUpdating = true;
                 Toggle_KeyRemapping.Checked = false;
                 IsUpdating = false;
@@ -1148,7 +1174,7 @@ namespace Cirnix.Forms
         {
             if (isSmartKey(key))
             {
-                MetroDialog.OK("이미 교차 활성화된 단축키", "해당 키는 스마트키가 활성화되어 있습니다.\n스마트키를 먼저 해제해주시기 바랍니다.");
+                MetroDialog.OK("快捷鍵已被交叉啟用", "智慧施法已啟用該快捷鍵\n請先取消該按鍵的智慧施法");
                 return true;
             }
             return false;
@@ -1165,7 +1191,7 @@ namespace Cirnix.Forms
             if (hotkeyList.IsRegistered(hotkey)
              || isKeyReMapped(hotkey))
             {
-                MetroDialog.OK("이미 등록된 단축키", "해당 키가 이미 단축키로 등록되어 있습니다.\n스마트키나 키리맵핑, 채팅 단축키에서 먼저 해제해주시기 바랍니다.");
+                MetroDialog.OK("快捷鍵已註冊", "這個快捷鍵已經被使用。\n請先從智慧施法、改鍵或聊天快捷鍵中移除該按鍵的設定。");
                 KeyReMapDefault();
                 return;
             }
@@ -1231,7 +1257,7 @@ namespace Cirnix.Forms
                     switch (type)
                     {
                         case 0:
-                            RB_Chat1.Font = state ? new Font("맑은 고딕", 9F, FontStyle.Bold) : new Font("맑은 고딕", 9F);
+                            RB_Chat1.Font = state ? new Font("Malgun Gothic", 9F, FontStyle.Bold) : new Font("Malgun Gothic", 9F);
                             return;
                         case 1:
                             RB_Chat1.ForeColor = state ? Color.Red : SystemColors.ControlText;
@@ -1242,7 +1268,7 @@ namespace Cirnix.Forms
                     switch (type)
                     {
                         case 0:
-                            RB_Chat2.Font = state ? new Font("맑은 고딕", 9F, FontStyle.Bold) : new Font("맑은 고딕", 9F);
+                            RB_Chat2.Font = state ? new Font("Malgun Gothic", 9F, FontStyle.Bold) : new Font("Malgun Gothic", 9F);
                             return;
                         case 1:
                             RB_Chat2.ForeColor = state ? Color.Red : SystemColors.ControlText;
@@ -1253,7 +1279,7 @@ namespace Cirnix.Forms
                     switch (type)
                     {
                         case 0:
-                            RB_Chat3.Font = state ? new Font("맑은 고딕", 9F, FontStyle.Bold) : new Font("맑은 고딕", 9F);
+                            RB_Chat3.Font = state ? new Font("Malgun Gothic", 9F, FontStyle.Bold) : new Font("Malgun Gothic", 9F);
                             return;
                         case 1:
                             RB_Chat3.ForeColor = state ? Color.Red : SystemColors.ControlText;
@@ -1264,7 +1290,7 @@ namespace Cirnix.Forms
                     switch (type)
                     {
                         case 0:
-                            RB_Chat4.Font = state ? new Font("맑은 고딕", 9F, FontStyle.Bold) : new Font("맑은 고딕", 9F);
+                            RB_Chat4.Font = state ? new Font("Malgun Gothic", 9F, FontStyle.Bold) : new Font("Malgun Gothic", 9F);
                             return;
                         case 1:
                             RB_Chat4.ForeColor = state ? Color.Red : SystemColors.ControlText;
@@ -1275,7 +1301,7 @@ namespace Cirnix.Forms
                     switch (type)
                     {
                         case 0:
-                            RB_Chat5.Font = state ? new Font("맑은 고딕", 9F, FontStyle.Bold) : new Font("맑은 고딕", 9F);
+                            RB_Chat5.Font = state ? new Font("Malgun Gothic", 9F, FontStyle.Bold) : new Font("Malgun Gothic", 9F);
                             return;
                         case 1:
                             RB_Chat5.ForeColor = state ? Color.Red : SystemColors.ControlText;
@@ -1286,7 +1312,7 @@ namespace Cirnix.Forms
                     switch (type)
                     {
                         case 0:
-                            RB_Chat6.Font = state ? new Font("맑은 고딕", 9F, FontStyle.Bold) : new Font("맑은 고딕", 9F);
+                            RB_Chat6.Font = state ? new Font("Malgun Gothic", 9F, FontStyle.Bold) : new Font("Malgun Gothic", 9F);
                             return;
                         case 1:
                             RB_Chat6.ForeColor = state ? Color.Red : SystemColors.ControlText;
@@ -1297,7 +1323,7 @@ namespace Cirnix.Forms
                     switch (type)
                     {
                         case 0:
-                            RB_Chat7.Font = state ? new Font("맑은 고딕", 9F, FontStyle.Bold) : new Font("맑은 고딕", 9F);
+                            RB_Chat7.Font = state ? new Font("Malgun Gothic", 9F, FontStyle.Bold) : new Font("Malgun Gothic", 9F);
                             return;
                         case 1:
                             RB_Chat7.ForeColor = state ? Color.Red : SystemColors.ControlText;
@@ -1308,7 +1334,7 @@ namespace Cirnix.Forms
                     switch (type)
                     {
                         case 0:
-                            RB_Chat8.Font = state ? new Font("맑은 고딕", 9F, FontStyle.Bold) : new Font("맑은 고딕", 9F);
+                            RB_Chat8.Font = state ? new Font("Malgun Gothic", 9F, FontStyle.Bold) : new Font("Malgun Gothic", 9F);
                             return;
                         case 1:
                             RB_Chat8.ForeColor = state ? Color.Red : SystemColors.ControlText;
@@ -1319,7 +1345,7 @@ namespace Cirnix.Forms
                     switch (type)
                     {
                         case 0:
-                            RB_Chat9.Font = state ? new Font("맑은 고딕", 9F, FontStyle.Bold) : new Font("맑은 고딕", 9F);
+                            RB_Chat9.Font = state ? new Font("Malgun Gothic", 9F, FontStyle.Bold) : new Font("Malgun Gothic", 9F);
                             return;
                         case 1:
                             RB_Chat9.ForeColor = state ? Color.Red : SystemColors.ControlText;
@@ -1330,7 +1356,7 @@ namespace Cirnix.Forms
                     switch (type)
                     {
                         case 0:
-                            RB_Chat0.Font = state ? new Font("맑은 고딕", 9F, FontStyle.Bold) : new Font("맑은 고딕", 9F);
+                            RB_Chat0.Font = state ? new Font("Malgun Gothic", 9F, FontStyle.Bold) : new Font("Malgun Gothic", 9F);
                             return;
                         case 1:
                             RB_Chat0.ForeColor = state ? Color.Red : SystemColors.ControlText;
@@ -1354,7 +1380,7 @@ namespace Cirnix.Forms
             IsUpdating = true;
             TB_ChatMacro.Text = chatHotkeyList[CurrentChatIndex].ChatMessage;
             Label_ChatHotkey.Text = GetHotkeyString(chatHotkeyList[CurrentChatIndex].Hotkey);
-            BTN_SetChatHotkey.Text = chatHotkeyList.IsKeyRegisted(CurrentChatIndex) ? "단축키 해제" : "단축키 지정";
+            BTN_SetChatHotkey.Text = chatHotkeyList.IsKeyRegisted(CurrentChatIndex) ? "關閉快捷鍵" : "指定快捷鍵";
             Toggle_ChatMacro.Checked = chatHotkeyList[CurrentChatIndex].IsRegisted;
             IsUpdating = false;
         }
@@ -1362,15 +1388,15 @@ namespace Cirnix.Forms
         {
             switch (BTN_SetChatHotkey.Text)
             {
-                case "단축키 지정":
+                case "指定快捷鍵":
                     BTN_SetChatHotkey.Text = "...";
                     IsChatHotkeyInput = true;
                     break;
                 case "...":
-                    BTN_SetChatHotkey.Text = "단축키 지정";
+                    BTN_SetChatHotkey.Text = "指定快捷鍵";
                     IsChatHotkeyInput = false;
                     break;
-                case "단축키 해제":
+                case "關閉快捷鍵":
                     if (chatHotkeyList[CurrentChatIndex].IsRegisted)
                     {
                         IsUpdating = true;
@@ -1379,8 +1405,8 @@ namespace Cirnix.Forms
                         RB_Chat_SetCurrentFont(1, false);
                         IsUpdating = false;
                     }
-                    BTN_SetChatHotkey.Text = "단축키 지정";
-                    Label_ChatHotkey.Text = "없음";
+                    BTN_SetChatHotkey.Text = "指定快捷鍵";
+                    Label_ChatHotkey.Text = "無";
                     chatHotkeyList[CurrentChatIndex].Hotkey = 0;
                     IsChatHotkeyInput = false;
                     RB_Chat_SetCurrentFont(0, false);
@@ -1404,9 +1430,9 @@ namespace Cirnix.Forms
             if (hotkeyList.IsRegistered(hotkey)
              || isKeyReMapped(hotkey))
             {
-                MetroDialog.OK("이미 등록된 단축키", "해당 키가 이미 단축키로 등록되어 있습니다.\n스마트키나 키리맵핑, 채팅 단축키에서 먼저 해제해주시기 바랍니다.");
-                BTN_SetChatHotkey.Text = "단축키 지정";
-                Label_ChatHotkey.Text = "없음";
+                MetroDialog.OK("快捷鍵已註冊", "這個快捷鍵已經被使用。\n請先從智慧施法、改鍵或聊天快捷鍵中移除該按鍵的設定。");
+                BTN_SetChatHotkey.Text = "指定快捷鍵";
+                Label_ChatHotkey.Text = "無";
                 chatHotkeyList[CurrentChatIndex].Hotkey = 0;
                 IsChatHotkeyInput = false;
                 return;
@@ -1414,14 +1440,14 @@ namespace Cirnix.Forms
             GB_ChatMacro.Focus();
             chatHotkeyList[CurrentChatIndex].Hotkey = hotkey;
             Label_ChatHotkey.Text = KeyText;
-            BTN_SetChatHotkey.Text = "단축키 해제";
+            BTN_SetChatHotkey.Text = "關閉快捷鍵";
             RB_Chat_SetCurrentFont(0, true);
         }
         private void BTN_SetChatHotkey_Leave(object sender, EventArgs e)
         {
             if (!IsChatHotkeyInput) return;
-            BTN_SetChatHotkey.Text = "단축키 지정";
-            Label_ChatHotkey.Text = "없음";
+            BTN_SetChatHotkey.Text = "指定快捷鍵";
+            Label_ChatHotkey.Text = "無";
             IsChatHotkeyInput = false;
         }
         private void Toggle_ChatMacro_CheckedChanged(object sender, EventArgs e)
@@ -1429,7 +1455,7 @@ namespace Cirnix.Forms
             if (IsUpdating) return;
             if (!chatHotkeyList.IsKeyRegisted(CurrentChatIndex))
             {
-                MetroDialog.OK("단축키가 지정되지 않음", "단축키가 설정되어 있지 않습니다.\n우선, 단축키를 지정해주시기 바랍니다.");
+                MetroDialog.OK("未指定快捷鍵", "尚未設定快捷鍵\n請先指定一個快捷鍵");
                 goto UnCheck;
             }
             if (!Toggle_ChatMacro.Checked)
@@ -1441,7 +1467,7 @@ namespace Cirnix.Forms
             }
             if (hotkeyList.IsRegistered(chatHotkeyList[CurrentChatIndex].Hotkey))
             {
-                MetroDialog.OK("이미 등록된 단축키", "해당 키가 이미 단축키로 등록되어 있습니다.\n스마트키나 키리맵핑, 채팅 단축키에서 먼저 해제해주시기 바랍니다.");
+                MetroDialog.OK("快捷鍵已註冊", "這個快捷鍵已經被使用。\n請先從智慧施法、改鍵或聊天快捷鍵中移除該按鍵的設定。");
                 goto UnCheck;
             }
             chatHotkeyList.Register(CurrentChatIndex);
@@ -1465,7 +1491,7 @@ namespace Cirnix.Forms
                 AutoMouse.Enabled = Toggle_AutoMouse.Checked;
                 return;
             }
-            MetroDialog.OK("미지정 단축키 발견", "지정되지 않은 단축키가 있습니다.\n최소한 한쪽 시작 단축키는 지정해주세요.");
+            MetroDialog.OK("未指定快捷鍵", "尚未設定快捷鍵\n請至少指定一個快捷鍵");
             IsUpdating = true;
             Toggle_AutoMouse.Checked = false;
             IsUpdating = false;
@@ -1476,8 +1502,8 @@ namespace Cirnix.Forms
                 AutoMouse.Enabled = Toggle_AutoMouse.Checked = false;
             if (IsAutoMouseInput || AutoMouse.LeftStartKey != 0)
             {
-                Label_AutoLeftMouseOn.Text = "없음";
-                BTN_AutoLeftMouseOn.Text = "좌클";
+                Label_AutoLeftMouseOn.Text = "無";
+                BTN_AutoLeftMouseOn.Text = "左鍵";
                 AutoMouse.LeftStartKey = 0;
                 return;
             }
@@ -1491,8 +1517,8 @@ namespace Cirnix.Forms
                 AutoMouse.Enabled = Toggle_AutoMouse.Checked = false;
             if (IsAutoMouseInput || AutoMouse.RightStartKey != 0)
             {
-                Label_AutoRightMouseOn.Text = "없음";
-                BTN_AutoRightMouseOn.Text = "우클";
+                Label_AutoRightMouseOn.Text = "無";
+                BTN_AutoRightMouseOn.Text = "右鍵";
                 AutoMouse.RightStartKey = 0;
                 return;
             }
@@ -1506,8 +1532,8 @@ namespace Cirnix.Forms
                 AutoMouse.Enabled = Toggle_AutoMouse.Checked = false;
             if (IsAutoMouseInput || AutoMouse.EndKey != 0)
             {
-                Label_AutoMouseOff.Text = "없음";
-                BTN_AutoMouseOff.Text = "종료";
+                Label_AutoMouseOff.Text = "無";
+                BTN_AutoMouseOff.Text = "END";
                 AutoMouse.EndKey = 0;
                 return;
             }
@@ -1531,22 +1557,22 @@ namespace Cirnix.Forms
                     return;
             if (hotkeyList.IsRegistered(hotkey) || isKeyReMapped(hotkey) || AutoMouse.IsRegistered(hotkey))
             {
-                MetroDialog.OK("이미 등록된 단축키", "해당 키가 이미 단축키로 등록되어 있습니다.\n스마트키나 키리맵핑, 채팅 단축키에서 먼저 해제해주시기 바랍니다.");
+                MetroDialog.OK("快捷鍵已註冊", "這個快捷鍵已經被使用。\n請先從智慧施法、改鍵或聊天快捷鍵中移除該按鍵的設定。");
                 switch (TargetMouse)
                 {
                     case SelectedAutoMouseType.Off:
-                        Label_AutoMouseOff.Text = "없음";
-                        BTN_AutoMouseOff.Text = "종료";
+                        Label_AutoMouseOff.Text = "無";
+                        BTN_AutoMouseOff.Text = "END";
                         AutoMouse.EndKey = 0;
                         break;
                     case SelectedAutoMouseType.Left:
-                        Label_AutoLeftMouseOn.Text = "없음";
-                        BTN_AutoLeftMouseOn.Text = "좌클";
+                        Label_AutoLeftMouseOn.Text = "無";
+                        BTN_AutoLeftMouseOn.Text = "左鍵";
                         AutoMouse.LeftStartKey = 0;
                         break;
                     case SelectedAutoMouseType.Right:
-                        Label_AutoRightMouseOn.Text = "없음";
-                        BTN_AutoRightMouseOn.Text = "우클";
+                        Label_AutoRightMouseOn.Text = "無";
+                        BTN_AutoRightMouseOn.Text = "右鍵";
                         AutoMouse.RightStartKey = 0;
                         break;
                 }
@@ -1558,17 +1584,17 @@ namespace Cirnix.Forms
                 {
                     case SelectedAutoMouseType.Off:
                         Label_AutoMouseOff.Text = KeyText;
-                        BTN_AutoMouseOff.Text = "해제";
+                        BTN_AutoMouseOff.Text = "清除";
                         AutoMouse.EndKey = hotkey;
                         break;
                     case SelectedAutoMouseType.Left:
                         Label_AutoLeftMouseOn.Text = KeyText;
-                        BTN_AutoLeftMouseOn.Text = "해제";
+                        BTN_AutoLeftMouseOn.Text = "清除";
                         AutoMouse.LeftStartKey = hotkey;
                         break;
                     case SelectedAutoMouseType.Right:
                         Label_AutoRightMouseOn.Text = KeyText;
-                        BTN_AutoRightMouseOn.Text = "해제";
+                        BTN_AutoRightMouseOn.Text = "清除";
                         AutoMouse.RightStartKey = hotkey;
                         break;
                 }
@@ -1581,18 +1607,18 @@ namespace Cirnix.Forms
             switch (TargetMouse)
             {
                 case SelectedAutoMouseType.Off:
-                    Label_AutoMouseOff.Text = "없음";
-                    BTN_AutoMouseOff.Text = "종료";
+                    Label_AutoMouseOff.Text = "無";
+                    BTN_AutoMouseOff.Text = "END";
                     AutoMouse.EndKey = 0;
                     break;
                 case SelectedAutoMouseType.Left:
-                    Label_AutoLeftMouseOn.Text = "없음";
-                    BTN_AutoLeftMouseOn.Text = "좌클";
+                    Label_AutoLeftMouseOn.Text = "無";
+                    BTN_AutoLeftMouseOn.Text = "左鍵";
                     AutoMouse.LeftStartKey = 0;
                     break;
                 case SelectedAutoMouseType.Right:
-                    Label_AutoRightMouseOn.Text = "없음";
-                    BTN_AutoRightMouseOn.Text = "우클";
+                    Label_AutoRightMouseOn.Text = "無";
+                    BTN_AutoRightMouseOn.Text = "右鍵";
                     AutoMouse.RightStartKey = 0;
                     break;
             }
@@ -1674,7 +1700,7 @@ namespace Cirnix.Forms
                 case "hp":
                     Label_CommandTitle.Text = "최대 체력수치 제거";
                     Label_CommandKR.Text = "ㅗㅔ";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "상태 창에 표기되는 최대 체력수치를 제거하여 체력수치가 사라지는 증상을 완화합니다.\r\n사용 시, 현재 체력의 수치만 확인할 수 있으며, 다시 입력시, 해당 기능을 사용하지 않습니다.";
                     break;
                 case "dice":
@@ -1686,67 +1712,67 @@ namespace Cirnix.Forms
                 case "mo":
                     Label_CommandTitle.Text = "메모리 최적화";
                     Label_CommandKR.Text = "ㅡㅐ";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "워크래프트가 사용 중인 메모리를 최적화합니다.\r\n메모리를 최적화함으로써, 페이탈로 인한 워크래프트 강제 종료 현상을 최소화 할 수 있지만, 컴퓨터 사양이 낮은 유저의 경우, 인 게임 최적화를 사용시에 잔렉이 발생할 수 있습니다.\r\n명령어 사용 직후, 5초간 메모리의 변화량을 체크하여 알려줍니다.";
                     break;
                 case "chk":
                     Label_CommandTitle.Text = "치트맵 판독";
                     Label_CommandKR.Text = "체크";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "프로그램에 사전에 등록된 구문을 이용하여, 해당 맵에 치트셋이 삽입되어 있는지 확인합니다.\r\n현재 지원하는 치트셋은 '갯힝', '소울상디' 치트셋이며, 제보해주시는대로 추가 지원도 고려하고 있습니다.";
                     break;
                 case "rework":
                     Label_CommandTitle.Text = "리워크";
                     Label_CommandKR.Text = "ㄱㄷ재가";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "워크래프트의 리워크 기능입니다.";
                     break;
                 case "j":
                     Label_CommandTitle.Text = "방 입장";
                     Label_CommandKR.Text = "ㅓ";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "워크래프트의 지정된 방으로 입장합니다.";
                     break;
                 case "c":
                     Label_CommandTitle.Text = "방 생성";
                     Label_CommandKR.Text = "ㅊ";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "워크래프트의 방을 생성합니다.\r\n 생성할때 이전에 만들었던 방의 맵으로 생성됩니다.";
                     break;
                 case "wa":
                     Label_CommandTitle.Text = "밴 리스트";
                     Label_CommandKR.Text = "ㅈㅁ";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "밴리스트에 저장된 IP 및 ID를 방에 접속된 인원의\r\n IP 및 ID와 매칭하여 조건에 맞을 경우 출력합니다.\r\n\r\nID 및 IP의 일부를 입력해주세요. \r\n\r\n1.2를 입력할 경우 1.2.3.4 IP를 검색합니다.\r\n1.2.3.4를 입력할 경우 무조건 같은 IP를 검색합니다.";
                     break;
                 case "va":
                     Label_CommandTitle.Text = "IP 매칭";
                     Label_CommandKR.Text = "ㅍㅁ";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "방에 접속된 인원의 IP 및 ID를 출력합니다.";
                     break;
                 case "max":
                     Label_CommandTitle.Text = "방 유저 카운트 알람(MAX)";
                     Label_CommandKR.Text = "ㅡㅁㅌ";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "방의 유저 설정된 수 이상이되면 알립니다.\r\n\r\n 한번더 !max 명령어를 입력하면 중단합니다.";
                     break;
                 case "min":
                     Label_CommandTitle.Text = "방 유저 카운트 알람(MIN)";
                     Label_CommandKR.Text = "ㅡㅑㅜ";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "방의 유저 설정된 수 이하가되면 알립니다.\r\n\r\n 한번더 !min 명령어를 입력하면 중단합니다.";
                     break;
                 case "as":
                     Label_CommandTitle.Text = "자동시작";
                     Label_CommandKR.Text = "ㅁㄴ";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "지정 이상의 인원이되면 10초 후 자동으로 시작합니다.\r\n\r\n 한번더 !as 명령어를 입력하면 중단합니다.\r\n이미 10초 카운트다운을 하고있다면 중단이 불가능합니다.";
                     break;
                 case "exit":
                     Label_CommandTitle.Text = "워크래프트 종료";
                     Label_CommandKR.Text = "종료";
-                    Label_ParameterValue.Text = "없음";
+                    Label_ParameterValue.Text = "無";
                     TB_CommandDescription.Text = "워크래프트를 종료합니다.";
                     break;
                 default:
@@ -1813,7 +1839,7 @@ namespace Cirnix.Forms
             KeyboardHooker.HookEnd();
             await Task.Delay(1);
             KeyboardHooker.HookStart();
-            MetroDialog.OK("후킹 재설정 완료", "단축키 후킹 상태를 재설정하였습니다.");
+            MetroDialog.OK("hook重置完成", "快捷鍵已經重設");
         }
 
         private void Toggle_AutoFrequency_CheckedChanged(object sender, EventArgs e)
@@ -1840,6 +1866,11 @@ namespace Cirnix.Forms
         {
             if (banlistview.SelectedItems.Count <= 0) return;
             this.DelSave((BanlistModel)this.banlistview.SelectedItems[0].Tag);
+        }
+
+        private void Label_AutoLeftMouseOn_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void Number_ChatFrequency_ValueChanged(object sender, EventArgs e)

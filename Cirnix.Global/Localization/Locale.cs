@@ -35,8 +35,10 @@ namespace Cirnix.Global
 
         /// <summary>
         /// 한국어 받침 체크
+        /// Korean consonant check
         /// </summary>
         /// <param name="name">체크할 문자열</param>
+        /// <param name="name">String to check</param>
         /// <param name="firstValue">예: 을, 이, 은</param>
         /// <param name="secondValue">예: 를, 가, 는</param>
         /// <returns></returns>

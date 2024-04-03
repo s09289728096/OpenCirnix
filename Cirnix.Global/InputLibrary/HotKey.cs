@@ -221,7 +221,7 @@ namespace Cirnix.Global
         {
             switch(key)
             {
-                case 0:                    return "없음";
+                case 0:                    return "無";
                 case Keys.Escape:          return "Esc";
                 case Keys.Scroll:          return "Scroll Lock";
                 case Keys.Oemtilde:        return "` ~";
@@ -239,21 +239,21 @@ namespace Cirnix.Global
                 case Keys.Oemplus:         return "= +";
                 case Keys.Back:            return "Backspace";
                 case Keys.NumLock:         return "Num Lock";
-                case Keys.Divide:          return "키패드/";
-                case Keys.Multiply:        return "키패드*";
-                case Keys.Subtract:        return "키패드-";
-                case Keys.Add:             return "키패드+";
-                case Keys.NumPad1:         return "키패드1";
-                case Keys.NumPad2:         return "키패드2";
-                case Keys.NumPad3:         return "키패드3";
-                case Keys.NumPad4:         return "키패드4";
-                case Keys.NumPad5:         return "키패드5";
-                case Keys.NumPad6:         return "키패드6";
-                case Keys.NumPad7:         return "키패드7";
-                case Keys.NumPad8:         return "키패드8";
-                case Keys.NumPad9:         return "키패드9";
-                case Keys.NumPad0:         return "키패드0";
-                case Keys.Decimal:         return "키패드.";
+                case Keys.Divide:          return "按鍵/";
+                case Keys.Multiply:        return "按鍵*";
+                case Keys.Subtract:        return "按鍵-";
+                case Keys.Add:             return "按鍵+";
+                case Keys.NumPad1:         return "按鍵1";
+                case Keys.NumPad2:         return "按鍵2";
+                case Keys.NumPad3:         return "按鍵3";
+                case Keys.NumPad4:         return "按鍵4";
+                case Keys.NumPad5:         return "按鍵5";
+                case Keys.NumPad6:         return "按鍵6";
+                case Keys.NumPad7:         return "按鍵7";
+                case Keys.NumPad8:         return "按鍵8";
+                case Keys.NumPad9:         return "按鍵9";
+                case Keys.NumPad0:         return "按鍵0";
+                case Keys.Decimal:         return "按鍵.";
                 case Keys.OemOpenBrackets: return "[ {";
                 case Keys.Oem6:            return "] }";
                 case Keys.Oem5:            return "\\ |";

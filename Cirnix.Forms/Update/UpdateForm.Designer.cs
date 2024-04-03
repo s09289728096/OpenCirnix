@@ -36,37 +36,37 @@
             // 
             // progressBarUpdateState
             // 
-            this.progressBarUpdateState.Location = new System.Drawing.Point(12, 38);
+            this.progressBarUpdateState.Location = new System.Drawing.Point(10, 38);
             this.progressBarUpdateState.Name = "progressBarUpdateState";
-            this.progressBarUpdateState.Size = new System.Drawing.Size(350, 25);
+            this.progressBarUpdateState.Size = new System.Drawing.Size(300, 25);
             this.progressBarUpdateState.TabIndex = 1;
             // 
             // LabelMsg
             // 
-            this.LabelMsg.Location = new System.Drawing.Point(12, 69);
+            this.LabelMsg.Location = new System.Drawing.Point(10, 69);
             this.LabelMsg.Margin = new System.Windows.Forms.Padding(3);
             this.LabelMsg.Name = "LabelMsg";
-            this.LabelMsg.Size = new System.Drawing.Size(350, 50);
+            this.LabelMsg.Size = new System.Drawing.Size(300, 50);
             this.LabelMsg.TabIndex = 2;
-            this.LabelMsg.Text = "업데이트 서버에 연결 중...";
+            this.LabelMsg.Text = "正在連接更新伺服器...";
             this.LabelMsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelTitle
             // 
             this.LabelTitle.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LabelTitle.Location = new System.Drawing.Point(62, 12);
+            this.LabelTitle.Location = new System.Drawing.Point(53, 12);
             this.LabelTitle.Margin = new System.Windows.Forms.Padding(3);
             this.LabelTitle.Name = "LabelTitle";
-            this.LabelTitle.Size = new System.Drawing.Size(250, 20);
+            this.LabelTitle.Size = new System.Drawing.Size(214, 20);
             this.LabelTitle.TabIndex = 3;
-            this.LabelTitle.Text = "업데이트 중이니 종료하지 마세요!";
+            this.LabelTitle.Text = "正在更新中 請不要退出!";
             this.LabelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UpdateForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 130);
+            this.ClientSize = new System.Drawing.Size(321, 130);
             this.Controls.Add(this.LabelTitle);
             this.Controls.Add(this.LabelMsg);
             this.Controls.Add(this.progressBarUpdateState);
@@ -75,7 +75,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UpdateForm";
-            this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
+            this.Padding = new System.Windows.Forms.Padding(17, 30, 17, 20);
             this.Resizable = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateForm_FormClosing);
             this.ResumeLayout(false);

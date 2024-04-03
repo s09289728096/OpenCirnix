@@ -63,7 +63,7 @@ namespace Cirnix.Memory
                         int ExitCode = proc.ExitCode;
                         if (ExitCode >> 16 < 0 || ExitCode << 16 >> 16 < 0)
                         {
-                            MetroDialog.OK("오류", "JNLoader 설치에 실패했습니다.\n백신에 의해 차단됬을 수도 있습니다.");
+                            MetroDialog.OK("錯誤", "JNLoader 安裝失敗\n可能被防毒軟體阻擋");
                             return 0;
                         }
                     }
@@ -91,7 +91,7 @@ namespace Cirnix.Memory
             }
             catch (ArgumentException ex)
             {
-                MetroDialog.OK("오류", "Warcraft III를 실행하지 못했습니다.\nCirnix를 다시 실행시켜주세요.");
+                MetroDialog.OK("錯誤", "Warcraft III 執行失敗.\n請重新執行一次Cirnix");
                 ExceptionSender.ExceptionSendAsync(ex);
                 return 0;
             }
