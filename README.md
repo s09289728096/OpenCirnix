@@ -1,11 +1,14 @@
 # OpenCirnix
-워크래프트3 외부 프로그램 Cirnix의 오픈소스 버전입니다.
+This is an open source version of the Warcraft 3 external program "Cirnix".
 
-**개발에 사용된 IDE: Visual Studio 2019**
+Fork for Localization. (Traditional Chinese)
+Community: [Fate/Another Global](https://discord.gg/9YZkDjTjDW)
 
-**테스트 완료된 운영체제: Windows 10 2004**
+**Using IDE: Visual Studio 2019**
 
-**요구사항**
+**Testing Operating System: Windows 11 2204**
+
+**Requirements**
 - Warcraft III 1.28.5.7680 (1.28f)
-- .NET Framework 4.6.2 이상의 버전
+- .NET Framework 4.6.2 or higher version
 - [CirnoLib](https://github.com/BlacklightsC/CirnoLib.git)
