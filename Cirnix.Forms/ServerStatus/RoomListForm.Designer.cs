@@ -191,7 +191,7 @@
             this.Label_RegDate.Location = new System.Drawing.Point(168, 263);
             this.Label_RegDate.Margin = new System.Windows.Forms.Padding(0);
             this.Label_RegDate.Name = "Label_RegDate";
-            this.Label_RegDate.Size = new System.Drawing.Size(52, 15);
+            this.Label_RegDate.Size = new System.Drawing.Size(60, 15);
             this.Label_RegDate.TabIndex = 9;
             this.Label_RegDate.Text = "創建日期:";
             this.Label_RegDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -227,7 +227,7 @@
             this.Label_Player0.Location = new System.Drawing.Point(168, 297);
             this.Label_Player0.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player0.Name = "Label_Player0";
-            this.Label_Player0.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player0.Size = new System.Drawing.Size(20, 15);
             this.Label_Player0.TabIndex = 13;
             this.Label_Player0.Text = "1";
             this.Label_Player0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -250,7 +250,7 @@
             this.Label_Player1.Location = new System.Drawing.Point(168, 311);
             this.Label_Player1.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player1.Name = "Label_Player1";
-            this.Label_Player1.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player1.Size = new System.Drawing.Size(20, 15);
             this.Label_Player1.TabIndex = 15;
             this.Label_Player1.Text = "2";
             this.Label_Player1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -273,7 +273,7 @@
             this.Label_Player2.Location = new System.Drawing.Point(168, 325);
             this.Label_Player2.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player2.Name = "Label_Player2";
-            this.Label_Player2.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player2.Size = new System.Drawing.Size(20, 15);
             this.Label_Player2.TabIndex = 17;
             this.Label_Player2.Text = "3";
             this.Label_Player2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -296,7 +296,7 @@
             this.Label_Player5.Location = new System.Drawing.Point(168, 367);
             this.Label_Player5.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player5.Name = "Label_Player5";
-            this.Label_Player5.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player5.Size = new System.Drawing.Size(20, 15);
             this.Label_Player5.TabIndex = 23;
             this.Label_Player5.Text = "6";
             this.Label_Player5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -319,7 +319,7 @@
             this.Label_Player4.Location = new System.Drawing.Point(168, 353);
             this.Label_Player4.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player4.Name = "Label_Player4";
-            this.Label_Player4.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player4.Size = new System.Drawing.Size(20, 15);
             this.Label_Player4.TabIndex = 21;
             this.Label_Player4.Text = "5";
             this.Label_Player4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -342,7 +342,7 @@
             this.Label_Player3.Location = new System.Drawing.Point(168, 339);
             this.Label_Player3.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player3.Name = "Label_Player3";
-            this.Label_Player3.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player3.Size = new System.Drawing.Size(20, 15);
             this.Label_Player3.TabIndex = 19;
             this.Label_Player3.Text = "4";
             this.Label_Player3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -365,7 +365,7 @@
             this.Label_Player11.Location = new System.Drawing.Point(168, 451);
             this.Label_Player11.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player11.Name = "Label_Player11";
-            this.Label_Player11.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player11.Size = new System.Drawing.Size(20, 15);
             this.Label_Player11.TabIndex = 35;
             this.Label_Player11.Text = "12";
             this.Label_Player11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -388,7 +388,7 @@
             this.Label_Player10.Location = new System.Drawing.Point(168, 437);
             this.Label_Player10.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player10.Name = "Label_Player10";
-            this.Label_Player10.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player10.Size = new System.Drawing.Size(20, 15);
             this.Label_Player10.TabIndex = 33;
             this.Label_Player10.Text = "11";
             this.Label_Player10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -411,7 +411,7 @@
             this.Label_Player9.Location = new System.Drawing.Point(168, 423);
             this.Label_Player9.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player9.Name = "Label_Player9";
-            this.Label_Player9.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player9.Size = new System.Drawing.Size(20, 15);
             this.Label_Player9.TabIndex = 31;
             this.Label_Player9.Text = "10";
             this.Label_Player9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -434,7 +434,7 @@
             this.Label_Player8.Location = new System.Drawing.Point(168, 409);
             this.Label_Player8.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player8.Name = "Label_Player8";
-            this.Label_Player8.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player8.Size = new System.Drawing.Size(20, 15);
             this.Label_Player8.TabIndex = 29;
             this.Label_Player8.Text = "9";
             this.Label_Player8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -457,7 +457,7 @@
             this.Label_Player7.Location = new System.Drawing.Point(168, 395);
             this.Label_Player7.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player7.Name = "Label_Player7";
-            this.Label_Player7.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player7.Size = new System.Drawing.Size(20, 15);
             this.Label_Player7.TabIndex = 27;
             this.Label_Player7.Text = "8";
             this.Label_Player7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -480,7 +480,7 @@
             this.Label_Player6.Location = new System.Drawing.Point(168, 381);
             this.Label_Player6.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Player6.Name = "Label_Player6";
-            this.Label_Player6.Size = new System.Drawing.Size(16, 15);
+            this.Label_Player6.Size = new System.Drawing.Size(20, 15);
             this.Label_Player6.TabIndex = 25;
             this.Label_Player6.Text = "7";
             this.Label_Player6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -718,7 +718,7 @@
             this.Label_StartTime.Location = new System.Drawing.Point(168, 280);
             this.Label_StartTime.Margin = new System.Windows.Forms.Padding(0);
             this.Label_StartTime.Name = "Label_StartTime";
-            this.Label_StartTime.Size = new System.Drawing.Size(52, 15);
+            this.Label_StartTime.Size = new System.Drawing.Size(60, 15);
             this.Label_StartTime.TabIndex = 11;
             this.Label_StartTime.Text = "開始時間:";
             this.Label_StartTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

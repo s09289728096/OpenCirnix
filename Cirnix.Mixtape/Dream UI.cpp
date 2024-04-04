@@ -140,14 +140,14 @@ int __stdcall PrintAttackSpeedAndOtherInfo(int addr, float * attackspeed, float 
 			float MaxAttackReload = 1.0f / (maxattackspeed / realBAT);
 #pragma warning(push)
 #pragma warning(disable: 4819)
-			sprintf_s(buffer, sizeof(buffer), "%.1f/秒 (後搖: %.2f 秒)|n攻擊速度加成: %.0f%%|n最大攻速: %.1f/秒 (後搖: %.2f 秒)|n", AttacksPerSec, AttackReload, AttackSpeedBonus, MaxAttacksPerSec, MaxAttackReload);
+			sprintf_s(buffer, sizeof(buffer), "%.1f/秒 (攻擊間隔: %.2f 秒)|n攻擊速度加成: %.0f%%|n最大攻速: %.1f/秒 (攻擊間隔: %.2f 秒)|n", AttacksPerSec, AttackReload, AttackSpeedBonus, MaxAttacksPerSec, MaxAttackReload);
 #pragma warning(pop)
 		}
 		else
 		{
 #pragma warning(push)
 #pragma warning(disable: 4819)
-			sprintf_s(buffer, sizeof(buffer), "%.3f/秒 (後搖: %.2f 秒)|n攻擊速度加成: %.0f%%", AttacksPerSec, AttackReload, AttackSpeedBonus);
+			sprintf_s(buffer, sizeof(buffer), "%.3f/秒 (攻擊間隔: %.2f 秒)|n攻擊速度加成: %.0f%%", AttacksPerSec, AttackReload, AttackSpeedBonus);
 #pragma warning(pop)
 		}
 

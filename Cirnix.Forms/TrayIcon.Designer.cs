@@ -74,7 +74,7 @@
             // 
             this.OpenWindow.Name = "OpenWindow";
             this.OpenWindow.Size = new System.Drawing.Size(155, 22);
-            this.OpenWindow.Text = "프로그램 열기";
+            this.OpenWindow.Text = "開啟程式";
             this.OpenWindow.Click += new System.EventHandler(this.OpenWindow_Click);
             // 
             // Line1
@@ -86,7 +86,7 @@
             // 
             this.OpenRoomList.Name = "OpenRoomList";
             this.OpenRoomList.Size = new System.Drawing.Size(155, 22);
-            this.OpenRoomList.Text = "M16 방 리스트";
+            this.OpenRoomList.Text = "M16 房間列表";
             this.OpenRoomList.Click += new System.EventHandler(this.OpenRoomList_Click);
             // 
             // OpenAnalyzer
@@ -94,7 +94,7 @@
             this.OpenAnalyzer.Enabled = false;
             this.OpenAnalyzer.Name = "OpenAnalyzer";
             this.OpenAnalyzer.Size = new System.Drawing.Size(155, 22);
-            this.OpenAnalyzer.Text = "코드 리더기";
+            this.OpenAnalyzer.Text = "存檔代碼分析";
             this.OpenAnalyzer.Visible = false;
             this.OpenAnalyzer.Click += new System.EventHandler(this.OpenAnalyzer_Click);
             // 
@@ -102,7 +102,7 @@
             // 
             this.OpenAdditionalTool.Name = "OpenAdditionalTool";
             this.OpenAdditionalTool.Size = new System.Drawing.Size(155, 22);
-            this.OpenAdditionalTool.Text = "부가 기능";
+            this.OpenAdditionalTool.Text = "附加元件";
             this.OpenAdditionalTool.Click += new System.EventHandler(this.OpenAdditionalTool_Click);
             // 
             // Line2
@@ -114,14 +114,14 @@
             // 
             this.OpenOption.Name = "OpenOption";
             this.OpenOption.Size = new System.Drawing.Size(155, 22);
-            this.OpenOption.Text = "설정 및 도움말";
+            this.OpenOption.Text = "設定和幫助";
             this.OpenOption.Click += new System.EventHandler(this.Option_Click);
             // 
             // Information
             // 
             this.Information.Name = "Information";
             this.Information.Size = new System.Drawing.Size(155, 22);
-            this.Information.Text = "프로그램 정보";
+            this.Information.Text = "程式資訊";
             this.Information.Click += new System.EventHandler(this.Information_Click);
             // 
             // Line3
@@ -133,7 +133,7 @@
             // 
             this.ShutDown.Name = "ShutDown";
             this.ShutDown.Size = new System.Drawing.Size(155, 22);
-            this.ShutDown.Text = "프로그램 종료";
+            this.ShutDown.Text = "離開程式";
             this.ShutDown.Click += new System.EventHandler(this.ShutDown_Click);
             // 
             // TrayIcon

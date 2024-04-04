@@ -70,7 +70,7 @@ namespace Cirnix.Forms
             catch (Exception ex)
             {
                 ExceptionSender.ExceptionSendAsync(ex, true);
-                MessageBox.Show(this, "설정 불러오기에 실패하여, 설정을 초기화 해야합니다.", "불러오기 실패", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                MessageBox.Show(this, "無法讀取設定, 可能需要重新設定", "無法讀取", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 Application.ExitThread();
                 Environment.Exit(0);
             }
@@ -80,7 +80,7 @@ namespace Cirnix.Forms
         private void TrayCheck()
         {
             MainTrayIcon.BalloonTipTitle = $"{Theme.Title} v{version[0]}.{version[1]}";
-            MainTrayIcon.BalloonTipText = "여기서 창을 다시 열수있어요!";
+            MainTrayIcon.BalloonTipText = "Cirnix將在工作列持續運行!";
             MainTrayIcon.ShowBalloonTip(5000);
         }
 
@@ -151,7 +151,7 @@ namespace Cirnix.Forms
             catch (Exception ex)
             {
                 ExceptionSender.ExceptionSendAsync(ex, true);
-                MessageBox.Show(this, "설정 불러오기에 실패하여, 설정을 초기화 해야합니다.", "불러오기 실패", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                MessageBox.Show(this, "無法讀取設定, 可能需要重新設定", "無法讀取", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 Application.ExitThread();
                 Environment.Exit(0);
                 return;
@@ -255,7 +255,7 @@ namespace Cirnix.Forms
         {
             if (e.Error != null)
             {
-                MetroDialog.OK("연결 오류", "업데이트 서버에 연결할 수 없습니다.");
+                MetroDialog.OK("連線錯誤", "無法連線到伺服器");
                 return;
             }
             isOnline = true;
@@ -263,7 +263,7 @@ namespace Cirnix.Forms
             if (version[0] > Latest[0]) return;
             else if (version[0] == Latest[0])
                 if (version[1] >= Latest[1]) return;
-            if (MetroDialog.YesNo("업데이트 필요", $"최신 버전이 확인되었습니다.\n 현재: {version[0]}.{version[1]}\n 최신: {Latest[0]}.{Latest[1]}\n업데이트 하시겠습니까?"))
+            if (MetroDialog.YesNo("需要更新", $"存在較新的版本.\n 當前: {version[0]}.{version[1]}\n 最新: {Latest[0]}.{Latest[1]}\n是否要進行更新?\n*這將會導致Cirnix變更為韓語*"))
             {
                 try
                 {
@@ -350,6 +350,7 @@ namespace Cirnix.Forms
                         catch
                         {
                             // ExternalException : 요청한 클립보드 작업을 수행하지 못했습니다.
+                            // ExternalException : The requested clipboard operation could not be performed.
                         }
                     }
                     else

@@ -6,8 +6,8 @@ using System.Runtime.InteropServices;
 // 이러한 특성 값을 변경하세요.
 // General information about an assembly is controlled through the following set of properties:
 // Change the values of these properties to modify information related to the assembly.
-[assembly: AssemblyTitle("Cirnix - Warcraft III 보조 도구")]
-[assembly: AssemblyProduct("Cirnix - Warcraft III 보조 도구")]
+[assembly: AssemblyTitle("Cirnix - Warcraft III Assistant Tool")]
+[assembly: AssemblyProduct("Cirnix - Warcraft III Assistant Tool")]
 [assembly: AssemblyCopyright("Copyright © BlacklightsC 2017 - 2021")]
 [assembly: AssemblyCompany("Developed by BlacklightsC")]
 
