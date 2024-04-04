@@ -27,7 +27,7 @@ namespace Cirnix.Forms
             Label_Title.MouseDown += new MouseEventHandler(Label_Title_MouseDown);
             Label_Title.MouseMove += new MouseEventHandler(Label_Title_MouseMove);
             Label_Title.MouseUp += new MouseEventHandler(Label_Title_MouseUp);
-            Label_Title.Text = Text = $"{Global.Theme.Title} v{version[0]}.{version[1]}";
+            Label_Title.Text = Text = $"{Global.Theme.Title} v{version[0]}.{version[1]} Rev.{version[2]}";
             ImageBox.MouseDown += new MouseEventHandler(Label_Title_MouseDown);
             ImageBox.MouseMove += new MouseEventHandler(Label_Title_MouseMove);
             ImageBox.MouseUp += new MouseEventHandler(Label_Title_MouseUp);

@@ -45,7 +45,7 @@ namespace Cirnix.Global
             saveFilePath = new SaveFilePath();
             UserState = CommandTag.None;
             Version ver = System.Reflection.Assembly.GetEntryAssembly().GetName().Version;
-            version = new int[2] { ver.Major, ver.Minor };
+            version = new int[3] { ver.Major, ver.Minor, ver.Revision };
             saveFilePath.Read();
             Category = new string[3];
             Category[0] = Settings.MapType;
