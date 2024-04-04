@@ -30,7 +30,6 @@ namespace Cirnix.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OptionForm));
             this.MainTabControl = new MetroFramework.Controls.MetroTabControl();
             this.War3SettingTab = new MetroFramework.Controls.MetroTabPage();
             this.GB_MixFile = new System.Windows.Forms.GroupBox();
@@ -296,9 +295,9 @@ namespace Cirnix.Forms
             this.War3SettingTab.HorizontalScrollbarBarColor = true;
             this.War3SettingTab.HorizontalScrollbarHighlightOnWheel = false;
             this.War3SettingTab.HorizontalScrollbarSize = 10;
-            this.War3SettingTab.Location = new System.Drawing.Point(4, 38);
+            this.War3SettingTab.Location = new System.Drawing.Point(4, 36);
             this.War3SettingTab.Name = "War3SettingTab";
-            this.War3SettingTab.Size = new System.Drawing.Size(632, 233);
+            this.War3SettingTab.Size = new System.Drawing.Size(632, 235);
             this.War3SettingTab.TabIndex = 2;
             this.War3SettingTab.Text = "魔獸爭霸";
             this.War3SettingTab.VerticalScrollbarBarColor = true;
@@ -940,9 +939,9 @@ namespace Cirnix.Forms
             this.RPGTab.HorizontalScrollbarBarColor = true;
             this.RPGTab.HorizontalScrollbarHighlightOnWheel = false;
             this.RPGTab.HorizontalScrollbarSize = 10;
-            this.RPGTab.Location = new System.Drawing.Point(4, 38);
+            this.RPGTab.Location = new System.Drawing.Point(4, 36);
             this.RPGTab.Name = "RPGTab";
-            this.RPGTab.Size = new System.Drawing.Size(632, 233);
+            this.RPGTab.Size = new System.Drawing.Size(632, 235);
             this.RPGTab.TabIndex = 0;
             this.RPGTab.Text = "存檔";
             this.RPGTab.VerticalScrollbar = true;
@@ -1923,7 +1922,7 @@ namespace Cirnix.Forms
             this.RB_Prev4.Name = "RB_Prev4";
             this.RB_Prev4.Size = new System.Drawing.Size(120, 25);
             this.RB_Prev4.TabIndex = 87;
-            this.RB_Prev4.Text = "使用按鍵9,0";
+            this.RB_Prev4.Text = "(未使用)";
             this.RB_Prev4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RB_Prev4.UseVisualStyleBackColor = true;
             this.RB_Prev4.CheckedChanged += new System.EventHandler(this.RB_Prev_CheckedChanged);
@@ -1962,7 +1961,7 @@ namespace Cirnix.Forms
             this.RB_Prev3.Name = "RB_Prev3";
             this.RB_Prev3.Size = new System.Drawing.Size(120, 25);
             this.RB_Prev3.TabIndex = 85;
-            this.RB_Prev3.Text = "指定單位1號";
+            this.RB_Prev3.Text = "停用Space";
             this.RB_Prev3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RB_Prev3.UseVisualStyleBackColor = true;
             this.RB_Prev3.CheckedChanged += new System.EventHandler(this.RB_Prev_CheckedChanged);
@@ -2332,9 +2331,9 @@ namespace Cirnix.Forms
             this.BanList.HorizontalScrollbarBarColor = true;
             this.BanList.HorizontalScrollbarHighlightOnWheel = false;
             this.BanList.HorizontalScrollbarSize = 10;
-            this.BanList.Location = new System.Drawing.Point(4, 38);
+            this.BanList.Location = new System.Drawing.Point(4, 36);
             this.BanList.Name = "BanList";
-            this.BanList.Size = new System.Drawing.Size(632, 233);
+            this.BanList.Size = new System.Drawing.Size(632, 235);
             this.BanList.TabIndex = 5;
             this.BanList.Text = "黑名單";
             this.BanList.VerticalScrollbarBarColor = true;
@@ -2459,9 +2458,9 @@ namespace Cirnix.Forms
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 10;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 36);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(632, 233);
+            this.metroTabPage1.Size = new System.Drawing.Size(632, 235);
             this.metroTabPage1.TabIndex = 3;
             this.metroTabPage1.Text = "命令";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -2704,9 +2703,9 @@ namespace Cirnix.Forms
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 36);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(632, 233);
+            this.metroTabPage2.Size = new System.Drawing.Size(632, 235);
             this.metroTabPage2.TabIndex = 4;
             this.metroTabPage2.Text = "幫助";
             this.metroTabPage2.VerticalScrollbarBarColor = true;

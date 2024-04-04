@@ -140,34 +140,15 @@ namespace Cirnix.Global
             Thread.Sleep(1);
             mouse_event((uint)(MouseFlags.LBDOWN | MouseFlags.LBUP), 0, 0, 0, 0);
             Thread.Sleep(1);
-            switch(Settings.SmartKeyPreventionType)
-            {
-                default:
-                    return;
-                case 1:
-                    keybd_event((byte)Keys.Escape, 0, 0, 0x21);
-                    keybd_event((byte)Keys.Escape, 0, 2, 0x21);
-                    break;
-                case 2:
-                    keybd_event((byte)Keys.D1, 0, 0, 0x21);
-                    keybd_event((byte)Keys.D1, 0, 2, 0x21);
-                    break;
-                case 3:
-                    if(IsCross)
-                    {
-                        keybd_event((byte)Keys.D9, 0, 0, 0x21);
-                        keybd_event((byte)Keys.D9, 0, 2, 0x21);
-                    }
-                    else
-                    {
-                        keybd_event((byte)Keys.D0, 0, 0, 0x21);
-                        keybd_event((byte)Keys.D0, 0, 2, 0x21);
-                    }
-                    IsCross = !IsCross;
-                    break;
-            }
-            Thread.Sleep(1);
         }
+
+        public static void BlockKeyFunc(Keys key, bool Mode) {
+            if (Mode == true)
+                hotkeyList.Register(key, KeyRemapping, Keys.None);
+            else
+                hotkeyList.UnRegister(key);
+        }
+
 
         public static string GetSendKeyString(Keys key)
         {

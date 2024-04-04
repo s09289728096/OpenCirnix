@@ -882,6 +882,28 @@ namespace Cirnix.Forms
         private void RB_Prev_CheckedChanged(object sender, EventArgs e)
         {
             Settings.SmartKeyPreventionType = SmartKeyPreventionType;
+            
+            switch (Settings.SmartKeyPreventionType) {
+                case 0:
+                    //Inactivated
+                    BlockKeyFunc(Keys.Escape, false);
+                    BlockKeyFunc(Keys.Space, false);
+                    break;
+                case 1:
+                    //ESC
+                    BlockKeyFunc(Keys.Space, false);
+                    BlockKeyFunc(Keys.Escape, true);
+                    break;
+                case 2:
+                    //Space
+                    BlockKeyFunc(Keys.Escape, false);
+                    BlockKeyFunc(Keys.Space, true);
+                    break;
+                case 3:
+                    //Unused
+                    break;
+            }
+
         }
         private int SmartKeyPreventionType {
             get {
